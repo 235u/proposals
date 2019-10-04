@@ -1,0 +1,16 @@
+﻿.table,
+.custom-file {
+    width: unset;
+}
+
+.form-control.physical-dimension {
+    width: 5em;
+}
+
+.form-control.currency {
+    width: 9em;
+}
+
+section {
+    margin-bottom: 10px;
+}

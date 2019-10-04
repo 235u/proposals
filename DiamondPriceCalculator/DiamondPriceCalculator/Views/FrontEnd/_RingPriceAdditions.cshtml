@@ -1,0 +1,59 @@
+﻿@model RingInfo
+
+<h2>Price Additions</h2>
+<section>
+    <h3>Ring Metal</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Metal</th>
+                <th scope="col">Purity</th>
+                <th scope="col">Price Addition</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (PreciousMetalInfo metal in RingPriceInfo.MetalPriceAdditions.Keys)
+            {
+                <tr>
+                    <td class="align-middle">@metal.PreciousMetal.GetDisplayName()</td>
+                    <td class="align-middle">@metal.Fineness.GetDisplayName()</td>
+                    <td>
+                        <div class="input-group">
+                            <input type="number" value="@RingPriceInfo.MetalPriceAdditions[metal].ToString("F2")" class="form-control currency">
+                            <div class="input-group-append">
+                                <span class="input-group-text">AED</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+<section>
+    <h3>Ring Type</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Price Addition</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (RingType ringType in RingPriceInfo.TypePriceAdditions.Keys)
+            {
+                <tr>
+                    <td>@ringType.GetDisplayName()</td>
+                    <td>
+                        <div class="input-group">
+                            <input type="number" value="@RingPriceInfo.TypePriceAdditions[ringType].ToString("F2")" class="form-control currency">
+                            <div class="input-group-append">
+                                <span class="input-group-text">AED</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

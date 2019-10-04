@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form>
+    <div class="row">
+        <div class="col">
+            <partial name="_RingPriceAdditions" />
+        </div>
+        <div class="col">
+            <h2>Diamond Inventory</h2>
+            <section>
+                <h3>Excel Upload</h3>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">*.xlsx</label>
+                </div>
+            </section>
+            <section>
+                <h3>Parsed Inventory (Not Implemented)</h3>
+                <vc:diamond-list></vc:diamond-list>
+            </section>            
+        </div>
+    </div>
+</form>

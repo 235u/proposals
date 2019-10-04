@@ -1,0 +1,14 @@
+﻿@model RingInfo
+@{
+    ViewData["Title"] = "Front End";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form>
+    <partial name="_RingSettings" model="@Model" />
+    <partial name="_DiamondFilters" model="@Model.Diamond" />
+    <section>
+        <h3>Filtered Inventory (Not Implemented)</h3>
+        <vc:diamond-list></vc:diamond-list>
+    </section>
+</form>

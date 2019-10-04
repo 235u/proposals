@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActinUranium.Proposals.BoxFolderCreator", "BoxFolderCreator\ActinUranium.Proposals.BoxFolderCreator.csproj", "{F7D97EA6-5E44-46D6-99A0-DAA0E717E4A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActinUranium.Proposals.BoxFolderCreator.Tests", "BoxFolderCreator.Tests\ActinUranium.Proposals.BoxFolderCreator.Tests.csproj", "{D2D5DBFD-FE4B-4F6F-9A91-BFD7C7654CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7D97EA6-5E44-46D6-99A0-DAA0E717E4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D97EA6-5E44-46D6-99A0-DAA0E717E4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D97EA6-5E44-46D6-99A0-DAA0E717E4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D97EA6-5E44-46D6-99A0-DAA0E717E4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D5DBFD-FE4B-4F6F-9A91-BFD7C7654CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D5DBFD-FE4B-4F6F-9A91-BFD7C7654CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D5DBFD-FE4B-4F6F-9A91-BFD7C7654CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D5DBFD-FE4B-4F6F-9A91-BFD7C7654CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C158F416-718A-4EBD-A821-F8F78A6EA060}
+	EndGlobalSection
+EndGlobal

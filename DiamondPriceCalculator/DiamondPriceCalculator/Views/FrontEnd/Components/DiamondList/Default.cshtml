@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DiamondInfo>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Weight</th>
+            <th scope="col">Color</th>
+            <th scope="col">Quality</th>
+            <th scope="col">Shape</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var diamond in Model)
+        {
+            <partial name="_Diamond" model="diamond" />
+        }
+    </tbody>
+</table>

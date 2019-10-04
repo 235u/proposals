@@ -1,0 +1,57 @@
+﻿@model RingInfo
+
+<h2>Ring Settings</h2>
+<div class="form-row">
+    <div class="col-auto form-group">
+        <label asp-for="Metal.PreciousMetal" class="control-label"></label>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            @foreach (PreciousMetal metal in Enum.GetValues(typeof(PreciousMetal)))
+            {
+                if (metal == PreciousMetal.Gold)
+                {
+                    <label class="btn btn-outline-secondary active">
+                        <input type="radio" checked>@metal.GetDisplayName()
+                    </label>
+                }
+                else
+                {
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio">@metal.GetDisplayName()
+                    </label>
+                }
+            }
+        </div>
+    </div>
+    <div class="col-auto form-group">
+        <label asp-for="Metal.Fineness" class="control-label"></label>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            @foreach (PreciousMetalFineness fineness in Enum.GetValues(typeof(PreciousMetalFineness)))
+            {
+                if (fineness == PreciousMetalFineness.TwentyTwoKarat)
+                {
+                    <label class="btn btn-outline-secondary active">
+                        <input type="radio" checked>@fineness.GetDisplayName()
+                    </label>
+                }
+                else
+                {
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio">@fineness.GetDisplayName()
+                    </label>
+                }
+            }
+        </div>
+    </div>
+</div>
+<div class="form-row">
+    <div class="col form-group">
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" name="ringType" id="withSideStones" value="withSideStones" class="custom-control-input" checked>
+            <label for="withSideStones" class="custom-control-label">With side stones</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" name="ringType" id="withoutSideStones" value="withoutSideStones" class="custom-control-input">
+            <label for="withoutSideStones" class="custom-control-label">Without side stones</label>
+        </div>
+    </div>
+</div>

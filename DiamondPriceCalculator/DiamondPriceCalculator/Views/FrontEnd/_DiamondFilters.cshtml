@@ -1,0 +1,102 @@
+﻿@model DiamondInfo
+
+<h2>Diamond Inventory Filters</h2>
+<div class="form-row">
+    <div class="col-auto form-group">
+        <label asp-for="WeightInCarats" class="control-label"></label>
+        <div class="input-group">
+            <input type="number" value="@Html.DisplayFor(d => d.WeightInCarats)" step="0.01" class="form-control physical-dimension">
+            <div class="input-group-append">
+                <span class="input-group-text">ct</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto form-group">
+        <label asp-for="Measurements.Length" class="control-label"></label>
+        <div class="input-group">
+            <input type="number" value="@Html.DisplayFor(d => d.Measurements.Length)" step="0.01" class="form-control physical-dimension">
+            <div class="input-group-append">
+                <span class="input-group-text">mm</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto form-group">
+        <label asp-for="Measurements.Width" class="control-label"></label>
+        <div class="input-group">
+            <input type="number" value="@Html.DisplayFor(d => d.Measurements.Width)" step="0.01" class="form-control physical-dimension">
+            <div class="input-group-append">
+                <span class="input-group-text">mm</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto form-group">
+        <label asp-for="Measurements.Height" class="control-label"></label>
+        <div class="input-group">
+            <input type="number" value="@Html.DisplayFor(d => d.Measurements.Height)" step="0.01" class="form-control physical-dimension">
+            <div class="input-group-append">
+                <span class="input-group-text">mm</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <label asp-for="Color" class="control-label"></label>
+    <div class="btn-group-toggle" data-toggle="buttons">
+        @foreach (DiamondColor grade in Enum.GetValues(typeof(DiamondColor)))
+        {
+            if ((int)grade < 3)
+            {
+                <label class="btn btn-outline-secondary active" title="@grade.GetGroupName()">
+                    <input type="checkbox" checked>@grade
+                </label>
+            }
+            else
+            {
+                <label class="btn btn-outline-secondary" title="@grade.GetGroupName()">
+                    <input type="checkbox">@grade
+                </label>
+            }
+        }
+    </div>
+</div>
+<div class="form-group">
+    <label asp-for="Clarity" class="control-label"></label>
+    <div class="btn-group-toggle" data-toggle="buttons">
+        @foreach (DiamondClarity grade in Enum.GetValues(typeof(DiamondClarity)))
+        {
+            if (grade == DiamondClarity.IF)
+            {
+                <label class="btn btn-outline-secondary active" title="@grade.GetGroupName()">
+                    <input type="checkbox" checked>@grade
+                </label>
+            }
+            else
+            {
+                <label class="btn btn-outline-secondary" title="@grade.GetGroupName()">
+                    <input type="checkbox">@grade
+                </label>
+            }
+        }
+    </div>
+</div>
+<div class="form-group">
+    <label asp-for="Shape" class="control-label"></label>
+    <div class="btn-group-toggle" data-toggle="buttons">
+        @foreach (DiamondShape shape in Enum.GetValues(typeof(DiamondShape)))
+        {
+            if (shape == DiamondShape.Round)
+            {
+                <label class="btn btn-outline-secondary active">
+                    <input type="checkbox" checked>@shape
+                </label>
+            }
+            else
+            {
+                <label class="btn btn-outline-secondary">
+                    <input type="checkbox">@shape
+                </label>
+            }
+
+        }
+    </div>
+</div>

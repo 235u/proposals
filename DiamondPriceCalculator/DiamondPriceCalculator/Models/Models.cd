@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DiamondPriceCalculator.Web.Models.RingInfo">
+    <Position X="0.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAACBAAA=</HashCode>
+      <FileName>Models\RingInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Metal" />
+      <Property Name="RingType" />
+      <Property Name="Diamond" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DiamondPriceCalculator.Web.Models.DiamondInfo">
+    <Position X="0.5" Y="3.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQgAABAAA=</HashCode>
+      <FileName>Models\DiamondInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Measurements" />
+      <Property Name="Color" />
+      <Property Name="Clarity" />
+      <Property Name="Shape" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DiamondPriceCalculator.Web.Models.PreciousMetalInfo">
+    <Position X="5.25" Y="2.25" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PreciousMetalInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PreciousMetal" />
+      <Property Name="Fineness" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DiamondPriceCalculator.Web.Models.DiamondInventory">
+    <Position X="5.25" Y="8.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DiamondPriceCalculator.Web.Models.DiamondInventory.Lottery&lt;T&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\DiamondInventory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAQAAAA=</HashCode>
+      <FileName>Models\DiamondInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiamondPriceCalculator.Web.Models.RingPriceInfo">
+    <Position X="5.25" Y="6.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RingPriceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiamondPriceCalculator.Web.Models.MeasurementInfo">
+    <Position X="0.5" Y="8.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAEAAAAAEBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MeasurementInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DiamondPriceCalculator.Web.Models.PreciousMetal">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAE=</HashCode>
+      <FileName>Models\PreciousMetal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DiamondPriceCalculator.Web.Models.PreciousMetalFineness">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAgQAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PreciousMetalFineness.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DiamondPriceCalculator.Web.Models.RingType">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DiamondPriceCalculator.Web.Models.DiamondClarity">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAADAAAAAAAACAAAAAAAAAEAAAAAAABAAAA=</HashCode>
+      <FileName>Models\DiamondClarity.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DiamondPriceCalculator.Web.Models.DiamondColor">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHv7/YQE=</HashCode>
+      <FileName>Models\DiamondColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DiamondPriceCalculator.Web.Models.DiamondShape">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAACCAAACAAIAAAIAAQAAAAAIAIAACA=</HashCode>
+      <FileName>Models\DiamondShape.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
