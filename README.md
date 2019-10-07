@@ -1,2 +1,2 @@
-# proposals
+# Proposals
 Upwork proposals
