@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace DiamondPriceCalculator.Web.Controllers
+namespace ActinUranium.Proposals.DiamondPriceCalculator.Controllers
 {
     public class BackEndController : Controller
     {

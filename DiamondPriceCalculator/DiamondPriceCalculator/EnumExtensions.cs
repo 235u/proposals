@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace DiamondPriceCalculator.Web
+namespace ActinUranium.Proposals.DiamondPriceCalculator
 {
     public static class EnumExtensions
     {

@@ -1,7 +1,7 @@
-﻿using DiamondPriceCalculator.Web.Models;
+﻿using ActinUranium.Proposals.DiamondPriceCalculator.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DiamondPriceCalculator.Web.ViewComponents
+namespace ActinUranium.Proposals.DiamondPriceCalculator.ViewComponents
 {
     public class DiamondList : ViewComponent
     {

@@ -5,10 +5,76 @@
 <h1>@ViewData["Title"]</h1>
 <form>
     <div class="row">
-        <div class="col">
-            <partial name="_RingPriceAdditions" />
-        </div>
-        <div class="col">
+        <section class="col">
+            <h2>Scheduler (Not Implemented)</h2>
+            <div class="placeholder border bg-light"></div>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col">
+            <h2>Price Additions</h2>
+            <section>
+                <h3>Ring Type</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col" class="currency">Price Addition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (RingType ringType in RingPriceInfo.TypePriceAdditions.Keys)
+                        {
+                            <tr>
+                                <td class="align-middle">@ringType.GetDisplayName()</td>
+                                <td>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">AED</span>
+                                        </div>
+                                        <input type="number"
+                                               value="@RingPriceInfo.TypePriceAdditions[ringType].ToString("F2")"
+                                               class="form-control currency">
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>Ring Metal</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Metal</th>
+                            <th scope="col">Purity</th>
+                            <th scope="col" class="currency">Price Addition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (PreciousMetalInfo metal in RingPriceInfo.MetalPriceAdditions.Keys)
+                        {
+                            <tr>
+                                <td class="align-middle">@metal.PreciousMetal.GetDisplayName()</td>
+                                <td class="align-middle">@metal.Fineness.GetDisplayName()</td>
+                                <td>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">AED</span>
+                                        </div>
+                                        <input type="number"
+                                               value="@RingPriceInfo.MetalPriceAdditions[metal].ToString("F2")"
+                                               class="form-control currency">
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section class="col">
             <h2>Diamond Inventory</h2>
             <section>
                 <h3>Excel Upload</h3>
@@ -20,7 +86,7 @@
             <section>
                 <h3>Parsed Inventory (Not Implemented)</h3>
                 <vc:diamond-list></vc:diamond-list>
-            </section>            
-        </div>
+            </section>
+        </section>
     </div>
 </form>

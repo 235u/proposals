@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DiamondPriceCalculator.Web.Models
+namespace ActinUranium.Proposals.DiamondPriceCalculator.Models
 {
     /// <summary>
     /// Represents diamond's colorlessness – the less color, the higher its value.

@@ -1,4 +1,4 @@
-﻿namespace DiamondPriceCalculator.Web.Models
+﻿namespace ActinUranium.Proposals.DiamondPriceCalculator.Models
 {
     public enum DiamondShape
     {

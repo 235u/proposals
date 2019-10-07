@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace DiamondPriceCalculator.Web
+namespace ActinUranium.Proposals.DiamondPriceCalculator
 {
     public class Program
     {

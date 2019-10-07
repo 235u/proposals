@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DiamondPriceCalculator.Web.Models
+namespace ActinUranium.Proposals.DiamondPriceCalculator.Models
 {
     public sealed class RingPriceInfo
     {

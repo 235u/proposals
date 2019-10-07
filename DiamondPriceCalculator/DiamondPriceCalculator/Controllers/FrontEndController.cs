@@ -1,7 +1,7 @@
-﻿using DiamondPriceCalculator.Web.Models;
+﻿using ActinUranium.Proposals.DiamondPriceCalculator.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DiamondPriceCalculator.Web.Controllers
+namespace ActinUranium.Proposals.DiamondPriceCalculator.Controllers
 {
     public class FrontEndController : Controller
     {

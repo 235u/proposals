@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
 
-namespace DiamondPriceCalculator.Web
+namespace ActinUranium.Proposals.DiamondPriceCalculator
 {
     public class Startup
     {

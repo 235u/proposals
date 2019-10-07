@@ -1,16 +1,11 @@
-﻿.table,
-.custom-file {
-    width: unset;
-}
-
-.form-control.physical-dimension {
-    width: 5em;
-}
-
-.form-control.currency {
-    width: 9em;
-}
-
-section {
+﻿section {
     margin-bottom: 10px;
+}
+
+th.currency {
+    width: 50%
+}
+
+.placeholder {
+    height: 600px;
 }

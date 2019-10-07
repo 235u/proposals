@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DiamondPriceCalculator.Web.Models
+namespace ActinUranium.Proposals.DiamondPriceCalculator.Models
 {
     public sealed class DiamondInventory : List<DiamondInfo>
     {
@@ -13,26 +13,30 @@ namespace DiamondPriceCalculator.Web.Models
 
         public static DiamondInventory Create()
         {
-            var inventory = new DiamondInventory();                       
-            
+            var inventory = new DiamondInventory();
+
+            var shapes = (IEnumerable<DiamondShape>)Enum.GetValues(typeof(DiamondShape));
+            var shapeLottery = new Lottery<DiamondShape>(shapes);
+
+            var cuts = (IEnumerable<DiamondCut>)Enum.GetValues(typeof(DiamondCut));
+            var cutLottery = new Lottery<DiamondCut>(cuts);
+
             var colors = (IEnumerable<DiamondColor>)Enum.GetValues(typeof(DiamondColor));
             var colorLottery = new Lottery<DiamondColor>(colors);
             
             var clarities = (IEnumerable<DiamondClarity>)Enum.GetValues(typeof(DiamondClarity));
             var clarityLottery = new Lottery<DiamondClarity>(clarities);
 
-            var shapes = (IEnumerable<DiamondShape>)Enum.GetValues(typeof(DiamondShape));
-            var shapeLottery = new Lottery<DiamondShape>(shapes);
-
             for (int counter = 0; counter < 100; counter++)
             {
                 var diamond = new DiamondInfo()
                 {
-                    WeightInCarats = NextDecimal(maxValue: 10),
-                    Color = colorLottery.Next(),
-                    Clarity = clarityLottery.Next(),
                     Shape = shapeLottery.Next(),
-                    PriceInDirhams = NextDecimal(maxValue: 10_000)
+                    PriceInDirhams = NextDecimal(maxValue: 10_000),
+                    WeightInCarats = NextDecimal(maxValue: 10),
+                    Cut = cutLottery.Next(),
+                    Color = colorLottery.Next(),
+                    Clarity = clarityLottery.Next()
                 };
 
                 inventory.Add(diamond);
