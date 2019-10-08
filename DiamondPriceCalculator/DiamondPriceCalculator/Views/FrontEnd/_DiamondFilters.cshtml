@@ -47,7 +47,14 @@
         <select class="form-control">
             @foreach (DiamondColor grade in Enum.GetValues(typeof(DiamondColor)))
             {
-                <option>@grade</option>
+                if ((int)grade <= (int)DiamondColor.M)
+                {
+                    <option>@grade</option>
+                }
+                else
+                {
+                    <option disabled>@grade</option>
+                }
             }
         </select>
     </div>

@@ -329,3 +329,4 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 /BoxFolderCreator/BoxFolderCreator.Tests/config.json
+/DiamondPriceCalculator/DiamondPriceCalculator/wwwroot/xlsx
