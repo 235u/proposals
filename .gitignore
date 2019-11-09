@@ -330,3 +330,4 @@ ASALocalRun/
 .mfractor/
 /BoxFolderCreator/BoxFolderCreator.Tests/config.json
 /DiamondPriceCalculator/DiamondPriceCalculator/wwwroot/xlsx
+/IdentityCustomization/IdentityCustomization/appsettings.Development.json
