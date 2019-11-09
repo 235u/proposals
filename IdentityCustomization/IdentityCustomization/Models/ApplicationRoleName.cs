@@ -22,5 +22,16 @@ namespace IdentityCustomization.Models
             IndependentRepresentative,
             Administrator
         };
+
+        public static readonly Dictionary<ApplicationUserCategory, string> ByCategory =
+            new Dictionary<ApplicationUserCategory, string>()
+            {
+                [ApplicationUserCategory.MedicalCompany] = MedicalCompany,
+                [ApplicationUserCategory.HealthcareProvider] = HealthcareProvider,
+                [ApplicationUserCategory.DependentPractitioner] = DependentPractitioner,
+                [ApplicationUserCategory.IndependentPractitioner] = IndependentPractitioner,
+                [ApplicationUserCategory.DependentRepresentative] = DependentRepresentative,
+                [ApplicationUserCategory.IndependentRepresentative] = IndependentRepresentative
+            };
     }
 }

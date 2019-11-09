@@ -1,10 +1,13 @@
 # Identity Customization
 
-Feature-complete under made assumptions (listed below), according provided [Requirements.pdf](Requirements.pdf), 
+Feature-complete under made assumptions (listed below), according provided [Requirements.pdf](Requirements.pdf),
+
 - as an `ASP.NET Core 3.0` web application (most actual at the moment of writing), 
 - live at https://identitycustomization.azurewebsites.net, 
 - running within the [Free App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/) in West Europe without the `Always On` feature available (therefore taking time for the first request when in sleep mode),
-- using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite); switch to the preconfigured `LocalDB` instance in [Startup.cs](IdentityCustomization/Startup.cs) for local testing).
+- using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite).
+
+Switch to SQL Server in [Startup.cs](IdentityCustomization/Startup.cs) for local testing using the preconfigured LocalDB connection string. Customize the connection string in [appsetings.json](IdentityCustomization/appsettings.json) for production environment.
 
 ## State
 
@@ -26,7 +29,9 @@ Feature-complete under made assumptions (listed below), according provided [Requ
 
 ## Login
 
-Login by (mobile) phone number not implemented as unusual and confusing.
+Login by (mobile) phone number not implemented as unusual / confusing (keeping it simple - you aren't gonna need it).
+
+![Login](IdentityCustomization/wwwroot/img/login.png)
 
 ## Two-Factor Authentication
 
@@ -38,7 +43,7 @@ However, [Twilio's SMS](https://www.twilio.com/sms) service is integrated (see [
 
 ## Registration
 
-Email notifications using [Twilio SendGrid](https://www.twilio.com/sendgrid) (see [EmailSenderOptions](IdentityCustomization/Services/EmailSenderOptions.cs), [EmailSender](IdentityCustomization/Services/EmailSender.cs), and [EmailSenderTests](IdentityCustomization.Tests/Services/EmailSenderTests.cs)).
+![Registration](IdentityCustomization/wwwroot/img/registration.png)
 
 ### Issues
 
@@ -57,6 +62,12 @@ Email notifications using [Twilio SendGrid](https://www.twilio.com/sendgrid) (se
 - Organizations usually dont have first name, middle name, last name, title, and have neuter gender (ignored);
 - all new fields decorated with the [PersonalData](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.identity.personaldataattribute) attribute (see [Add custom user data to the Identity DB](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/add-user-data) for details);
 - maximum length of the text fields set to `64` characters (via [MaxLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.maxlengthattribute) attribute).
+
+### Notifications
+
+Email notifications using [Twilio SendGrid](https://www.twilio.com/sendgrid) (see [EmailSenderOptions](IdentityCustomization/Services/EmailSenderOptions.cs), [EmailSender](IdentityCustomization/Services/EmailSender.cs), and [EmailSenderTests](IdentityCustomization.Tests/Services/EmailSenderTests.cs)).
+
+![Confirmation](IdentityCustomization/wwwroot/img/confirmation.png)
 
 ## Categories
 

@@ -33,7 +33,7 @@ namespace IdentityCustomization
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            
+
             services.AddControllersWithViews(config =>
             {
                 var builder = new AuthorizationPolicyBuilder();
@@ -49,7 +49,6 @@ namespace IdentityCustomization
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailSenderOptions>(Configuration.GetSection(nameof(EmailSenderOptions)));
-
             services.AddTransient<SmsSender>();
             services.Configure<SmsSenderOptions>(Configuration.GetSection(nameof(SmsSenderOptions)));
         }

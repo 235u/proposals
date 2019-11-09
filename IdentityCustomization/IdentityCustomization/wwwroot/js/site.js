@@ -1,4 +1,46 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿(function () {
+    "use strict";
 
-// Write your JavaScript code.
+    $(document).ready(() => {
+        const categorySelect = $("#Input_Category");
+        if (categorySelect) {
+            updateRequiredFields(categorySelect);
+            categorySelect.change(() => {
+                updateRequiredFields(categorySelect);
+            });
+        }
+    });
+
+    function updateRequiredFields(categorySelect) {
+        const organizationInput = $("#Input_Organization");
+        const belongsToInput = $("#Input_BelongsTo");
+        const category = parseInt(categorySelect.val());
+        if (category <= 1) {
+            organizationInput.attr("disabled", false);
+            organizationInput.rules("add", {
+                required: true,
+                messages: {
+                    required: "The Organization field is required."
+                }
+            });
+
+            belongsToInput.val("");
+            belongsToInput.rules("remove", "required");
+            belongsToInput.valid();
+            belongsToInput.attr("disabled", true);
+        } else {
+            belongsToInput.attr("disabled", false);
+            belongsToInput.rules("add", {
+                required: true,
+                messages: {
+                    required: "The Belongs to field is required."
+                }
+            });
+
+            organizationInput.val("");
+            organizationInput.rules("remove", "required");
+            organizationInput.valid();
+            organizationInput.attr("disabled", true);
+        }
+    }
+}());
