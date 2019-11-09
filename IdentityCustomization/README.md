@@ -1,10 +1,10 @@
 # Identity Customization
 
-Almost feature-complete, according provided [Requirements.pdf](https://github.com/235u/proposals/blob/master/IdentityCustomization/Requirements.pdf), 
+Feature-complete under made assumptions (listed below), according provided [Requirements.pdf](Requirements.pdf), 
 - as an `ASP.NET Core 3.0` web application (most actual at the moment of writing), 
 - live at https://identitycustomization.azurewebsites.net, 
 - running within the [Free App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/) in West Europe without the `Always On` feature available (therefore taking time for the first request when in sleep mode),
-- using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite); switch to the preconfigured `LocalDB` instance in [Startup.cs](https://github.com/235u/proposals/blob/master/IdentityCustomization/IdentityCustomization/Startup.cs) for local testing).
+- using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite); switch to the preconfigured `LocalDB` instance in [Startup.cs](IdentityCustomization/Startup.cs) for local testing).
 
 ## State
 
@@ -34,13 +34,16 @@ Login by (mobile) phone number not implemented as unusual and confusing.
 
 > Two factor authentication (2FA) authenticator apps, using a Time-based One-time Password Algorithm (TOTP), are the industry recommended approach for 2FA. 2FA using TOTP is preferred to SMS 2FA.
 
-However, [Twilio's SMS](https://www.twilio.com/sms) service is integrated (see [SmsSenderOptions](), [SmsSender](), and [SmsSenderTests]()).
+However, [Twilio's SMS](https://www.twilio.com/sms) service is integrated (see [SmsSenderOptions](IdentityCustomization/Services/SmsSenderOptions.cs), [SmsSender](IdentityCustomization/Services/SmsSender.cs), and [SmsSenderTests](IdentityCustomization.Tests/Services/SmsSenderTests.cs)).
 
 ## Registration
 
-- Email notifications using Twilio SendGrid
+Email notifications using [Twilio SendGrid](https://www.twilio.com/sendgrid) (see [EmailSenderOptions](IdentityCustomization/Services/EmailSenderOptions.cs), [EmailSender](IdentityCustomization/Services/EmailSender.cs), and [EmailSenderTests](IdentityCustomization.Tests/Services/EmailSenderTests.cs)).
+
+### Issues
+
 - `FirstName` instead of `Firstname`;
-- `Middle name` should not be required;
+- `Middle name` should not be required (for multi-cultural personal names);
 - `Title` dropdown values not provided;
 - `Tel` is already available as `PhoneNumber` (see the `AspUsers` table / default `IdentityUser<TKey>` [implementation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityuser)); phone number confirmation not implemented (not required);
 - `FaxNumber` instead of `Fax` (consistent with `PhoneNumber`);
@@ -57,7 +60,7 @@ However, [Twilio's SMS](https://www.twilio.com/sms) service is integrated (see [
 
 ## Categories
 
-`Enum` instead of table (see [ApplicationUserCategory.cs](https://github.com/235u/proposals/blob/master/IdentityCustomization/IdentityCustomization/Models/ApplicationUserCategory.cs)), ignoring `id` and `BSMCode` fields (purpose unclear):
+`Enum` instead of table (see [ApplicationUserCategory.cs](IdentityCustomization/Models/ApplicationUserCategory.cs)), ignoring `id` and `BSMCode` fields (purpose unclear):
 ```csharp
 public enum ApplicationUserCategory
 {
@@ -96,7 +99,7 @@ public enum ApplicationUserCategory
 
 ## Pages
 
-Implemented as [HomeController](https://github.com/235u/proposals/blob/master/IdentityCustomization/IdentityCustomization/Controllers/HomeController.cs) views for simplified routing,
+Implemented as [HomeController](IdentityCustomization/Controllers/HomeController.cs) views for simplified routing,
 
 ```csharp
 public async Task<IActionResult> Index()
