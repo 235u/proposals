@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="IdentityCustomization.Models.ApplicationUser">
+    <Position X="0.5" Y="2.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAAAAAECIAAAQAAAAAAIAIQAgAAAAAAAAKAg=</HashCode>
+      <FileName>Models\ApplicationUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gender" />
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IdentityCustomization.Models.ApplicationRoleName">
+    <Position X="4.75" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADAAAAAAAAAAAIAAAEAAAAAIMAAAAAAAAQ=</HashCode>
+      <FileName>Models\ApplicationRoleName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser">
+    <Position X="1" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="IdentityCustomization.Models.ApplicationUserCategory">
+    <Position X="1.75" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADAAAAAAAAAAAIAAAAAAAAAIEAAAAAAAAQ=</HashCode>
+      <FileName>Models\ApplicationUserCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="IdentityCustomization.Models.Gender">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Models\Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

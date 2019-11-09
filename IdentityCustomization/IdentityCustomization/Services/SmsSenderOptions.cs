@@ -1,6 +1,6 @@
 ﻿namespace IdentityCustomization.Services
 {
-    public class SmsSenderOptions
+    public sealed class SmsSenderOptions
     {        
         public string TwilioAccountSid { get; set; }
 

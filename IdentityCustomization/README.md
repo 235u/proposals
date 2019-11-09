@@ -6,6 +6,24 @@ Almost feature-complete, according provided [Requirements.pdf](https://github.co
 - running within the [Free App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/) in West Europe without the `Always On` feature available (therefore taking time for the first request when in sleep mode),
 - using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite); switch to the preconfigured `LocalDB` instance in [Startup.cs](https://github.com/235u/proposals/blob/master/IdentityCustomization/IdentityCustomization/Startup.cs) for local testing).
 
+## State
+
+[![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fidentitycustomization.azurewebsites.net)](https://identitycustomization.azurewebsites.net)
+
+## Design
+
+### Data
+
+![Data](IdentityCustomization/wwwroot/img/data.png)
+
+### Models
+
+![Models](IdentityCustomization/wwwroot/img/models.png)
+
+### Services
+
+![Services](IdentityCustomization/wwwroot/img/services.png)
+
 ## Login
 
 Login by (mobile) phone number not implemented as unusual and confusing.

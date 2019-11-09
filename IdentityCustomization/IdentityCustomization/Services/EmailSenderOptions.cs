@@ -1,6 +1,6 @@
 ﻿namespace IdentityCustomization.Services
 {
-    public class EmailSenderOptions
+    public sealed class EmailSenderOptions
     {
         public string SendGridApiKey { get; set; }
 

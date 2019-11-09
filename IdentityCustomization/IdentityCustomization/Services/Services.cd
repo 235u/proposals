@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="IdentityCustomization.Services.EmailSenderOptions">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\EmailSenderOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdentityCustomization.Services.EmailSender">
+    <Position X="0.5" Y="2.25" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQBAAAA=</HashCode>
+      <FileName>Services\EmailSender.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Options" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IdentityCustomization.Services.SmsSender">
+    <Position X="2.25" Y="6.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Services\SmsSender.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Options" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IdentityCustomization.Services.SmsSenderOptions">
+    <Position X="3.25" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SmsSenderOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

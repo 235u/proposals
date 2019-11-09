@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace IdentityCustomization.Models
 {
-    public class ApplicationUser : IdentityUser
+    public sealed class ApplicationUser : IdentityUser
     {
         public const int MaxStringLength = 64;
 
