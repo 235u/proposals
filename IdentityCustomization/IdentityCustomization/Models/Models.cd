@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="FullSignature">
   <Class Name="IdentityCustomization.Models.ApplicationUser">
-    <Position X="0.5" Y="2.5" Width="3.25" />
+    <Position X="0.5" Y="2.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAEEAAAAAAAECIAAAQAAAAAAIAIQAgAAAAAAAAKAg=</HashCode>
       <FileName>Models\ApplicationUser.cs</FileName>
@@ -12,9 +12,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="IdentityCustomization.Models.ApplicationRoleName">
-    <Position X="4.75" Y="5.25" Width="2.5" />
+    <Position X="4.75" Y="5.5" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAADAAAAAAAAAAAIAAAEAAAAAIMAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAADAAAAIAAAAAAIAAAEAAAAAIMAAAAAAAAQ=</HashCode>
       <FileName>Models\ApplicationRoleName.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -23,14 +23,14 @@
     <TypeIdentifier />
   </Class>
   <Enum Name="IdentityCustomization.Models.ApplicationUserCategory">
-    <Position X="1.75" Y="6.75" Width="2" />
+    <Position X="1.75" Y="7" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAADAAAAAAAAAAAIAAAAAAAAAIEAAAAAAAAQ=</HashCode>
       <FileName>Models\ApplicationUserCategory.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="IdentityCustomization.Models.Gender">
-    <Position X="4.75" Y="3.5" Width="1.5" />
+    <Position X="4.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Models\Gender.cs</FileName>

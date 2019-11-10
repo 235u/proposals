@@ -7,7 +7,7 @@ Feature-complete under made assumptions (listed below), according provided [Requ
 - running within the [Free App Service Plan](https://azure.microsoft.com/en-us/pricing/details/app-service/plans/) in West Europe without the `Always On` feature available (therefore taking time for the first request when in sleep mode),
 - using `SQLite` for data persistence (via corresponding [EF Core Database Provider](https://docs.microsoft.com/en-us/ef/core/providers/sqlite).
 
-Switch to SQL Server in [Startup.cs](IdentityCustomization/Startup.cs) for local testing using the preconfigured LocalDB connection string. Customize the connection string in [appsetings.json](IdentityCustomization/appsettings.json) for production environment.
+Switch to SQL Server in [Startup.cs](IdentityCustomization/Startup.cs) for local testing using the preconfigured LocalDb connection string. Customize the connection string in [appsetings.json](IdentityCustomization/appsettings.json) for production environment.
 
 ## State
 
@@ -34,6 +34,8 @@ Login by (mobile) phone number not implemented as unusual / confusing (keeping i
 ![Login](IdentityCustomization/wwwroot/img/login.png)
 
 ## Two-Factor Authentication
+
+![2Fa](IdentityCustomization/wwwroot/img/2fa.png)
 
 2FA implemented using TOTP, as
 
@@ -109,6 +111,8 @@ public enum ApplicationUserCategory
 - `IndependentRepresentative` instead of `InDependentRepresentativeUser`;
 
 ## Pages
+
+![Routing](IdentityCustomization/wwwroot/img/routing.png)
 
 Implemented as [HomeController](IdentityCustomization/Controllers/HomeController.cs) views for simplified routing,
 

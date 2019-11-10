@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -29,7 +30,7 @@ namespace IdentityCustomization.Services
             Response response = await client.SendEmailAsync(message);
             if (response.StatusCode != HttpStatusCode.Accepted)
             {
-                Debugger.Break();
+                throw new Exception(response.StatusCode.ToString());
             }
         }
 
