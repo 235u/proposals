@@ -1,10 +1,9 @@
 # ELMAH Configuration
 
-An ASP.NET MVC (5.2.7) application, 
+An ASP.NET MVC (5.2.7) application, live at https://elmahconfiguration.azurewebsites.net, 
 
-- targeting .NET Framework (4.7)
+- targeting .NET Framework (4.7),
 - integrating [Elmah.Mvc](https://github.com/alexbeletsky/elmah-mvc) (2.1.2),
-- live at https://elmahconfiguration.azurewebsites.net, 
 - using `SqlServer` for data persistence in [default configuration](ElmahConfiguration/Web.config) (for local testing),
 - and using `SQLite` in [debug configuration](ElmahConfiguration/Web.Debug.config) (for hosting in Azure, with enabled [remote access](https://code.google.com/archive/p/elmah/wikis/SecuringErrorLogPages.wiki)).
 
