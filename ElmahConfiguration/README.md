@@ -23,8 +23,7 @@ An ASP.NET MVC (5.2.7) application,
 
 ```xml
 <connectionStrings>
-  <add name="elmah"
-       connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SQLServer.mdf;Integrated Security=True" />
+  <add name="elmah" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SQLServer.mdf;Integrated Security=True" />
 </connectionStrings>
 ```
 
