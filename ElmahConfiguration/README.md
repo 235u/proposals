@@ -5,8 +5,8 @@ An ASP.NET MVC (5.2.7) application,
 - targeting .NET Framework (4.7)
 - integrating [Elmah.Mvc](https://github.com/alexbeletsky/elmah-mvc) (2.1.2),
 - live at https://elmahconfiguration.azurewebsites.net, 
-- using `SqlServer` in default configuration (for local testing),
-- and using `SQLite` for data persistence in `Debug` configuration (for hosting in Azure, with enabled [remote access](https://code.google.com/archive/p/elmah/wikis/SecuringErrorLogPages.wiki)).
+- using `SqlServer` for data persistence in [default configuration](ElmahConfiguration/ElmahConfiguration/Web.config) (for local testing),
+- and using `SQLite` in [debug configuration](ElmahConfiguration/ElmahConfiguration/Web.Debug.config) (for hosting in Azure, with enabled [remote access](https://code.google.com/archive/p/elmah/wikis/SecuringErrorLogPages.wiki)).
 
 ## Procedure
 
@@ -28,7 +28,7 @@ An ASP.NET MVC (5.2.7) application,
 </connectionStrings>
 ```
 
-4. Update your database schema via [SQLServer.sql]() (original [source](https://github.com/elmah/SqlErrorLog)).
+4. Update your database schema via [SQLServer.sql](ElmahConfiguration/App_Data/SQLServer.sql) (original [source](https://github.com/elmah/SqlErrorLog)).
 
 ![Schema](ElmahConfiguration/Content/Schema.png)
 
