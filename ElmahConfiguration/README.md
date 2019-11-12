@@ -10,8 +10,8 @@ An ASP.NET MVC (5.2.7) application,
 
 ## Procedure
 
-1. Add [Elmah.Mvc](https://github.com/alexbeletsky/elmah-mvc) via [NuGet](https://www.nuget.org/packages/Elmah.MVC/) to the host web application.
-2. Set the [ErrorLog implementation](https://elmah.github.io/a/error-log-implementations/) to `Elmah.SqlErrorLog` in the `Web.config` of the host web application and provide the name of the `ConnectionString` to use.
+1. Add `Elmah.Mvc` via [NuGet](https://www.nuget.org/packages/Elmah.MVC/) to the host web application.
+2. Set the [ErrorLog implementation](https://elmah.github.io/a/error-log-implementations/) to `Elmah.SqlErrorLog` in the `Web.config` (of the host web application) and provide the name of the `ConnectionString` to use.
 
 ```xml
 <elmah>
