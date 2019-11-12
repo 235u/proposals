@@ -1,6 +1,12 @@
 # ELMAH Configuration
 
-Live at https://elmahconfiguration.azurewebsites.net, using `SQLite` for data persistence in `Release` configuration (for hosting in Azure), and `SqlServer` in default configuration for (local testing).
+An ASP.NET MVC (5.2.7) application, 
+
+- targeting .NET Framework (4.7)
+- integrating [Elmah.Mvc](https://github.com/alexbeletsky/elmah-mvc) (2.1.2),
+- live at https://elmahconfiguration.azurewebsites.net, 
+- using `SqlServer` in default configuration (for local testing),
+- and using `SQLite` for data persistence in `Debug` configuration (for hosting in Azure, with enabled [remote access](https://code.google.com/archive/p/elmah/wikis/SecuringErrorLogPages.wiki)).
 
 ## Procedure
 
@@ -9,7 +15,7 @@ Live at https://elmahconfiguration.azurewebsites.net, using `SQLite` for data pe
 
 ```xml
 <elmah>
-    <errorLog type="Elmah.SqlErrorLog, Elmah" connectionStringName="elmah" />
+  <errorLog type="Elmah.SqlErrorLog, Elmah" connectionStringName="elmah" />
 </elmah>
 ```
 
@@ -17,7 +23,8 @@ Live at https://elmahconfiguration.azurewebsites.net, using `SQLite` for data pe
 
 ```xml
 <connectionStrings>
-    <add name="elmah" connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SQLServer.mdf;Integrated Security=True" />
+  <add name="elmah"
+       connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SQLServer.mdf;Integrated Security=True" />
 </connectionStrings>
 ```
 
@@ -50,3 +57,4 @@ public class HomeController : Controller
     }
 }
 ```
+

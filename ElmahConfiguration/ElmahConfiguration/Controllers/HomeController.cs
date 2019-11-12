@@ -4,24 +4,24 @@ using System.Web.Mvc;
 
 namespace ElmahConfiguration.Controllers
 {
-public class HomeController : Controller
-{
-    public ActionResult Index()
+    public class HomeController : Controller
     {
-        RaiseErrorSignal();
-        return RedirectToAction(actionName: "Index", controllerName: "elmah");
-    }
+        public ActionResult Index()
+        {
+            RaiseErrorSignal();
+            return RedirectToAction(actionName: "Index", controllerName: "elmah");
+        }
 
-    private static void RaiseErrorSignal()
-    {
-        try
+        private static void RaiseErrorSignal()
         {
-            throw new Exception(message: "Catch Me If You Can");
-        }
-        catch (Exception e)
-        {
-            ErrorSignal.FromCurrentContext().Raise(e);
+            try
+            {
+                throw new Exception(message: "Catch Me If You Can");
+            }
+            catch (Exception e)
+            {
+                ErrorSignal.FromCurrentContext().Raise(e);
+            }
         }
     }
-}
 }
