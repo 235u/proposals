@@ -28,7 +28,7 @@ An ASP.NET MVC (5.2.7) application,
 </connectionStrings>
 ```
 
-4. Update your database schema via [SQLServer.sql](ElmahConfiguration/App_Data/SQLServer.sql) (original [source](https://github.com/elmah/SqlErrorLog)).
+4. Update your database schema via [SQLServer.sql](ElmahConfiguration/App_Data/SQLServer.sql) (original [source](https://github.com/elmah/SqlErrorLog); execute on existing database).
 
 ![Schema](ElmahConfiguration/Content/Schema.png)
 
