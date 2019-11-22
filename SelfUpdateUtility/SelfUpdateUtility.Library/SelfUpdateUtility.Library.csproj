@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SelfUpdateUtility.Library</AssemblyName>
+    <RootNamespace>SelfUpdateUtility.Library</RootNamespace>
+    <Authors>Nikita Sharov</Authors>
+    <Company>Actin Uranium</Company>
+    <Product>Self-Update Utility</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.108.1" />
+  </ItemGroup>
+
+</Project>
