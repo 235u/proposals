@@ -40,10 +40,29 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
-### Major Adjustments
+### User Interface Enhancements
 
-- The version check is done explicitly (extracted from the self-update function), to be able to provide feedback to the users;
-- the self-update function does not close it's host application instance, it has to be done by the host application itself:
+Helps testing the required functionality:
+
+
+### Control Flow Adjustments
+
+The self-update function does not close it's host application instance, it has to be done by the host application itself:
+
+```csharp
+public async Task Pull()
+{
+    using (GetObjectResponse response = await Client.GetObjectAsync(BucketName, BucketObjectKey))
+    {
+        RenameCurrentProcessFileName();
+        UpdateLocalFiles(response);
+    }
+
+    Process.Start(StartInfo);
+}
+```
+The final implementation will vary depending on the host application type (e.g. by calling the [Close](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.close?view=netframework-4.7.2) method on the main window or [Application.Exit](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.exit?view=netframework-4.7.2) in a Windows Forms application, not available for console applications).
+
 ```csharp
 private async void OnPullButtonClick(object sender, EventArgs e)
 {
@@ -71,8 +90,47 @@ private async void OnPullButtonClick(object sender, EventArgs e)
     }
 }
 ```
-The final implementation will vary depending on the host application type (e.g. by calling the [Close](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.close?view=netframework-4.7.2) method on the main window or [Application.Exit](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.exit?view=netframework-4.7.2) in a Windows Forms application, not available for console applications).
 
+The version check is done explicitly (extracted from the self-update function), to provide feedback for the users.
+
+### Final Steps
+
+> should start a new process exactly as currently running one
+
+Adjust [ProcessStartInfo](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.processstartinfo?view=netstandard-2.0) configuration if required:
+
+```csharp
+private static ProcessStartInfo CreateStartInfo(string[] args)
+{
+    string fileName = GetCurrentProcessFileName();
+    string arguments = string.Join(" ", args);
+    return new ProcessStartInfo(fileName, arguments);
+}
+
+private static string GetCurrentProcessFileName()
+{
+    return AppDomain.CurrentDomain.FriendlyName;
+}
+```
+
+Adjust Amazon S3 authentification in your hosting application (see [official documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingRequests.html) for details)
+
+```csharp
+private static AmazonS3Client CreateClient()
+{
+    var credentials = GetCredentials();
+    return new AmazonS3Client(credentials, RegionEndpoint.EUCentral1);
+}
+
+private static AWSCredentials GetCredentials()
+{
+    return new BasicAWSCredentials(
+        accessKey: "[access key]",
+        secretKey: "[secret key]");
+}
+```
+
+and authorization via AWS Console according your scenario.
 
 ### Issues
 
