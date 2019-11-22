@@ -22,13 +22,17 @@ public class SelfUpdate
     public void SelfUpdate()
     {
         /*
-            * THIS SHOULD UPDATE THE APP AND RESTART IT:
-            *
-        check the lastmodified.txt on S3 and if it's different from the current one
-        then download the ZIP file, rename currently running exe to appname.old.exe and then
-and unzip it overwriting the old files            
-        then it should start a new process exactly as currently running one and exit currently running process     the exe name and command line arguments for the new process should be copied from current process. Keep in mind it should work in MONO too.
-        */
+         * THIS SHOULD UPDATE THE APP AND RESTART IT:
+         * check the lastmodified.txt on S3 and 
+         * if it's different from the current one
+         * then download the ZIP file,
+         * rename currently running exe to appname.old.exe and 
+         * unzip it overwriting the old files            
+         * then it should start a new process exactly as currently running one and 
+         * exit currently running process
+         * the exe name and command line arguments for the new process should be copied from current process.
+         * Keep in mind it should work in MONO too.
+         */
     }
 }
 ```
@@ -40,10 +44,11 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
+This break-down helps testing the required functionality like overwriting of application's components at run-time, whithout an interims application for updating of the target application (by stopping - overwriting - re-starting).
+
 ### User Interface Enhancements
 
-Helps testing the required functionality:
-
+![User Interface](UserInterface.png)
 
 ### Control Flow Adjustments
 
@@ -90,10 +95,72 @@ private async void OnPullButtonClick(object sender, EventArgs e)
     }
 }
 ```
-
 The version check is done explicitly (extracted from the self-update function), to provide feedback for the users.
 
+> the exe name and command line arguments for the new process should be copied from current process.
+
+The command line arguments get passed from the `Main` function of the host application:
+
+```csharp
+public static void Main(string[] args)
+{            
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+            
+    try
+    {
+        using (AmazonS3Client client = CreateClient())
+        {
+            ProcessStartInfo startInfo = CreateStartInfo(args);
+            var form = new MainForm(args)
+            {
+                SelfUpdate = new SelfUpdate
+                {
+                    Client = client,
+                    StartInfo = startInfo,
+                    FilesToUpdate = GetFilesToUpdate()
+                }
+            };
+
+            Application.Run(form);
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
+```
+
+The determination of the command line arguments passed to a specific process on later stages (at run-time), would depend on the host platform (i.e. different implementartions for Linux, macOS, and Windows).
+
 ### Final Steps
+
+> upload it to S3 bucket
+
+```
+private const string BucketName = "self-update-utility";
+private const string BucketObjectKey = "SelfUpdateUtility.zip";
+```
+
+Adjust [Amazon S3 authentification](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingRequests.html) in your hosting application
+
+```csharp
+private static AmazonS3Client CreateClient()
+{
+    var credentials = GetCredentials();
+    return new AmazonS3Client(credentials, RegionEndpoint.EUCentral1);
+}
+
+private static AWSCredentials GetCredentials()
+{
+    return new BasicAWSCredentials(
+        accessKey: "[access key]",
+        secretKey: "[secret key]");
+}
+```
+
+and authorization via AWS Console according your scenario.
 
 > should start a new process exactly as currently running one
 
@@ -112,25 +179,6 @@ private static string GetCurrentProcessFileName()
     return AppDomain.CurrentDomain.FriendlyName;
 }
 ```
-
-Adjust Amazon S3 authentification in your hosting application (see [official documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingRequests.html) for details)
-
-```csharp
-private static AmazonS3Client CreateClient()
-{
-    var credentials = GetCredentials();
-    return new AmazonS3Client(credentials, RegionEndpoint.EUCentral1);
-}
-
-private static AWSCredentials GetCredentials()
-{
-    return new BasicAWSCredentials(
-        accessKey: "[access key]",
-        secretKey: "[secret key]");
-}
-```
-
-and authorization via AWS Console according your scenario.
 
 ### Issues
 
