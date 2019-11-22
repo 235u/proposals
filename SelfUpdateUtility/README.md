@@ -2,7 +2,7 @@
 
 ## Requirements
 
-See Requirements.pdf for complete job description (fixed-price one-time project).
+See [Requirements.pdf](Requirements.pdf) for complete job description (one-time project, fixed-price).
 
 > I need to write a class in c# that will self update an application and restart it.
 >
@@ -32,3 +32,18 @@ and unzip it overwriting the old files
     }
 }
 ```
+
+## Solution
+
+Top-level components:
+
+- Class Library (.NET Standard 2.0)
+- Windows Forms Test Application (.NET Framework 4.7.2)
+
+### Issues
+
+Getting a TrustFailure WebException with Mono 6.4.0.198 on Windows x64 ...
+
+> Windows Mono builds don't currently support TLS 1.2
+
+... according [this](https://github.com/mono/mono/issues/10489) (still open) GitHub issue, being recommended by Amazon (see [Infrastructure Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/network-isolation.html)).
