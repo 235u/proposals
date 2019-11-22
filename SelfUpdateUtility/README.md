@@ -40,6 +40,40 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
+### Major Adjustments
+
+- The version check is done explicitly (extracted from the self-update function), to be able to provide feedback to the users;
+- the self-update function does not close it's host application instance, it has to be done by the host application itself:
+```csharp
+private async void OnPullButtonClick(object sender, EventArgs e)
+{
+    try
+    {
+        if (await SelfUpdate.IsUpToDate())
+        {
+            MessageBox.Show(
+                "The application is up to date.",
+                MessageBoxCaption.Information,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+        else
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            await SelfUpdate.Pull();
+            Cursor.Current = Cursors.Default;
+            Close();
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
+```
+The final implementation will vary depending on the host application type (e.g. by calling the [Close](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.close?view=netframework-4.7.2) method on the main window or [Application.Exit](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.exit?view=netframework-4.7.2) in a Windows Forms application, not available for console applications).
+
+
 ### Issues
 
 Getting a TrustFailure WebException with Mono 6.4.0.198 on Windows x64 ...
