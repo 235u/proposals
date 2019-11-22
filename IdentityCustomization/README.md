@@ -9,10 +9,6 @@ Feature-complete under made assumptions (listed below), according provided [Requ
 
 Switch to SQL Server in [Startup.cs](IdentityCustomization/Startup.cs) for local testing using the preconfigured LocalDb connection string. Customize the connection string in [appsetings.json](IdentityCustomization/appsettings.json) for production environment.
 
-## State
-
-[![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fidentitycustomization.azurewebsites.net)](https://identitycustomization.azurewebsites.net)
-
 ## Design
 
 ### Data
