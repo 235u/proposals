@@ -158,7 +158,7 @@ private async void OnPullButtonClick(object sender, EventArgs e)
     }
     catch (Exception ex)
     {
-        MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        ShowThreadExceptionDialog(ex);
     }
 }
 ```
@@ -198,27 +198,20 @@ public static void Main(string[] args)
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);
             
-    try
+    using (AmazonS3Client client = CreateClient())
     {
-        using (AmazonS3Client client = CreateClient())
+        ProcessStartInfo startInfo = CreateStartInfo(args);
+        var form = new MainForm(args)
         {
-            ProcessStartInfo startInfo = CreateStartInfo(args);
-            var form = new MainForm(args)
+            SelfUpdate = new SelfUpdate
             {
-                SelfUpdate = new SelfUpdate
-                {
-                    Client = client,
-                    StartInfo = startInfo,
-                    FilesToUpdate = GetFilesToUpdate()
-                }
-            };
+                Client = client,
+                StartInfo = startInfo,
+                FilesToUpdate = GetFilesToUpdate()
+            }
+        };
 
-            Application.Run(form);
-        }
-    }
-    catch (Exception ex)
-    {
-        MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        Application.Run(form);
     }
 }
 ```
