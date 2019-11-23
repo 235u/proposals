@@ -2,7 +2,7 @@
 
 ## Requirements
 
-See [Requirements.pdf](Requirements.pdf) for complete job description (one-time project, fixed-price).
+See [Requirements.pdf](Requirements.pdf) for complete job description (one-time project, fixed-price), formatting adjusted:
 
 > I need to write a class in c# that will self update an application and restart it.
 >
@@ -10,13 +10,16 @@ See [Requirements.pdf](Requirements.pdf) for complete job description (one-time 
 ```
 public class SelfUpdate
 {
-    //the list should come from .config file
+    // the list should come from .config file
     string files2update = "somefile.dll,someotherfile.txt";
 
     public void UploadLatestFiles()
     {
-        //this should ZIP the latest .exe and .config plus files in files2update and upload it to S3 bucket
-        //also upload a small file called "lastmodified.txt" with a current timestamp
+        /* 
+         * this should ZIP the latest .exe and .config plus files in files2update and 
+         * upload it to S3 bucket
+         * also upload a small file called "lastmodified.txt" with a current timestamp
+         */
     }
 
     public void SelfUpdate()
@@ -44,13 +47,77 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
-This break-down helps testing the required functionality like overwriting of application's components at run-time, whithout an interims application for updating of the target application (by stopping - overwriting - re-starting).
+This break-down helps testing the required functionality like overwriting of application's components at run-time (libraries being in use), whithout an interims application for updating of the target application (by stopping - overwriting - re-starting).
 
-### User Interface Enhancements
+### User Interface
+
+> write a simple form testing app with 2 buttons
 
 ![User Interface](UserInterface.png)
 
-### Control Flow Adjustments
+
+### Minor Adjustments
+
+Using `/` instead of `,` in
+
+```xml
+<setting name="FilesToUpdate" serializeAs="String">
+    <value>SelfUpdateUtility.Library.dll/SomeOtherFile.txt</value>
+</setting>
+```
+
+as comma could be part of a file name, while forward slash can not.
+
+> also upload a small file called "lastmodified.txt" with a current timestamp
+
+The upload-latest-files function 
+
+```csharp
+public async Task Push()
+{
+    await UploadLatestFiles();
+    await UpdateLocalTimestamp();
+}
+```
+
+requests the `LastModified` property of the currently uploaded archive (without [locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html))
+
+```csharp
+private async Task UpdateLocalTimestamp()
+{
+    GetObjectMetadataResponse metadata = await Client.GetObjectMetadataAsync(BucketName, BucketObjectKey);
+    LocalTimestamp.SetUtcDateTime(metadata.LastModified);
+}
+```
+
+and stores this timestamp locally, in the current working directory of the application:
+
+```csharp
+public static class LocalTimestamp
+{
+    private const string Path = "LastModified.txt";
+
+    public static DateTime? GetUtcDateTime()
+    {
+        if (!File.Exists(Path))
+        {
+            return null;
+        }
+
+        string text = File.ReadAllText(Path);
+        var timestamp = DateTimeOffset.Parse(text);
+        return timestamp.DateTime;
+    }
+
+    public static void SetUtcDateTime(DateTime value)
+    {
+        Debug.Assert(value.Kind == DateTimeKind.Utc);
+        var timestamp = new DateTimeOffset(value);
+        var text = timestamp.ToString();
+        File.WriteAllText(Path, text);
+    }
+}
+```
 
 The self-update function does not close it's host application instance, it has to be done by the host application itself:
 
@@ -95,7 +162,30 @@ private async void OnPullButtonClick(object sender, EventArgs e)
     }
 }
 ```
-The version check is done explicitly (extracted from the self-update function), to provide feedback for the users.
+The version check is done explicitly (extracted from the self-update function), to provide some feedback for the users:
+
+```csharp
+public async Task<bool> IsUpToDate()
+{
+    DateTime? remoteTimestamp = await GetLastModifiedAsync();
+    if (!remoteTimestamp.HasValue)
+    {
+        return true;
+    }
+    else
+    {
+        DateTime? localTimestamp = LocalTimestamp.GetUtcDateTime();
+        if (!localTimestamp.HasValue)
+        {
+            return false;
+        }
+        else
+        {
+            return localTimestamp >= remoteTimestamp;
+        }
+    }
+}
+```
 
 > the exe name and command line arguments for the new process should be copied from current process.
 
@@ -138,7 +228,7 @@ The determination of the command line arguments passed to a specific process on 
 
 > upload it to S3 bucket
 
-```
+```csharp
 private const string BucketName = "self-update-utility";
 private const string BucketObjectKey = "SelfUpdateUtility.zip";
 ```

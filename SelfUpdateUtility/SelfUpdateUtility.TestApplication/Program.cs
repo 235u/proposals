@@ -71,7 +71,7 @@ namespace SelfUpdateUtility.TestApplication
 
         private static string[] GetFilesToUpdate()
         {
-            return Settings.Default.FilesToUpdate.Split(';');
+            return Settings.Default.FilesToUpdate.Split('/');
         }
     }
 }

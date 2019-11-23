@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FilesToUpdate" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">SelfUpdateUtility.Library.dll;SomeOtherFile.txt</Value>
+      <Value Profile="(Default)">SelfUpdateUtility.Library.dll/SomeOtherFile.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

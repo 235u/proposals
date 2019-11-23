@@ -25,7 +25,7 @@ namespace SelfUpdateUtility.TestApplication.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SelfUpdateUtility.Library.dll;SomeOtherFile.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SelfUpdateUtility.Library.dll/SomeOtherFile.txt")]
         public string FilesToUpdate {
             get {
                 return ((string)(this["FilesToUpdate"]));
