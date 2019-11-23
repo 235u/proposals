@@ -11,36 +11,26 @@ namespace SelfUpdateUtility.TestApplication
 {
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
+        ////[STAThread]
         public static void Main(string[] args)
         {            
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            
-            try
-            {
-                using (AmazonS3Client client = CreateClient())
-                {
-                    ProcessStartInfo startInfo = CreateStartInfo(args);
-                    var form = new MainForm(args)
-                    {
-                        SelfUpdate = new SelfUpdate
-                        {
-                            Client = client,
-                            StartInfo = startInfo,
-                            FilesToUpdate = GetFilesToUpdate()
-                        }
-                    };
+            Application.SetCompatibleTextRenderingDefault(false);            
 
-                    Application.Run(form);
-                }
-            }
-            catch (Exception ex)
+            using (AmazonS3Client client = CreateClient())
             {
-                MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ProcessStartInfo startInfo = CreateStartInfo(args);
+                var form = new MainForm(args)
+                {
+                    SelfUpdate = new SelfUpdate
+                    {
+                        Client = client,
+                        StartInfo = startInfo,
+                        FilesToUpdate = GetFilesToUpdate()
+                    }
+                };
+
+                Application.Run(form);
             }
         }
 

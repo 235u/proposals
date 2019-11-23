@@ -47,7 +47,7 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
-This break-down helps testing the required functionality like overwriting of application's components at run-time (libraries being in use), without an interims application for updating (by stopping - overwriting - re-starting the target application).
+This break-down helps testing the required functionality like overwriting application's components at run-time (libraries being in use), without an interims application for updating (by stopping - overwriting - re-starting the target application).
 
 ### User Interface
 
@@ -79,7 +79,7 @@ public async Task Push()
 }
 ```
 
-requests the `LastModified` property of the currently uploaded archive (without [locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html))
+requests the `LastModified` property of the currently uploaded archive (without [locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html), ignoring potential race conditions as very unlikely)
 
 ```csharp
 private async Task UpdateLocalTimestamp()
@@ -132,6 +132,7 @@ public async Task Pull()
     Process.Start(StartInfo);
 }
 ```
+
 The final implementation will vary depending on the host application type (e.g. by calling the [Close](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.close?view=netframework-4.7.2) method on the main window or [Application.Exit](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.exit?view=netframework-4.7.2) in a Windows Forms application, not available for console applications).
 
 ```csharp
@@ -161,6 +162,7 @@ private async void OnPullButtonClick(object sender, EventArgs e)
     }
 }
 ```
+
 The version check is done explicitly (extracted from the self-update function), to provide some feedback for the users:
 
 ```csharp

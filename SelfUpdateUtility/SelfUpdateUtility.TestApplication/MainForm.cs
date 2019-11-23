@@ -57,7 +57,7 @@ namespace SelfUpdateUtility.TestApplication
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowThreadExceptionDialog(ex);
             }
         }
 
@@ -69,7 +69,7 @@ namespace SelfUpdateUtility.TestApplication
                 {
                     MessageBox.Show(
                         "The application is up to date.",
-                        MessageBoxCaption.Information,
+                        "Information",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                 }
@@ -83,7 +83,20 @@ namespace SelfUpdateUtility.TestApplication
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, MessageBoxCaption.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowThreadExceptionDialog(ex);
+            }
+        }
+
+        private void ShowThreadExceptionDialog(Exception ex)
+        {
+            // workaround for Mono not catching unhandled exceptions
+            using (var form = new ThreadExceptionDialog(ex))
+            {
+                DialogResult result = form.ShowDialog();
+                if (result == DialogResult.Abort)
+                {
+                    Close();
+                }
             }
         }
     }
