@@ -21,7 +21,7 @@ namespace SelfUpdateUtility.TestApplication
         private void InitializeProcessIdTextBox()
         {
             var currentProcess = Process.GetCurrentProcess();
-            processIdTextBox.Text += $" {currentProcess.Id}";
+            processIdTextBox.Text = currentProcess.Id.ToString();
         }
 
         private void InitializeArgumentsTextBox(string[] args)
