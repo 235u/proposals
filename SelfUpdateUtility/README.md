@@ -47,14 +47,13 @@ Top-level components:
 - Class Library (.NET Standard 2.0)
 - Windows Forms Test Application (.NET Framework 4.7.2)
 
-This break-down helps testing the required functionality like overwriting of application's components at run-time (libraries being in use), whithout an interims application for updating of the target application (by stopping - overwriting - re-starting).
+This break-down helps testing the required functionality like overwriting of application's components at run-time (libraries being in use), without an interims application for updating (by stopping - overwriting - re-starting the target application).
 
 ### User Interface
 
 > write a simple form testing app with 2 buttons
 
 ![User Interface](UserInterface.png)
-
 
 ### Minor Adjustments
 
