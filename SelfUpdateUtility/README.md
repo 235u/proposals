@@ -272,8 +272,10 @@ private static string GetCurrentProcessFileName()
 
 ### Issues
 
+Overwriting assemblies referenced by the host application (being in use).
+
 Getting a TrustFailure WebException with Mono 6.4.0.198 on Windows x64 ...
 
 > Windows Mono builds don't currently support TLS 1.2
 
-... according [this](https://github.com/mono/mono/issues/10489) (still open) GitHub issue, being recommended by Amazon (see [Infrastructure Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/network-isolation.html)).
+... according [this](https://github.com/mono/mono/issues/10489) (still open) GitHub issue, being recommended (and used by default?) by Amazon (see [Infrastructure Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/network-isolation.html)).
