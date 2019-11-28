@@ -1,0 +1,123 @@
+﻿@model DimdexRegistration.Models.Visitor
+@{
+    ViewData["Title"] = "Visitor Registration Form";
+}
+
+<form asp-action="Create">
+    <div class="headline">
+        <h1>@ViewData["Title"]</h1>
+        <span>*Required field</span>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="Title"></label></th>
+                <td class="col-75" colspan="3">
+                    <select>
+                        <option>Lieutenant</option>
+                        <option>Commander</option>
+                        <option>Captain</option>
+                        <option>Admiral</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="FirstName"></label></th>
+                <td class="col-75" colspan="3"><input asp-for="FirstName" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="FamilyName"></label></th>
+                <td class="col-75" colspan="3"><input asp-for="FamilyName" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="JobTitle"></label></th>
+                <td class="col-75" colspan="3"><input asp-for="JobTitle" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="CompanyName"></label></th>
+                <td class="col-75" colspan="3"><input asp-for="CompanyName" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="Nationality"></label></th>
+                <td class="col-75" colspan="3">
+                    <select>
+                        @foreach (string country in Country.Names)
+                        {
+                            <option>@country</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="TelephoneCountryCode"></label></th>
+                <td class="col-25">
+                    <select>
+                        @foreach (string country in Country.Names)
+                        {
+                            <option>@country @Country.CallingCodes[country]</option>
+                        }
+                    </select>
+                </td>
+                <th class="col-25" scope="row"><label asp-for="Telephone"></label></th>
+                <td class="col-25"><input asp-for="Telephone" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="MobileCountryCode"></label></th>
+                <td class="col-25">
+                    <select>
+                        @foreach (string country in Country.Names)
+                        {
+                            <option>@country @Country.CallingCodes[country]</option>
+                        }
+                    </select>
+                </td>
+                <th class="col-25" scope="row"><label asp-for="Mobile"></label></th>
+                <td class="col-25"><input asp-for="Mobile" /></td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row"><label asp-for="Email"></label></th>
+                <td class="col-75" colspan="3"><input asp-for="Email" /></td>
+            </tr>
+            <tr>
+                <th class="col-75" colspan="3" scope="row"><label asp-for="PassportCopy"></label></th>
+                <td class="col-25 text-center"><button>Upload File</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="note">
+        <span>Note:</span>
+        <span>Please ensure that your first/given name and family name match your name in the ID/passport provided.<br />Your registration may not be processed if details are found to be inaccurate.</span>
+    </div>
+    <div class="reason">Your main reason for attending <strong>DIMDEX 2020</strong>:</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="col-50 border" colspan="2"><input type="checkbox" /><label>Establishing new business contacts/leads</label></td>
+                <td class="col-50" colspan="2"><input type="checkbox" /><label>Checking out latest technologies</label></td>
+            </tr>
+            <tr>
+                <td class="col-50 border" colspan="2">
+                    <input type="checkbox" /><label>Interest in specific exhibitor (please specify)</label>
+                    <input class="border-bottom" type="text" />
+                </td>
+                <td class="col-50" colspan="2"><input type="checkbox" /><label>Attending MENC</label></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="checkbox" /><label>Others (please specify)</label>
+                    <input class="border-bottom" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <th class="col-25" scope="row">Enter the Security Code shown</th>
+                <td class="col-25"></td>
+                <td class="col-25 border-right"><input type="text" /></td>
+                <td class="col-25 text-center"><button type="submit">Submit</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="hint">Visitors must provide trade relevant accreditation such as business card, company identitfication, trade association membership card or any similar proof of qualification along with a photocopy of ID/passport for identitification purposes.</div>
+    <div class="clearfix">
+        <img class="sponsor-img float-right" src="~/img/gold-sponsor.png" width="163" height="95" alt="Gold sponsor" />
+    </div>
+</form>
