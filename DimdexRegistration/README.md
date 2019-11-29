@@ -13,7 +13,9 @@ Run [Mozilla's Observatory](https://observatory.mozilla.org/analyze/dimdex.235u.
 
 > according to design provided
 
-![Visitor Registration Form Live](DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Live.png)
+<a href="https://dimdex.235u.net">
+  <img src="DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Live.png" alt="Visitor Registration Form" width="640">
+</a>
 
 > to be fast
 
