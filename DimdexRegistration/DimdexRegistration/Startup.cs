@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Net.Http.Headers;
 
 namespace DimdexRegistration
 {
@@ -30,13 +32,26 @@ namespace DimdexRegistration
             else
             {
                 app.UseHsts();
+                app.UseContentTypeOptions();
+                app.UseContentSecurityPolicy();
+                app.UseReferrerPolicy();
             }
 
             app.UseDeveloperExceptionPage();
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+
+            var options = new StaticFileOptions
+            {
+                OnPrepareResponse = (context) =>
+                {
+                    const int CachePeriodInSeconds = 31_536_000; // 1 year
+                    string cacheControlHeaderValue = $"public, max-age={CachePeriodInSeconds}";
+                    context.Context.Response.Headers.Append(HeaderNames.CacheControl, cacheControlHeaderValue);
+                }
+            };
+
+            app.UseStaticFiles(options);
             app.UseRouting();
-            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
