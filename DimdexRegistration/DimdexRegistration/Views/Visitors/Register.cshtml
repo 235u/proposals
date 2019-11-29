@@ -92,20 +92,33 @@
     <table>
         <tbody>
             <tr>
-                <td class="col-50 border" colspan="2"><input type="checkbox" /><label>Establishing new business contacts/leads</label></td>
-                <td class="col-50" colspan="2"><input type="checkbox" /><label>Checking out latest technologies</label></td>
+                <td class="col-50 border" colspan="2">
+                    <input id="new-business-contacts" type="checkbox" />
+                    <label for="new-business-contacts">Establishing new business contacts/leads</label>
+                </td>
+                <td class="col-50" colspan="2">
+                    <input id="latest-technologies" type="checkbox" />
+                    <label for="latest-technologies">Checking out latest technologies</label>
+                </td>
             </tr>
             <tr>
                 <td class="col-50 border" colspan="2">
-                    <input type="checkbox" /><label>Interest in specific exhibitor (please specify)</label>
+                    <input id="specific-exhibitor" type="checkbox" />
+                    <label for="specific-exhibitor">Interest in specific exhibitor (please specify)</label>
                     <input class="border-bottom" type="text" />
                 </td>
-                <td class="col-50" colspan="2"><input type="checkbox" /><label>Attending MENC</label></td>
+                <td class="col-50" colspan="2">
+                    <input id="attending-menc" type="checkbox" />
+                    <label for="attending-menc">Attending MENC</label>
+                </td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <input type="checkbox" /><label>Others (please specify)</label>
-                    <input class="border-bottom" type="text" />
+                    <input id="others" type="checkbox" />
+                    <label for="others">Others (please specify)</label>
+                    <div>
+                        <input class="border-bottom" type="text" />
+                    </div>                    
                 </td>
             </tr>
             <tr>

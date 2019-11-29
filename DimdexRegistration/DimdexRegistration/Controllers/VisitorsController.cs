@@ -5,7 +5,7 @@ namespace DimdexRegistration.Controllers
 {
     public class VisitorsController : Controller
     {
-        public ViewResult Create()
+        public ViewResult Register()
         {
             var model = new Visitor();
             return View(model);

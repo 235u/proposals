@@ -13,6 +13,14 @@
     <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\templates\Exhibitor-Registration-Form.jpg" />
+    <Content Remove="wwwroot\templates\Media-Registration-Form.jpg" />
+    <Content Remove="wwwroot\templates\Visitor-Confirmation-Email.jpg" />
+    <Content Remove="wwwroot\templates\Visitor-Registration-Form.jpg" />
+    <Content Remove="wwwroot\templates\Visitor-Registration-Form.Scaled.png" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.0" />
@@ -29,6 +37,15 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\templates\Exhibitor-Registration-Form.jpg" />
+    <None Include="wwwroot\templates\Media-Registration-Form.jpg" />
+    <None Include="wwwroot\templates\Visitor-Confirmation-Email.jpg" />
+    <None Include="wwwroot\templates\Visitor-Registration-Form.jpg" />
+    <None Include="wwwroot\templates\Visitor-Registration-Form.Scaled.png" />
   </ItemGroup>
 
 </Project>

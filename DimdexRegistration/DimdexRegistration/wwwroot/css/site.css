@@ -7,7 +7,8 @@
 body {
     background-color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.5;
     margin: 0 auto;
     max-width: 1042px;
 }
@@ -15,6 +16,17 @@ body {
 hr {
     border: none;
     background-color: #316096;
+    margin: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -41,7 +53,7 @@ main {
 
     .headline > h1 {
         flex-grow: 1;
-        font-size: 28px;
+        font-size: 2rem;
         margin: 0;
         text-transform: uppercase;
     }
@@ -77,11 +89,12 @@ tbody > tr {
 .note {
     padding: 11px 9px;
     font-style: italic;
+    /*font-weight: bold;*/
 }
 
-.note > span {
-    display: inline-flex;
-}
+    .note > span {
+        display: inline-flex;
+    }
 
 tr > th {
     background-color: #316096;
@@ -92,21 +105,21 @@ tr > th {
 .reason {
     background-color: #316096;
     color: #fff;
-    padding: 9px 7px;
+    padding: 3px 7px;
 }
 
 .hint {
     background-color: #316096;
     color: #fff;
-    font-size: 17px;
+    /*font-size: 17px;*/
     margin-top: 6px;
     padding: 6px 5px;
 }
 
 input[type=text],
 input[type=email],
-input[type=tel]
-{
+input[type=tel],
+select {
     border: 0;
     padding: 0 8px;
     width: 100%;
@@ -114,12 +127,16 @@ input[type=tel]
 
     input[type=text]:focus,
     input[type=email]:focus,
-    input[type=tel]:focus {
+    input[type=tel]:focus,
+    select {
         outline: none;
     }
 
     input[type=text].border-bottom {
         border-bottom: 1px solid black;
+        padding: 0;
+        margin: 0 43px;
+        width: calc(100% - 51px);
     }
 
 input[type=checkbox] {
@@ -149,8 +166,8 @@ input[type=checkbox] {
 button {
     border: 2px solid #000;
     border-radius: 4px;
-    height: 24px;
-    font-size: 9px;
+    height: 26px;
+    font-size: 10px;
     font-weight: bold;
     min-width: 100px;
     text-transform: uppercase;
@@ -173,4 +190,52 @@ footer hr {
 
 .sponsor-img {
     margin-top: 71px;
+}
+
+/* See https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3 */
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 43px; /* 18px width of fake checkbox + 13px distance between fake checkbox and text */
+}
+
+    input[type=checkbox] + label::before,
+    input[type=checkbox] + label::after {
+        position: absolute;
+        content: "";
+        display: inline-block; /* Needed for the line-height to take effect */
+    }
+
+    /* Outer box of the fake checkbox */
+    input[type=checkbox] + label::before {
+        height: 18px;
+        width: 18px;
+        border: 2px solid #000;
+        left: 14px;
+        top: 3px; /* (24px line-height - 16px height of fake checkbox) / 2 - 1px for the border to vertically center it. */
+    }
+
+    /* Checkmark of the fake checkbox */
+    input[type=checkbox] + label::after {
+        height: 5px;
+        width: 9px;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        transform: rotate(-45deg);
+        left: 19px;
+        top: 8px;
+    }
+
+/* Hide the checkmark by default */
+input[type=checkbox] + label::after {
+    content: none;
+}
+
+/* Unhide on the checked state */
+input[type=checkbox]:checked + label::after {
+    content: "";
 }
