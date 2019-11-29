@@ -7,11 +7,17 @@
 
 See [Requirements.pdf](Requirements.pdf) for complete job description (one-time project, fixed price).
 
-## Non-Functional Requirements
-
-> to create high standard
+> to create high standard form
 
 Run [Mozilla's Observatory](https://observatory.mozilla.org/analyze/dimdex.235u.net) analysis.
+
+> according to design provided
+
+![Visitor Registration Form Scaled](DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Scaled.png)
+
+[...]
+
+![Visitor Registration Form Live](DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Live.png)
 
 > to be fast
 
