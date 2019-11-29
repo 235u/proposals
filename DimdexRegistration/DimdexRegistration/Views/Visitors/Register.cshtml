@@ -3,7 +3,7 @@
     ViewData["Title"] = "Visitor Registration Form";
 }
 
-<form asp-action="Create">
+<form asp-action="Create" asp-antiforgery="false">
     <div class="headline">
         <h1>@ViewData["Title"]</h1>
         <span>*Required field</span>
