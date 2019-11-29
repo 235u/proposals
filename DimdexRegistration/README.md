@@ -13,10 +13,6 @@ Run [Mozilla's Observatory](https://observatory.mozilla.org/analyze/dimdex.235u.
 
 > according to design provided
 
-![Visitor Registration Form Scaled](DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Scaled.png)
-
-[...]
-
 ![Visitor Registration Form Live](DimdexRegistration/wwwroot/templates/Visitor-Registration-Form.Live.png)
 
 > to be fast
