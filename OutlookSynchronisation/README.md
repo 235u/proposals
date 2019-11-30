@@ -43,11 +43,7 @@ I've maintained / extended multiple add-ins for:
 
 ### 4. What questions do you have about the project?
 
-The job is posted under `Desktop Software Development`, usually being platform dependent (e.g. targeting, the specification refers i.a. to [Outlook add-ins](https://docs.microsoft.com/en-us/outlook/add-ins/) (more exactly speaking: [the quick start tutorial for Visual Studio](https://docs.microsoft.com/en-us/outlook/add-ins/quick-start?tabs=visualstudio)), being web applications in general:
-
-> Outlook add-ins are different from COM or VSTO add-ins, which are older integrations specific to Outlook running on Windows. Unlike COM add-ins, Outlook add-ins don't have any code physically installed on the user's device or Outlook client. For an Outlook add-in, Outlook reads the manifest and hooks up the specified controls in the UI, and then loads the JavaScript and HTML. The web components all run in the context of a browser in a sandbox.
-
-The Setup ()
+Is your [REST API](https://help.cirrus-shield.com/docs/developer-guide/rest-api/) available in [OpenAPI Specification](https://swagger.io/resources/open-api/) form? Is it delta query capable like [Microsoft Graph](https://docs.microsoft.com/en-us/graph/delta-query-overview) (referenced in the specification)?
 
 What does this
 
@@ -60,8 +56,46 @@ mean to you in numbers? Furthermore I would be interested in:
 - products and services you are more comfortable with (GitHub, Slack, Discord, Trello, Jira etc.);
 - technology stack of your CRM;
 - non-functional requirements (performance constraints, number of users, contacts / calendar events to sync on average); 
-- quality assurance assistance, sample data / account for testing purposes; 
+- quality assurance assistance, sample data / account for testing purposes;
+- add-in distribution ([AppSource / Office Store](https://docs.microsoft.com/en-us/office/dev/store/submit-to-the-office-store), deployed by Office 365 tenancy administrators across their organizations)
 - further maintenance in production.
 
 ## Issues
 
+### Target Platform
+
+The job is posted under `Desktop Software Development`, usually being platform-dependent (e.g. targeting specific Office Desktop Clients), the specification refers i.a. to [Outlook add-ins](https://docs.microsoft.com/en-us/outlook/add-ins/) (more exactly speaking: [the quick start tutorial for Visual Studio](https://docs.microsoft.com/en-us/outlook/add-ins/quick-start?tabs=visualstudio)), being web applications in general:
+
+> Outlook add-ins are different from COM or VSTO add-ins, which are older integrations specific to Outlook running on Windows. Unlike COM add-ins, Outlook add-ins don't have any code physically installed on the user's device or Outlook client. For an Outlook add-in, Outlook reads the manifest and hooks up the specified controls in the UI, and then loads the JavaScript and HTML. The web components all run in the context of a browser in a sandbox.
+
+Which makes the 
+
+> add-in is downloaded and installed
+
+step (see [specification](Specification.pdf), the setup slide) questionable, like
+
+> **Automatic Syncs** are done in the background without any interference from the user. **Success** and **Error files** will be stored locally in a subfolder of the installation (called **Sync Reports**).
+
+and
+
+> The application should generate **debug logs** stored in a **log** subfolder of the installation folder.
+
+on the configuration slide. 
+
+Where should the automatic synchronisation run? On the server (host of the web application)? On user's device? In whose background? In Outlook's process? (Being the foreground, usually not running 24/7.)
+
+What should 'succes' and 'error' files contain? Who is expected to debug (literally speaking) the application? (I prefer Visual Studio's Debugger over text files on end-user's devices; I don't expect them to be my alpha and beta testers, trying to deliver bug-free experience, [failing fast](https://en.wikipedia.org/wiki/Fail-fast) during development, supported by test automation.)
+
+> Settings opens the configuration right task pane in Outlook.
+
+Where and how are the configuration settings expected to be stored? 
+
+### JavaScript Library
+
+The link to the [JavaScript Library](https://help.cirrus-shield.com/docs/developer-guide/javascript-library/) (seems to be better documented than the [REST API](https://help.cirrus-shield.com/docs/developer-guide/rest-api/))
+
+```html
+<script src=" https://cirrus-shield.net/ /Content/CirrusShield/CirrusShieldJS.js"></script>
+````
+
+is broken; the https://cirrus-shield.net SSL certificate is invalid.
