@@ -103,7 +103,7 @@ Furthermore I would be interested in:
 - technology stack of your CRM;
 - non-functional requirements (performance constraints, number of users, contacts / calendar events to sync on average); 
 - quality assurance assistance, sample data / account for testing purposes;
-- add-in distribution ([AppSource / Office Store](https://docs.microsoft.com/en-us/office/dev/store/submit-to-the-office-store), deployed by Office 365 tenancy administrators across their organizations, idividually set up by the end-users);
+- add-in distribution ([AppSource / Office Store](https://docs.microsoft.com/en-us/office/dev/store/submit-to-the-office-store) / deployed by Office 365 tenancy administrators across their organizations / idividually set up by the end-users);
 - further maintenance in production.
 
 ## Issues
