@@ -17,7 +17,26 @@ Feel free to take a look at the [source code](https://github.com/235u/website) (
 
 ### 2. Do you have suggestions to make this project run successfully?
 
-I would reconsider following features:
+The job is posted under `Desktop Software Development`, usually being platform-dependent (e.g. targeting specific Office Desktop Clients), the specification refers i.a. to [Outlook add-ins](https://docs.microsoft.com/en-us/outlook/add-ins/) (more exactly speaking: [the quick start tutorial for Visual Studio](https://docs.microsoft.com/en-us/outlook/add-ins/quick-start?tabs=visualstudio)), being web applications in general:
+
+> Outlook add-ins are different from COM or VSTO add-ins, which are older integrations specific to Outlook running on Windows. Unlike COM add-ins, Outlook add-ins don't have any code physically installed on the user's device or Outlook client. For an Outlook add-in, Outlook reads the manifest and hooks up the specified controls in the UI, and then loads the JavaScript and HTML. The web components all run in the context of a browser in a sandbox.
+
+Which makes the 
+
+> add-in is downloaded and installed
+
+step (see [specification](Specification.pdf), the setup slide) questionable, like
+
+> **Success** and **Error files** will be stored locally in a subfolder of the installation (called **Sync Reports**).
+
+> The application should generate **debug logs** stored in a **log** subfolder of the installation folder.
+
+> On **Save**, an XML file with all the configuration of contacts and events will be
+saved locally on the user’s PC in a subfolder of the installation folder.
+
+on the configuration slides. 
+
+In further consequence I would reconsider following features:
 
 > **Automatic Syncs** are done in the background without any interference from the user.
 
@@ -87,27 +106,6 @@ Furthermore I would be interested in:
 
 ## Issues
 
-### Target Platform
-
-The job is posted under `Desktop Software Development`, usually being platform-dependent (e.g. targeting specific Office Desktop Clients), the specification refers i.a. to [Outlook add-ins](https://docs.microsoft.com/en-us/outlook/add-ins/) (more exactly speaking: [the quick start tutorial for Visual Studio](https://docs.microsoft.com/en-us/outlook/add-ins/quick-start?tabs=visualstudio)), being web applications in general:
-
-> Outlook add-ins are different from COM or VSTO add-ins, which are older integrations specific to Outlook running on Windows. Unlike COM add-ins, Outlook add-ins don't have any code physically installed on the user's device or Outlook client. For an Outlook add-in, Outlook reads the manifest and hooks up the specified controls in the UI, and then loads the JavaScript and HTML. The web components all run in the context of a browser in a sandbox.
-
-Which makes the 
-
-> add-in is downloaded and installed
-
-step (see [specification](Specification.pdf), the setup slide) questionable, like
-
-> **Success** and **Error files** will be stored locally in a subfolder of the installation (called **Sync Reports**).
-
-> The application should generate **debug logs** stored in a **log** subfolder of the installation folder.
-
-> On **Save**, an XML file with all the configuration of contacts and events will be
-saved locally on the user’s PC in a subfolder of the installation folder.
-
-on the configuration slides. 
-
 ### JavaScript Library
 
 The link to the [JavaScript Library](https://help.cirrus-shield.com/docs/developer-guide/javascript-library/) (seems to be better documented than the [REST API](https://help.cirrus-shield.com/docs/developer-guide/rest-api/))
@@ -117,14 +115,4 @@ The link to the [JavaScript Library](https://help.cirrus-shield.com/docs/develop
 ````
 
 is broken; the https://cirrus-shield.net SSL certificate is invalid.
-
-### Entity Mapping
-
-[Outlook Contacts](https://docs.microsoft.com/en-us/graph/api/resources/contact) correspond to Cirrus Shield Accounts (no `Leads` in the `DescribeAll` endpoint response listed); what is the opposite for [Outlook Calendar Events](https://docs.microsoft.com/en-us/graph/api/resources/event) (same)?
-
-### Synchronisation
-
-
-
-Cirrus Shield Records having **empty required fields** seem to contradict the definition of required fields.
 
