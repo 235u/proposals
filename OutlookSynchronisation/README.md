@@ -13,7 +13,7 @@ Resolution of [wicked problems](https://en.wikipedia.org/wiki/Wicked_problem) ar
 - 10+ years of professional software engineering experience based on Microsoft technologies, products, and services in general;
 - 25+ years of personal experience as power user in the Microsoft eco-system ... starting with MS DOS and Windows 3.11 / NT 4.0, using MS Office / Outlook by myself.
 
-Feel free to take a look at the [source code](https://github.com/235u/website) (C#, HTML, CSS, and JavaScript) of my personal [website](https://github.com/235u/website).
+Feel free to take a look at the [source code](https://github.com/235u/website) (C#, HTML, CSS, and JavaScript) of my personal [website](https://www.235u.net).
 
 ### 2. Do you have suggestions to make this project run successfully?
 
@@ -25,7 +25,7 @@ Which makes the
 
 > add-in is downloaded and installed
 
-step (see [specification](Specification.pdf), the setup slide) questionable, like
+step (see [specification](Specification.pdf), the setup slide) questionable, like these requirements
 
 > **Success** and **Error files** will be stored locally in a subfolder of the installation (called **Sync Reports**).
 
@@ -42,7 +42,7 @@ In further consequence I would reconsider following features:
 
 To reduce the complexity / probability of users being interferenced by the automatic synchronisation and get rid of the questions like: Where should the automatic synchronisation run? On the server (host of the web application)? On user's device? In whose background? In the Outlook process? (Being the foreground, usually not running 24/7.)
 
-I would try to replace this with automatic synchronisation on add-ins startup and immediate updates on [changes in user's data](https://docs.microsoft.com/en-us/graph/webhooks#supported-resources) ([contacts](https://docs.microsoft.com/en-us/graph/api/resources/contact), [calendar events](https://docs.microsoft.com/en-us/graph/api/resources/event)) using webhooks, being always up-to-date in the `Outlook to Cirrus Shield` direction.
+I would try to replace this with automatic synchronisation on add-in's startup and immediate updates on [changes in user's data](https://docs.microsoft.com/en-us/graph/webhooks#supported-resources) ([contacts](https://docs.microsoft.com/en-us/graph/api/resources/contact), [calendar events](https://docs.microsoft.com/en-us/graph/api/resources/event)) using webhooks, being always up-to-date in the `Outlook to Cirrus Shield` direction.
 
 > The application should generate **debug logs** stored in a **log** subfolder of the installation folder.
 
@@ -51,7 +51,7 @@ I would prefer Visual Studio's Debugger over text files on end-user's devices; I
 > On **Save**, an XML file with all the configuration of contacts and events will be
 saved locally on the user’s PC in a subfolder of the installation folder.
 
-I would use [Office.RoamingSettings](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) JavaScript interface (or a custom solution, like persisting data in a database on the server or using user's OneDrives [for Business, of their Office 365 subscriptions]), due following office [add-in state and settings persistence](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) specifics:
+I would use [Office.RoamingSettings](https://docs.microsoft.com/en-us/javascript/api/outlook/office.roamingsettings) JavaScript interface (or a custom solution, like persisting data in a database on the server or using user's OneDrives [for Business, of their Office 365 subscriptions]), due following office [add-in state and settings persistence](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) specifics:
 
 > Office Add-ins are essentially web applications running in the stateless environment of a browser control. As a result, your add-in may need to persist data to maintain the continuity of certain operations or features across sessions of using your add-in.
 
@@ -103,14 +103,14 @@ Furthermore I would be interested in:
 - technology stack of your CRM;
 - non-functional requirements (performance constraints, number of users, contacts / calendar events to sync on average); 
 - quality assurance assistance, sample data / account for testing purposes;
-- add-in distribution ([AppSource / Office Store](https://docs.microsoft.com/en-us/office/dev/store/submit-to-the-office-store), deployed by Office 365 tenancy administrators across their organizations)
+- add-in distribution ([AppSource / Office Store](https://docs.microsoft.com/en-us/office/dev/store/submit-to-the-office-store), deployed by Office 365 tenancy administrators across their organizations, idividually set up by the end-users);
 - further maintenance in production.
 
 ## Issues
 
 ### JavaScript Library
 
-The link to the [JavaScript Library](https://help.cirrus-shield.com/docs/developer-guide/javascript-library/) (seems to be better documented than the [REST API](https://help.cirrus-shield.com/docs/developer-guide/rest-api/))
+The link to the [JavaScript Library](https://help.cirrus-shield.com/docs/developer-guide/javascript-library/) (seems to be better documented than the [Rest API](https://help.cirrus-shield.com/docs/developer-guide/rest-api/))
 
 ```html
 <script src=" https://cirrus-shield.net/ /Content/CirrusShield/CirrusShieldJS.js"></script>
