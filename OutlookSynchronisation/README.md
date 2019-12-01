@@ -42,7 +42,7 @@ In further consequence I would reconsider following features:
 
 To reduce the complexity / probability of users being interferenced by the automatic synchronisation and get rid of the questions like: Where should the automatic synchronisation run? On the server (host of the web application)? On user's device? In whose background? In the Outlook process? (Being the foreground, usually not running 24/7.)
 
-I would try to replace this with automatic synchronisation on add-ins startup and immediate updates on [changes in user's data](https://docs.microsoft.com/en-us/graph/webhooks#supported-resources) (contacts, calendar events) using webhooks, being always up-to-date in the `Outlook to Cirrus Shield` direction.
+I would try to replace this with automatic synchronisation on add-ins startup and immediate updates on [changes in user's data](https://docs.microsoft.com/en-us/graph/webhooks#supported-resources) ([contacts](https://docs.microsoft.com/en-us/graph/api/resources/contact), [calendar events](https://docs.microsoft.com/en-us/graph/api/resources/event)) using webhooks, being always up-to-date in the `Outlook to Cirrus Shield` direction.
 
 > The application should generate **debug logs** stored in a **log** subfolder of the installation folder.
 
@@ -51,7 +51,7 @@ I would prefer Visual Studio's Debugger over text files on end-user's devices; I
 > On **Save**, an XML file with all the configuration of contacts and events will be
 saved locally on the user’s PC in a subfolder of the installation folder.
 
-I would use [Office.RoamingSettings](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) JavaScript interface (or a custom solution, persisting data on the server), due following office [add-in state and settings persistence](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) specifics:
+I would use [Office.RoamingSettings](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) JavaScript interface (or a custom solution, like persisting data in a database on the server or using user's OneDrives [for Business, of their Office 365 subscriptions]), due following office [add-in state and settings persistence](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/persisting-add-in-state-and-settings) specifics:
 
 > Office Add-ins are essentially web applications running in the stateless environment of a browser control. As a result, your add-in may need to persist data to maintain the continuity of certain operations or features across sessions of using your add-in.
 
@@ -66,7 +66,7 @@ On hire I would like to use
 
 writing in 
 
-- self-explaining C# (7.3 at least), utilizing XML comments, targeting .NET Core (3.0 / current version) for the back-end, 
+- self-explaining C# (7.3 at least), utilizing XML comments, targeting .NET Core (3.0 / current version) for the back-end,
 - HTML5, CSS3, ECMAScript 2015 (ES6, at least) on the client-side / for the front-end, trying to reduce the functionality for the server-side execition, to reduce its load (and your bill) / for [responsive user experience](https://docs.microsoft.com/en-us/office/dev/add-ins/concepts/add-in-development-best-practices?product=outlook#optimize-and-monitor-add-in-performance);
 - Markdown (GitHub Flavored),
 
@@ -78,6 +78,8 @@ I've maintained / extended multiple add-ins for:
 
 - newsletter composition in Microsoft Outlook, as VSTO add-in, written in C#, 2-3 years ago, 
 - machinery engineering (component classification / standardisation / management), in Microsoft Word, and Excel (as VSTO add-ins), Autodesk AutoCAD and Inventor, with similar infrastructure (targeting .NET), about 5 years ago.
+
+I've (successfully) experimented with this [Get Excel workbooks using Microsoft Graph and MSAL in an Outlook Add-in](https://github.com/OfficeDev/PnP-OfficeAddins/tree/master/Samples/auth/Outlook-Add-in-Microsoft-Graph-ASPNET) quite extensive, (probably) most actual and well-fitting sample yesterday.
 
 ### 4. What questions do you have about the project?
 
