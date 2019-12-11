@@ -5,13 +5,26 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CE292C26-0F29-4760-A26D-C5ED0798B605}"
 	ProjectSection(SolutionItems) = preProject
-		JobDetails.pdf = JobDetails.pdf
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D2716122-0338-4EE6-AC27-F278C2EE21F1}"
+	ProjectSection(SolutionItems) = preProject
+		docs\dmca-takedown.md = docs\dmca-takedown.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_static", "_static", "{C59E6125-B31F-4A8F-A792-5EEDC47035EF}"
+	ProjectSection(SolutionItems) = preProject
+		docs\_static\2019-12-10-aliston.rtf = docs\_static\2019-12-10-aliston.rtf
+		docs\_static\job-details.pdf = docs\_static\job-details.pdf
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C59E6125-B31F-4A8F-A792-5EEDC47035EF} = {D2716122-0338-4EE6-AC27-F278C2EE21F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C66CB583-A761-426F-BC68-BE15EB0E7776}

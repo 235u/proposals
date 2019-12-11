@@ -1,6 +1,6 @@
 # Cirrus Shield Outlook Add-in
 
-See [job details](JobDetails.pdf) (complex project, fixed-price), as posted on November 29, 2019, including the screen-by-screen [specification](Specification.pdf), posted as an attachment.
+See [job details](docs/_static/job-details.pdf) (complex project, fixed-price), as posted on November 29, 2019, including the screen-by-screen [specification](docs/dmca-takedown.md), posted as an attachment.
 
 ## Questions
 
