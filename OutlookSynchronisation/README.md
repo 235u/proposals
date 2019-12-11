@@ -93,7 +93,7 @@ What does this
 
 > I am willing to pay higher rates for the most experienced freelancers
 
-mean to you in numbers?
+mean to you in ($$$) numbers?
 
 Furthermore I would be interested in:
 
