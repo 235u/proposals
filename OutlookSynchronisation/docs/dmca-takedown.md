@@ -17,6 +17,6 @@ several mails later, moving step 3 in front of step 2,
 
 > 3. **GitHub Asks User to Make Changes.** If the notice alleges that the entire contents of a repository infringe, we will skip to Step 6 and disable the entire repository expeditiously. Otherwise, because GitHub cannot disable access to specific files within a repository, we will contact the user who created the repository and give them approximately 24 hours to delete or modify the content specified in the notice. We'll notify the copyright owner if and when we give the user a chance to make changes.
 
-while
+ignoring clarification requests per https://support.github.com/contact form (ticket id: 490664) as [mail](_static/mail-to-github-support.pdf), while
 
 > working hard to build a supportive, welcoming place for users and GitHubbers alike.

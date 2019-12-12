@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_static", "_static", "{C59E
 	ProjectSection(SolutionItems) = preProject
 		docs\_static\2019-12-10-aliston.rtf = docs\_static\2019-12-10-aliston.rtf
 		docs\_static\job-details.pdf = docs\_static\job-details.pdf
+		docs\_static\mail-to-github-support.pdf = docs\_static\mail-to-github-support.pdf
 	EndProjectSection
 EndProject
 Global
