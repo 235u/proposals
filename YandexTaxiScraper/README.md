@@ -23,4 +23,4 @@ Winning streak on the same job posted thrice (see client's recent history in [jo
 
 ![Client's recent history](Competition.png)
 
-Last one on twice the budget of the highest bid. That's the way we f***ing roll.
+Last one on twice the budget of the highest bid. That's how we f***ing roll.
