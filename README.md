@@ -2,7 +2,7 @@
 Submitted for jobs posted on Upwork
 
 |Job|Hired|
-|:--|-----|
+|:--|:---:|
 |[Box Folder Creator](BoxFolderCreator)|:x:|
 |[Diamond Price Calculator](DiamondPriceCalculator)|:heavy_check_mark:|
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
