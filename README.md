@@ -8,6 +8,7 @@ Submitted for jobs posted on Upwork
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
+|[Google Search](GoogleSearch)|:x:|
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
