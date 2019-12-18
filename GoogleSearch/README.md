@@ -10,7 +10,7 @@ The royal we (see [The Big Lebowski](https://www.imdb.com/title/tt0118715), [Bun
  
 > to write a script
 
-In wich scripting language (JavaScript, Perl, PHP, PowerShell, Python, Ruby, etc.)? For wich envirnoment; for client- or server-side execution? To be called 'data collection script'?
+In wich scripting language (JavaScript, Perl, PHP, PowerShell, Python, Ruby, etc.)? For wich envirnoment; for client- or server-side execution?
 
 > that allows us to upload a CSV with a column of queries
 
