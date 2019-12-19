@@ -48,9 +48,11 @@ or the framed (by the black border) form area to be `1280px` wide?
 
 ![Detail information page](docs/detail-information.png)
 
-Giving you following font sizes (might be ok for a half-blind target audience):
+Giving you following font sizes in the latter case:
 
 ![Font sizes](docs/font-size.png)
+
+Wich might be fine for a half-blind target audience though.
 
 > For all displays larger than `1280px`, we need to simply add the margins left and right.
 
