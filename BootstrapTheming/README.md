@@ -56,4 +56,4 @@ For the state being, before question clarification:
 
 1. Clarify the questions.
 2. Throw away the `.sketch` `file (blacklisting it's creator).
-3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com).
+3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization (theming the primary colors, borders, typography, etc.).
