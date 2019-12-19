@@ -20,13 +20,13 @@ Please explain in detail, what 'immediate hire' means to you; having **15** to *
 
 > We'd like to get a pixel-perfect HTML/CSS with a high quality code
 
-Please explain in detail: your constraints forming the [cost-time-scope-triangle](https://en.wikipedia.org/wiki/Project_management_triangle) - **6+** forms within the next few hours for **$75**, asking for pixel perfection and *high quality code*.
+Please explain in detail: your constraints on the [cost-time-scope-triangle](https://en.wikipedia.org/wiki/Project_management_triangle) - **6+** forms within the next few hours for **$75**, asking for *pixel perfection* and *high quality code*.
 
 Do you call this *high quality sketch*,
 
 ![Select options](docs/select-options.png)
 
-being the base for the *high quality code* in question.
+to be the base for the *high quality code* in question.
 
 > with the attached sketch file.
 
@@ -49,3 +49,11 @@ Giving you following font sizes (might be ok for a half-blind audience):
 > For all displays larger than 1280px, we need to simply add the margins left and right.
 
 Meaning horizontal scrolling on displays below `1280px` width?
+
+## Proposal
+
+For the state being, before question clarification:
+
+1. Clarify the questions.
+2. Throw away the `.sketch` `file (blacklisting it's creator).
+3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com).
