@@ -1,6 +1,6 @@
 # [URGENT] Pixel perfect HTML/CSS from Sketch file
 
-Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
+Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
 
 So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
 
@@ -22,21 +22,21 @@ Please explain what *immediate hire* means to you; having **15** to **20** propo
 
 Please explain your constraint trade-offs on the [cost-time-scope-triangle](https://en.wikipedia.org/wiki/Project_management_triangle), contending that
 
-1. The quality of work is constrained by the project's budget, deadlines and scope (features).
+1. The quality of work is constrained by the project's budget, deadlines, and scope (features).
 2. The project manager can trade between constraints.
 3. Changes in one constraint necessitate changes in others to compensate or quality will suffer.
 
-regarding the **6+** forms within the next few hours for **$75**, asking for *pixel perfection* and *high quality code*.
+regarding the **6+** forms within the next few hours for **$75**, asking for *pixel perfection* and *high-quality code*.
 
 > with the attached sketch file.
 
-Are you asking for attaching the `.sketch` file (attached by you to the job description) to the *high quality code* (to be written in HTML and CSS)?
+Are you asking for attaching the `.sketch` file (attached by you to the job description) to the *high-quality code* (to be written in HTML and CSS)?
 
-Do you call this a *high quality sketch*
+Do you call this a *high-quality sketch*
 
 ![Select options](docs/select-options.png)
 
-to be the base for the *high quality code* in question?
+to be the base for the *high-quality code* in question?
 
 > The canvas in this sketch file is currently `3240px` in width, but we'd like to support for `1280px` in width and larger displays.
 
@@ -48,11 +48,11 @@ or the framed (by the black border) form area to be `1280px` wide?
 
 ![Detail information page](docs/detail-information.png)
 
-Giving you following font sizes in the latter case (rasterized):
+Giving you the following font sizes in the latter case (rasterized):
 
 ![Font sizes](docs/font-size.png)
 
-Wich might be fine for a half-blind target audience though.
+Which might be fine for a half-blind target audience though.
 
 > For all displays larger than `1280px`, we need to simply add the margins left and right.
 
@@ -64,6 +64,6 @@ For the state being, before question clarification:
 
 1. Clarify the questions.
 2. Throw away the `.sketch` file, blacklisting it's creator.
-3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
+3. Don't reinvent the quadratic wheel, use a front-end framework/library/toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
 4. Dismiss the actual hire on following the opposite approach: writing the next big front-end framework (throw-away number 1,000,000) within *the next few hours*.
-5. By me a beer, or say thank you at least.
+5. By me a beer or say thank you at least.
