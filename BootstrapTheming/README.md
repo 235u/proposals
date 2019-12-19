@@ -1,8 +1,8 @@
 # [URGENT] Pixel perfect HTML/CSS from Sketch file
 
-Are you asking for Mac-using freelancers only by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
+Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
 
-So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the question: how to open `.sketch` file on Windows?
+So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (answered already): how to open `.sketch` file on Windows?
 
 > **Sketch App**  
 > Sketch is a Mac App. But you don’t have a Mac. You only have Windows, and this damned Sketch file someone sent you. And that someone had a Mac. But you don’t have a Mac.
@@ -16,7 +16,7 @@ So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) th
 
 > I'd like to get this done within the next few hours. Immediate hire!
 
-Please explain in detail, what 'immediate hire' means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** hire and still being open to proposals. 
+Please explain what 'immediate hire' means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** (immediate?) hire and still being open to proposals. 
 
 > We'd like to get a pixel-perfect HTML/CSS with a high quality code
 
@@ -30,13 +30,13 @@ regarding the **6+** forms within the next few hours for **$75**, asking for *pi
 
 > with the attached sketch file.
 
+Are you asking for attaching the `.sketch` file (attached by you) to the *high quality code* (to be written in HTML and CSS)?
+
 Do you call this a *high quality sketch*
 
 ![Select options](docs/select-options.png)
 
 to be the base for the *high quality code* in question?
-
-Are you asking for attaching the `.sketch` file (attached by you) to the *high quality code* (to be written in HTML and CSS)?
 
 > The canvas in this sketch file is currently `3240px` in width, but we'd like to support for `1280px` in width and larger displays.
 
@@ -63,5 +63,5 @@ For the state being, before question clarification:
 1. Clarify the questions.
 2. Throw away the `.sketch` file, blacklisting it's creator.
 3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
-4. Dismiss the actual hire following the opposite approach, writing the next big front-end framework (throw-away number 1,000,000) within few hours.
+4. Dismiss the actual hire on following the opposite approach: writing the next big front-end framework (throw-away number 1,000,000) within *the next few hours*.
 5. By me a beer, or say thank you at least.
