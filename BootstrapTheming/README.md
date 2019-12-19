@@ -2,7 +2,7 @@
 
 Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
 
-So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (answered already): how to open `.sketch` file on Windows?
+So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
 
 > **Sketch App**  
 > Sketch is a Mac App. But you don’t have a Mac. You only have Windows, and this damned Sketch file someone sent you. And that someone had a Mac. But you don’t have a Mac.
@@ -16,7 +16,7 @@ So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) th
 
 > I'd like to get this done within the next few hours. Immediate hire!
 
-Please explain what 'immediate hire' means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** (immediate?) hire and still being open to proposals. 
+Please explain what *immediate hire* means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** (immediate?) hire and still being open to proposals. 
 
 > We'd like to get a pixel-perfect HTML/CSS with a high quality code
 
@@ -30,7 +30,7 @@ regarding the **6+** forms within the next few hours for **$75**, asking for *pi
 
 > with the attached sketch file.
 
-Are you asking for attaching the `.sketch` file (attached by you) to the *high quality code* (to be written in HTML and CSS)?
+Are you asking for attaching the `.sketch` file (attached by you to the job description) to the *high quality code* (to be written in HTML and CSS)?
 
 Do you call this a *high quality sketch*
 
@@ -48,7 +48,7 @@ or the framed (by the black border) form area to be `1280px` wide?
 
 ![Detail information page](docs/detail-information.png)
 
-Giving you following font sizes in the latter case:
+Giving you following font sizes in the latter case (rasterized):
 
 ![Font sizes](docs/font-size.png)
 
