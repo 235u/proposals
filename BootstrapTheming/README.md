@@ -16,7 +16,7 @@ So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) th
 
 > I'd like to get this done within the next few hours. Immediate hire!
 
-Please explain what *immediate hire* means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** (immediate?) hire and still being open to proposals. 
+Please explain what *immediate hire* means to you; having **15** to **20** proposals on a job posted **4** hours ago, **9** of them in the interviewing state, **1** hire and still being open to proposals. 
 
 > We'd like to get a pixel-perfect HTML/CSS with a high quality code
 
