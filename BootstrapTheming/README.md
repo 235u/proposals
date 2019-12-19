@@ -42,11 +42,11 @@ or the framed (by the black border) form area to be `1280px` wide?
 
 ![Detail information page](docs/detail-information.png)
 
-Giving you following font sizes (might be ok for a half-blind audience):
+Giving you following font sizes (might be ok for a half-blind target audience):
 
 ![Font sizes](docs/font-size.png)
 
-> For all displays larger than 1280px, we need to simply add the margins left and right.
+> For all displays larger than `1280px`, we need to simply add the margins left and right.
 
 Meaning horizontal scrolling on displays below `1280px` width?
 
@@ -55,5 +55,7 @@ Meaning horizontal scrolling on displays below `1280px` width?
 For the state being, before question clarification:
 
 1. Clarify the questions.
-2. Throw away the `.sketch` `file (blacklisting it's creator).
-3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization (theming the primary colors, borders, typography, etc.).
+2. Throw away the `.sketch` `file, blacklisting it's creator.
+3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
+4. Dismiss the actual hire following the opposite approach, writing the next big front-end framework (throw-away number 1,000,000) within few hours.
+5. By me a beer, or say thank you at least.
