@@ -1,6 +1,6 @@
 # [URGENT] Pixel perfect HTML/CSS from Sketch file
 
-Are you asking for Mac using freelancers only by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
+Are you asking for Mac-using freelancers only by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
 
 So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the question: how to open `.sketch` file on Windows?
 
@@ -20,17 +20,23 @@ Please explain in detail, what 'immediate hire' means to you; having **15** to *
 
 > We'd like to get a pixel-perfect HTML/CSS with a high quality code
 
-Please explain in detail: your constraints on the [cost-time-scope-triangle](https://en.wikipedia.org/wiki/Project_management_triangle) - **6+** forms within the next few hours for **$75**, asking for *pixel perfection* and *high quality code*.
+Please explain your constraint trade-offs on the [cost-time-scope-triangle](https://en.wikipedia.org/wiki/Project_management_triangle), contending that
 
-Do you call this *high quality sketch*,
+1. The quality of work is constrained by the project's budget, deadlines and scope (features).
+2. The project manager can trade between constraints.
+3. Changes in one constraint necessitate changes in others to compensate or quality will suffer.
 
-![Select options](docs/select-options.png)
-
-to be the base for the *high quality code* in question.
+regarding the **6+** forms within the next few hours for **$75**, asking for *pixel perfection* and *high quality code*.
 
 > with the attached sketch file.
 
-Are you asking for attaching the `.sketch` file, attached by you, to the *high quality code* (to be written in HTML and CSS)?
+Do you call this a *high quality sketch*
+
+![Select options](docs/select-options.png)
+
+to be the base for the *high quality code* in question?
+
+Are you asking for attaching the `.sketch` file (attached by you) to the *high quality code* (to be written in HTML and CSS)?
 
 > The canvas in this sketch file is currently `3240px` in width, but we'd like to support for `1280px` in width and larger displays.
 
@@ -55,7 +61,7 @@ Meaning horizontal scrolling on displays below `1280px` width?
 For the state being, before question clarification:
 
 1. Clarify the questions.
-2. Throw away the `.sketch` `file, blacklisting it's creator.
+2. Throw away the `.sketch` file, blacklisting it's creator.
 3. Don't reinvent the quadratic wheel, use a front-end framework / library / toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
 4. Dismiss the actual hire following the opposite approach, writing the next big front-end framework (throw-away number 1,000,000) within few hours.
 5. By me a beer, or say thank you at least.
