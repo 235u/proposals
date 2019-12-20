@@ -3,10 +3,12 @@ Submitted for jobs posted on Upwork
 
 |Job|Hired|
 |:--|:---:|
+|[Bootstrap Theming](BootstrapTheming)|:x:|
 |[Box Folder Creator](BoxFolderCreator)|:x:|
 |[Diamond Price Calculator](DiamondPriceCalculator)|:heavy_check_mark:|
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
+|[Excel Chart Exporter](EzparkTechnology)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
 |[Google Search](GoogleSearch)|:x:|
 |[Identity Customization](IdentityCustomization)|:x:|

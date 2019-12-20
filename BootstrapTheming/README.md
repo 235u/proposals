@@ -1,6 +1,6 @@
 # [URGENT] Pixel perfect HTML/CSS from Sketch file
 
-Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the market share of **17%** (desktop operating systems, worldwide, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
+Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the worldwide market share of **17%** (desktop operating systems, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide)?
 
 So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
 
@@ -66,4 +66,21 @@ For the state being, before question clarification:
 2. Throw away the `.sketch` file, blacklisting it's creator.
 3. Don't reinvent the quadratic wheel, use a front-end framework/library/toolkit like [Bootstrap](https://getbootstrap.com), with minimal customization ([theming](https://getbootstrap.com/docs/4.4/getting-started/theming/) the primary colors, borders, typography, etc.).
 4. Dismiss the actual hire on following the opposite approach: writing the next big front-end framework (throw-away number 1,000,000) within *the next few hours*.
-5. By me a beer or say thank you at least.
+
+## About the client
+
+**43%** hire rate with **$8.00** hourly rate paid on average, stating to be located in United States, Los Angeles, having 
+
+![Other open jobs by this Client](docs/open-jobs.png)
+
+on December 20, 2019, having **3** more open URGENT jobs posted 5 day ago within `Front-End Development` with identical descriptions, replacing the name of the host application:
+
+> We'd like to know if there are any limitations as to the development of the CoralDRAW [Photoshop/Sketch] vs. a standard web application development (backend API or frontend). Knowledge**s** in this area would be a strong plus.
+> 
+> PREFERENCES TO THE TECHNOLOGY:
+> - Javascript/Typescript
+> - Angular 8, Node
+
+According my knowledge (due lack of knowledge of the proclaimed native speaker): knowledge has no plural, and yes, there are limitations (the `Desktop Software Development` subcategory within the `Web, Mobile & Software Dev` category being there for a reason).
+
+The job targeted by this proposal has been closed / switched to invite-only, with **3** invites sent, **1** unanswered invite and **2** [sic!] hires.
