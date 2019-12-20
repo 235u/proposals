@@ -52,7 +52,7 @@ Meaning horizontal scrolling on displays below `1280px` width?
 
 Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the worldwide market share of **17%** (desktop operating systems, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
 
-So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
+So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (last) question (already answered): how to open `.sketch` file on Windows?
 
 > **Sketch App**  
 > Sketch is a Mac App. But you don’t have a Mac. You only have Windows, and this damned Sketch file someone sent you. And that someone had a Mac. But you don’t have a Mac.
@@ -77,7 +77,7 @@ For the state being, before question clarification:
 
 ![Other open jobs by this Client](docs/open-jobs.png)
 
-on December 20, 2019, having **3** more open URGENT jobs, posted **5** days ago within `Front-End Development`, with identical descriptions, replacing the name of the host application:
+on December 20, 2019, including **3** more open URGENT jobs, posted **5** days ago within `Front-End Development`, with identical descriptions, replacing the name of the host application:
 
 > We'd like to know if there are any limitations as to the development of the CoralDRAW [Photoshop/Sketch] vs. a standard web application development (backend API or frontend). Knowledge**s** in this area would be a strong plus.
 > 
@@ -87,4 +87,4 @@ on December 20, 2019, having **3** more open URGENT jobs, posted **5** days ago 
 
 According to my knowledge (due lack of knowledge of the proclaimed native speaker): knowledge has no plural, and yes, there are limitations (the `Desktop Software Development` subcategory within the `Web, Mobile & Software Dev` category being there for a reason).
 
-The job targeted by this proposal has been closed / switched to invite-only, with **3** invites sent, **1** unanswered invite and **2**&nbsp;[sic!] hires.
+The job targeted by this proposal has been closed / switched to invite-only, with **3**&nbsp;invites sent, **1**&nbsp;unanswered invite and **2**&nbsp;[sic!] hires.
