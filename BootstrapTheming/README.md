@@ -1,16 +1,6 @@
 # [URGENT] Pixel perfect HTML/CSS from Sketch file
 
-Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the worldwide market share of **17%** (desktop operating systems, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide)?
-
-So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
-
-> **Sketch App**  
-> Sketch is a Mac App. But you don’t have a Mac. You only have Windows, and this damned Sketch file someone sent you. And that someone had a Mac. But you don’t have a Mac.
->
-> What are you going to do? Buy a Mac? Too expensive. Ask that *someone* to use Photoshop? No way, that *someone* is obsessed with Sketch. You're in a hopeless jam. Or so you thought…
->
-> **Sketch for Windows**  
-> You need [Sketch for Windows](https://icons8.com/lunacy). There is no Sketch for Windows.
+See [job details](docs/job-details.pdf) (ongoing project, fixed-price), as posted on December 19, 2019, including [sketches](docs/form-unbranded-2.sketch), posted as an attachment.
 
 ## Description
 
@@ -58,6 +48,20 @@ Which might be fine for a half-blind target audience though.
 
 Meaning horizontal scrolling on displays below `1280px` width?
 
+## Attachment
+
+Are you asking for Mac-using freelancers only, by providing the sketch in a proprietary format; OS X having the worldwide market share of **17%** (desktop operating systems, according to [StatCounter](https://gs.statcounter.com/os-market-share/desktop/worldwide))?
+
+So… [Here's](https://icons8.com/articles/how-to-open-sketch-file-on-windows/) the (first) question (already answered): how to open `.sketch` file on Windows?
+
+> **Sketch App**  
+> Sketch is a Mac App. But you don’t have a Mac. You only have Windows, and this damned Sketch file someone sent you. And that someone had a Mac. But you don’t have a Mac.
+>
+> What are you going to do? Buy a Mac? Too expensive. Ask that *someone* to use Photoshop? No way, that *someone* is obsessed with Sketch. You're in a hopeless jam. Or so you thought…
+>
+> **Sketch for Windows**  
+> You need [Sketch for Windows](https://icons8.com/lunacy). There is no Sketch for Windows.
+
 ## Proposal
 
 For the state being, before question clarification:
@@ -73,14 +77,14 @@ For the state being, before question clarification:
 
 ![Other open jobs by this Client](docs/open-jobs.png)
 
-on December 20, 2019, having **3** more open URGENT jobs posted 5 day ago within `Front-End Development` with identical descriptions, replacing the name of the host application:
+on December 20, 2019, having **3** more open URGENT jobs, posted **5** days ago within `Front-End Development`, with identical descriptions, replacing the name of the host application:
 
 > We'd like to know if there are any limitations as to the development of the CoralDRAW [Photoshop/Sketch] vs. a standard web application development (backend API or frontend). Knowledge**s** in this area would be a strong plus.
 > 
-> PREFERENCES TO THE TECHNOLOGY:
-> - Javascript/Typescript
-> - Angular 8, Node
+> PREFERENCES TO THE TECHNOLOGY:  
+> &hyphen; Javascript/Typescript  
+> &hyphen; Angular 8, Node
 
-According my knowledge (due lack of knowledge of the proclaimed native speaker): knowledge has no plural, and yes, there are limitations (the `Desktop Software Development` subcategory within the `Web, Mobile & Software Dev` category being there for a reason).
+According to my knowledge (due lack of knowledge of the proclaimed native speaker): knowledge has no plural, and yes, there are limitations (the `Desktop Software Development` subcategory within the `Web, Mobile & Software Dev` category being there for a reason).
 
-The job targeted by this proposal has been closed / switched to invite-only, with **3** invites sent, **1** unanswered invite and **2** [sic!] hires.
+The job targeted by this proposal has been closed / switched to invite-only, with **3** invites sent, **1** unanswered invite and **2**&nbsp;[sic!] hires.
