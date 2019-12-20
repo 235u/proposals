@@ -29,16 +29,30 @@ Do you need the current prices of all games available on Steam? That's more than
 
 Note that
 
--  each and every title requires at least one additional request for pricing;
--  the oficcially unsupported API required might be limited to n requests per unit of time;
--  every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages / bundles / DLCs not considered;
-
--  
+- each and every title requires at least one additional request for pricing;
+- the oficcially unsupported API required might be limited to n requests per unit of time;
+- every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages/bundles and DLCs not considered;
  
 > and something to show which country has the cheapest price for the games.
 
-Something like highlighting the cheapest price
+Something like highlighting the cheapest price for a specific title?
 
-Note that 
+Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP).
 
-- prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP).
+> Some basic filters should be added also.
+
+Please explain how these "basic filters" are supposed
+
+> to show how expensive UK gaming is compared to other places.
+
+## Proof of Concept
+
+Live at https://price-comparison.azurewebsites.net
+
+## Proposal
+
+> I can provide further details as required
+
+1. Review , if 
+2. Hire
+2. Clarify given questions
