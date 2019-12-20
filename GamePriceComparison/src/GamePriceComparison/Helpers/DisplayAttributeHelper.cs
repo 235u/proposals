@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace SteamPriceComparison.Helpers
+namespace GamePriceComparison.Helpers
 {
     public static class DisplayAttributeHelper
     {

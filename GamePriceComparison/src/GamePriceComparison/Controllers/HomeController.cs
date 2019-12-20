@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SteamPriceComparison.Services;
+using GamePriceComparison.Services;
 
-namespace SteamPriceComparison.Controllers
+namespace GamePriceComparison.Controllers
 {
     public class HomeController : Controller
     {

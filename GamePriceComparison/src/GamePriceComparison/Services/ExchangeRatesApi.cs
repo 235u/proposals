@@ -1,12 +1,12 @@
 ﻿using RestSharp;
-using SteamPriceComparison.Helpers;
-using SteamPriceComparison.Models;
+using GamePriceComparison.Helpers;
+using GamePriceComparison.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 
-namespace SteamPriceComparison.Services
+namespace GamePriceComparison.Services
 {
     public static class ExchangeRatesApi
     {

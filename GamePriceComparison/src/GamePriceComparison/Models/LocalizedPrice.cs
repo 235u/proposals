@@ -1,4 +1,4 @@
-﻿namespace SteamPriceComparison.Models
+﻿namespace GamePriceComparison.Models
 {
     public struct LocalizedPrice
     {

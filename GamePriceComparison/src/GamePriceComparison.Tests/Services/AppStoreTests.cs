@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SteamPriceComparison.Models;
+using GamePriceComparison.Models;
 using System.Collections.Generic;
 
-namespace SteamPriceComparison.Services
+namespace GamePriceComparison.Services
 {
     [TestClass]
     public class AppStoreTests

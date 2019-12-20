@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SteamPriceComparison.Models
+namespace GamePriceComparison.Models
 {
     public class App
     {

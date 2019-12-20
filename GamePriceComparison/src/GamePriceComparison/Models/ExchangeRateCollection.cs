@@ -1,13 +1,13 @@
 ﻿using RestSharp;
-using SteamPriceComparison.Helpers;
-using SteamPriceComparison.Models;
-using SteamPriceComparison.Services;
+using GamePriceComparison.Helpers;
+using GamePriceComparison.Models;
+using GamePriceComparison.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 
-namespace SteamPriceComparison.Models
+namespace GamePriceComparison.Models
 {
     public class ExchangeRateCollection : Dictionary<Currency, decimal>
     {

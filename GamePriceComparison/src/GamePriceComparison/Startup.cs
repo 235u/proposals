@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SteamPriceComparison.Services;
+using GamePriceComparison.Services;
 
-namespace SteamGamePriceComparison
+namespace GamePriceComparison
 {
     public class Startup
     {

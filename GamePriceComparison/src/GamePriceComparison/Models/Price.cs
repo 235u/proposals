@@ -1,6 +1,6 @@
-﻿using SteamPriceComparison.Helpers;
+﻿using GamePriceComparison.Helpers;
 
-namespace SteamPriceComparison.Models
+namespace GamePriceComparison.Models
 {
     public struct Price
     {

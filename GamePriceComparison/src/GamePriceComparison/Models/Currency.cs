@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SteamPriceComparison.Models
+namespace GamePriceComparison.Models
 {
     public enum Currency
     {

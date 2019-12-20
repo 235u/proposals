@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SteamPriceComparison.Helpers
+namespace GamePriceComparison.Helpers
 {
     public static class EnumExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SteamPriceComparison.Models
+namespace GamePriceComparison.Models
 {
     [TestClass]
     public class ExchangeRateCollectionTests
