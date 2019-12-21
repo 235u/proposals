@@ -12,7 +12,7 @@ namespace GamePriceComparison.Services
     {
         private const string DefaultLanguage = "en";
         
-        private RestClient _client = new RestClient(baseUrl: "http://store.steampowered.com/api");
+        private RestClient _client = new RestClient(baseUrl: "https://store.steampowered.com/api");
         private ExchangeRateCollection _exchangeRates = ExchangeRateCollection.GetExchangeRates();
 
         public static Currency ParseCurrency(string code)

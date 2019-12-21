@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GamePriceComparison", "GamePriceComparison\GamePriceComparison.csproj", "{0363A899-CEB6-495E-869A-3630DD430BE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePriceComparison.Tests", "GamePriceComparison.Tests\GamePriceComparison.Tests.csproj", "{F46CE23E-1B03-4E65-A2CB-44521E67C3B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0363A899-CEB6-495E-869A-3630DD430BE1} = {0363A899-CEB6-495E-869A-3630DD430BE1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
