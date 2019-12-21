@@ -31,7 +31,7 @@ Note that this functionality is not part of the official API, see:
 - Stackoverflow, [How to get the price of an app in Steam WebAPI?](https://stackoverflow.com/questions/13784059/how-to-get-the-price-of-an-app-in-steam-webapi)
 - Official Team Fortress Wiki, [Rough documentation for the storefront API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI#Known_methods) - exposed via [Big Picture mode](https://support.steampowered.com/kb_article.php?ref=5006-ASLN-3202&l=english).
 
-Do you need the current prices of all the games available on Steam? That's more than **80K**  titles (see [app-list.json](docs/app-list.json), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint and taking 5+ MiB), being mutable (chaning its properties, e.g. titles, discounts).
+Do you need the current prices of all the games available on Steam? That's more than **80K**  titles (see [app-list.json](docs/app-list.json), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint and taking 5+ MiB), being mutable (chaning its properties, e.g. product titles, discounts).
 
 Note that
 
@@ -44,10 +44,11 @@ See [official documentation](https://partner.steamgames.com/doc/webapi_overview#
  
 Also note that
 
-- some titles have an initial price and often one final price after (e.g. 20% off), the latter mutating over time, various packages/bundles, in-game-products and DLCs not considered;
-- many games (no one nows how many) are distributed as keys outside of Steam, retailed at lower price (see [https://www.kinguin.net](Kinguin.net)), given away, rewarded, bundled with hardware, etc.
+- some titles have an initial price and some of them a different final price (after discount, e.g. 20% off), the latter mutating over time;
 - some titles are free-to-play (free-to-start), some are entirely free (of charge);
-- some titles (e.g. specific editions) are not available in some countries (for sale on Steam).
+- some titles (or packages) are not available in some countries (for sale on Steam);
+- various [bundles](https://partner.steamgames.com/doc/store/application/bundles), [packages](https://partner.steamgames.com/doc/store/application/packages), [DLCs](https://partner.steamgames.com/doc/store/application/dlc) and in-game-products are not, or might not be considered;
+- Steam titles (including bundles, packages and DLCs) distributed outside of Steam as keys, retailed at lower price (see [Kinguin.net](https://www.kinguin.net)), gifted, rewarded, bundled with hardware, etc. are not considered.
 
 > and something to show which country has the cheapest price for the games.
 
@@ -55,7 +56,7 @@ Something like highlighting the cheapest price for a specific title? Something t
 
 Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright, considered as piracy by the proclaimed copyright holders).
 
-Also note that initial prices (being the final prices on launch, sometimes, considering early access prices, etc.) try to match locally specific price ranges (psychological barriers), pretty-printed as 1199.00 or 29.99, e.g., being broken by conversion (and discounts in whole numbers as well).
+Also note that initial prices (being the final prices on launch, sometimes, considering betas and early access prices, etc.) try to match locally specific price ranges, pretty-printed as 1199.00 or 29.99 (psychological barriers), being broken by conversion (and "discounts" in whole percents as well).
 
 This may sound trivial, but "cheap" is a vague, highly subjective characteristic, in comparison with the less subjective "high price-performance ratio" (according to the "I'm not rich enough to buy cheap things" proverb).
 
@@ -65,7 +66,7 @@ Please explain how these "basic filters" are supposed
 
 > to show how expensive UK gaming is compared to other places.
 
-Keep in mind that the ability to filter on game title requires all game titles (available in English, bound to the unique `appid`) to be prefetched. 
+Keep in mind that the ability to filter on game title requires all game titles (available in English, bound to unique app IDs) to be prefetched. 
 
 ## Proof of concept
 
@@ -101,6 +102,8 @@ A breakdown of additional work to be done, in form of an **un**ordered list of r
 - specials (10 titles pushed by Steam);
 - new releases (top 30 titles)
 - selection of displayed categories: specials, top sellers, and new releases;
-- selection of displayed fields: initial and final prices, in base and/or native currency, actual discount in percent, genres, and supported platforms;
+- selection of displayed fields: initial and final prices, in base and/or native currency, actual discount in percent, categories, genres, and supported platforms (Windows, Mac, Linux);
 - base currency selection (different to GBP);
-- base country (as reference for specials, top sellers, and new releases, different to UK) and countries to compare selection;
+- base country (as reference for specials, top sellers, and new releases, different to UK) and countries to compare selection,
+
+to be reviewed and continued.
