@@ -11,7 +11,7 @@ namespace GamePriceComparison.Services
     public class AppStore
     {
         private const string DefaultLanguage = "en";
-        
+
         private RestClient _client = new RestClient(baseUrl: "https://store.steampowered.com/api");
         private ExchangeRateCollection _exchangeRates = ExchangeRateCollection.GetExchangeRates();
 
@@ -41,6 +41,12 @@ namespace GamePriceComparison.Services
                         Id = item.GetProperty("id").GetInt32(),
                         EnglishName = item.GetProperty("name").GetString()
                     };
+
+                    if (topSellers.Any(a => a.Id == app.Id))
+                    {
+                        // identic top sellers possible
+                        continue;
+                    }
 
                     var currencyCode = item.GetProperty("currency").GetString();
                     var originalPriceCurrency = ParseCurrency(currencyCode);
@@ -118,7 +124,7 @@ namespace GamePriceComparison.Services
                         }
                     }
                 }
-            }           
+            }
         }
 
 

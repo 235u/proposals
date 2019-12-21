@@ -4,10 +4,10 @@
 }
 
 <h1 class="display-1">@ViewData["Title"]</h1>
-<p class="lead">Shows how expensive UK gaming is compared to other places</p>
+<p class="lead">Shows how expensive UK gaming is compared to other places.</p>
 <h2>Top Sellers</h2>
 <table class="table table-bordered table-striped">
-    <caption>Representing Steam's (kinda volatile) @Country.UnitedKingdom.GetName() ranking and final prices (after discount), using reference exchange rates from the ECB</caption>
+    <caption>Representing Steam's (quite volatile) @Country.UnitedKingdom.GetName() top ten ranking (filtering out possible duplicates) and final prices (after discount),<br />using reference exchange rates from the ECB.</caption>
     <thead>
         <tr>
             <th scope="col" class="text-right">#</th>
