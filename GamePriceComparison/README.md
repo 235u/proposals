@@ -16,11 +16,11 @@ That's the ultimate goal? Representing a hypothesis (to be proven right or wrong
 
 The data won't be pulled from a third-party "static page that is automatically generated from" an [endpoint](https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil#GetSupportedAPIList) of the [Steamwork Web API](https://partner.steamgames.com/doc/webapi_overview), which "is [also] used to build this [official] documentation".
 
-Memo: The https://xpaw.me/ is beautiful.
+Memo: https://xpaw.me/ is beautiful.
 
 > I need a basic webpage tool to populate current prices of steam games in Uk, Russia and Argentina
 
-Note that this functionality is not part of the official Web API, see:
+Note that this functionality is not part of the official API, see:
 
 - Stackoverflow, [How to get the price of an app in Steam WebAPI?](https://stackoverflow.com/questions/13784059/how-to-get-the-price-of-an-app-in-steam-webapi)
 - Official Team Fortress Wiki, [Rough documentation for the storefront API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI#Known_methods) - exposed via [Big Picture mode](https://support.steampowered.com/kb_article.php?ref=5006-ASLN-3202&l=english).
@@ -38,9 +38,9 @@ Note that
 
 Something like highlighting the cheapest price for a specific title?
 
-Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics.
+Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
-Also note that "cheap" does not neccessarily mean "high price-performance ratio", being a va
+Also note that "cheap" does not neccessarily mean "high price-performance ratio", being a vague,  subjective characteristic.
 
 > Some basic filters should be added also.
 
@@ -48,14 +48,14 @@ Please explain how these "basic filters" are supposed
 
 > to show how expensive UK gaming is compared to other places.
 
-Keep in mind that the ability to filter on game title requires all the titles to be prefetched. 
+Keep in mind that the ability to filter on game title requires all titles to be prefetched. 
 
 ## Proof of concept
 
 Live at https://price-comparison.azurewebsites.net,
 
 <a href="https://https://price-comparison.azurewebsites.net">
-  <img src="docs/prototype.png" alt="Prototype" width="640">
+  <img src="docs/prototype.png" alt="Prototype">
 </a>
 
 taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
