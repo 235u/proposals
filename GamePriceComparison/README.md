@@ -6,7 +6,7 @@ See [job details](docs/job-details.pdf) (one-time project, fixed price), as post
 
 Live at https://price-comparison.azurewebsites.net,
 
-<a href="https://https://price-comparison.azurewebsites.net">
+<a href="https://price-comparison.azurewebsites.net">
   <img src="docs/prototype.png" alt="Prototype" width="640">
 </a>
 
