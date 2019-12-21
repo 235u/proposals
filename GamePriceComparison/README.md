@@ -6,7 +6,13 @@ See [job details](docs/job-details.pdf) (one-time project, fixed price), as post
 
 > The idea is to provide data so that it can be used to publish on a news website
 
-It sounds like a one-way ticket (aka throw-away application). How much data do you want to provide? And how often? Once?
+It sounds like a one-way ticket (aka throw-away application). How much data do you want to provide? And how often?
+
+Once, for a single article?
+
+Always, like the short stock market overview in the navigations bars of The New York Times [landing page](https://www.nytimes.com) and its [business section](https://www.nytimes.com/section/business), and/or the [full market overview](https://markets.on.nytimes.com/research/markets/overview/overview.asp).
+
+Data in which form? Via aditional JSON web API, as a facade, mashing up multiple APIs, aggregating the data?
 
 > to show how expensive UK gaming is compared to other places.
 
@@ -36,11 +42,11 @@ Note that
  
 > and something to show which country has the cheapest price for the games.
 
-Something like highlighting the cheapest price for a specific title?
+Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
 
 Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
-Also note that "cheap" does not necessarily mean "high price-performance ratio", being a vague,  subjective characteristic.
+Also note that "cheap" does not necessarily mean "good", "bad", or "high price-performance ratio", being a vague, subjective characteristic.
 
 > Some basic filters should be added also.
 
@@ -48,7 +54,7 @@ Please explain how these "basic filters" are supposed
 
 > to show how expensive UK gaming is compared to other places.
 
-Keep in mind that the ability to filter on game title requires all titles to be prefetched. 
+Keep in mind that the ability to filter on game title requires all titles (available in British English) to be prefetched. 
 
 ## Proof of concept
 
@@ -74,3 +80,9 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 3. Negotiate the next milestones, based on further proposals and indefinite estimates.
 4. …
 5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
+
+## Backlog
+
+A breakdown of additional work to be done, in form of an **un**ordered list of requirements: 
+
+- refactor.
