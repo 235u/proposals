@@ -55,7 +55,7 @@ Keep in mind that the ability to filter on game title requires all titles to be 
 Live at https://price-comparison.azurewebsites.net,
 
 <a href="https://https://price-comparison.azurewebsites.net">
-  <img src="docs/prototype.png" alt="Prototype">
+  <img src="docs/prototype.png" alt="Prototype" width="640">
 </a>
 
 taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
