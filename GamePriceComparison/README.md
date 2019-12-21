@@ -52,11 +52,15 @@ Keep in mind that the ability to filter on game title requires all the titles to
 
 ## Proof of concept
 
+Live at https://price-comparison.azurewebsites.net,
+
 <a href="https://https://price-comparison.azurewebsites.net">
-  <img src="docs/prototype.png" alt="Prototype" width="800">
+  <img src="docs/prototype.png" alt="Prototype" width="640">
 </a>
 
-Live at https://price-comparison.azurewebsites.net, taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
+taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
+
+Price conversions done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentine with Mexico, using mexican pesos).
 
 ## Proposal
 
