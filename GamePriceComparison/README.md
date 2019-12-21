@@ -44,16 +44,18 @@ See [official documentation](https://partner.steamgames.com/doc/webapi_overview#
  
 Also note that
 
-- every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages/bundles and DLCs not considered;
+- some titles have an initial price and often one final price after (e.g. 20% off), the latter mutating over time, various packages/bundles, in-game-products and DLCs not considered;
+- many games (no one nows how many) are distributed as keys outside of Steam, retailed at lower price (see [https://www.kinguin.net](Kinguin.net)), given away, rewarded, bundled with hardware, etc.
+- some titles are free-to-play (free-to-start), some are entirely free (of charge);
 - some titles (e.g. specific editions) are not available in some countries (for sale on Steam).
 
 > and something to show which country has the cheapest price for the games.
 
 Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
 
-Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
+Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright, considered as piracy by the proclaimed copyright holders).
 
-Also note that initial prices (being the final prices on launch, sometimes, considering early access prices etc.) try to match locally specific price ranges (psychological barriers), pretty-printed as 1199.00 or 29.99, e.g., being broken by conversion (and discounts in whole numbers as well).
+Also note that initial prices (being the final prices on launch, sometimes, considering early access prices, etc.) try to match locally specific price ranges (psychological barriers), pretty-printed as 1199.00 or 29.99, e.g., being broken by conversion (and discounts in whole numbers as well).
 
 This may sound trivial, but "cheap" is a vague, highly subjective characteristic, in comparison with the less subjective "high price-performance ratio" (according to the "I'm not rich enough to buy cheap things" proverb).
 
@@ -94,4 +96,11 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 
 A breakdown of additional work to be done, in form of an **un**ordered list of requirements: 
 
-- refactor.
+- refactoring;
+- performance optimization;
+- specials (10 titles pushed by Steam);
+- new releases (top 30 titles)
+- selection of displayed categories: specials, top sellers, and new releases;
+- selection of displayed fields: initial and final prices, in base and/or native currency, actual discount in percent, genres, and supported platforms;
+- base currency selection (different to GBP);
+- base country (as reference for specials, top sellers, and new releases, different to UK) and countries to compare selection;
