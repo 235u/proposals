@@ -6,11 +6,11 @@ See [job details](docs/job-details.pdf) (one-time project, fixed price), as post
 
 > The idea is to provide data so that it can be used to publish on a news website
 
-Sounds like a one-way ticket / throw-away application. How much data do you want to provide? And how often? Once? Raw data? Statistical data based on raw data?
+Sounds like a one-way ticket / throw-away application. How much data do you want to provide? And how often? Once?
 
 > to show how expensive UK gaming is compared to other places.
 
-That's the ultimate goal? Being a hypothesis (to be proven right or wrong by real-world data analysis), or the final conclusion (being quite obvious when comparing United Kingdom and Sierra Leone, e.g.)?
+That's the ultimate goal? Representing a hypothesis (to be proven right or wrong by real-world data analysis), or the final conclusion (being quite obvious when comparing United Kingdom and Sierra Leone, e.g.)?
 
 > The data will be pulled using https://steamapi.xpaw.me/
 
@@ -52,15 +52,11 @@ Keep in mind that the ability to filter on game title requires all the titles to
 
 ## Proof of concept
 
-Live at https://price-comparison.azurewebsites.net
-
-![Prototype](docs/prototype.png)
-
 <a href="https://https://price-comparison.azurewebsites.net">
-  <img src="docs/prototype.png" alt="Prototype" width="640">
+  <img src="docs/prototype.png" alt="Prototype" width="800">
 </a>
 
-Taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
+Live at https://price-comparison.azurewebsites.net, taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
 
 ## Proposal
 
@@ -69,8 +65,8 @@ Taking about 2 seconds to load, without any optimizations (12 requests to 3 diff
 
 > I can provide further details as required
 
-1. Provide ALL the details you can provide.
+1. Provide ALL the details you can.
 2. Clarify given questions.
 3. Negotiate next milestones, based on further proposals and indefinite estimates.
 4. …
-5. Redistribute the functionality between back- and front-end, targeting a JavaScript only solution (client-side execution)?
+5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
