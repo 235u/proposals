@@ -16,7 +16,7 @@ Data in which form? Via aditional JSON web API, as a facade, mashing up multiple
 
 > to show how expensive UK gaming is compared to other places.
 
-That's the ultimate goal? Representing a hypothesis (to be proven right or wrong by real-world data analysis), or the conclusion (being quite obvious when comparing the United Kingdom with Sierra Leone, e.g.)?
+That's the ultimate goal? Representing a hypothesis (to be proven right or wrong by real-world data analysis), or the conclusion (being quite obvious when comparing the United Kingdom with Sierra Leone, instead of the United Arab Emirates)?
 
 > The data will be pulled using https://steamapi.xpaw.me/
 
@@ -54,7 +54,7 @@ Also note that
 
 Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
 
-Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright, considered as piracy by the proclaimed copyright holders).
+Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
 Also note that initial prices (being the final prices on launch, sometimes, considering betas and early access prices, etc.) try to match locally specific price ranges, pretty-printed as 1199.00 or 29.99 (psychological barriers), being broken by conversion (and "discounts" in whole percents as well).
 
@@ -101,7 +101,7 @@ A breakdown of additional work to be done, in form of an **un**ordered list of r
 - performance optimization;
 - specials (10 titles pushed by Steam);
 - new releases (top 30 titles);
-- bundle and package coverage;
+- bundle and package coverage,
 
 to be reviewed and continued.
 
@@ -116,7 +116,7 @@ Depending on project scope and budget:
 - filtering (by title, discounts, categories, genres, and platforms);
 - sorting (by column, ascending and descending);
 - grouping,
-- statistics (minimum, maximum, average, etc.)
+- statistics (minimum, maximum, average, etc.),
 
 **OR** mined data export - to do all of the above in Excel by hand.
 
