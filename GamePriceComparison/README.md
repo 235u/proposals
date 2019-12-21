@@ -51,9 +51,11 @@ Also note that
 
 Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
 
-Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
+Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
-Also note that "cheap" does not necessarily mean "good", "bad", or "high price-performance ratio", being a vague, subjective characteristic.
+Also note that initial prices (being the final prices on launch, sometimes, considering early access prices etc.) try to match locally specific price ranges (psychological barriers), pretty-printed as 1199.00 or 29.99, e.g., being broken by conversion (and discounts in whole numbers as well).
+
+This may sound trivial, but "cheap" does not necessarily mean "good", "bad", or "high price-performance ratio", being a vague, subjective characteristic.
 
 > Some basic filters should be added also.
 
@@ -61,7 +63,7 @@ Please explain how these "basic filters" are supposed
 
 > to show how expensive UK gaming is compared to other places.
 
-Keep in mind that the ability to filter on game title requires all titles (available in British English) to be prefetched. 
+Keep in mind that the ability to filter on game title requires all game titles (available in English, bound to the unique `appid`) to be prefetched. 
 
 ## Proof of concept
 
@@ -77,8 +79,8 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 
 ## Proposal
 
-1. Review the prototype (don't review the source code behind, in it's first iteration) and read the documentation.
-2. Hire, approving the first milestone ("Proof of concept").
+1. Review the prototype and read the documentation (being not that "simple").
+2. Hire, approve the first milestone ("Proof of concept").
 
 > I can provide further details as required
 
