@@ -60,12 +60,12 @@ Live at https://price-comparison.azurewebsites.net,
 
 taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
 
-Price conversions are done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentine with Mexico, using mexican pesos).
+Price conversions are done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentina with Mexico, using mexican pesos).
 
 ## Proposal
 
-1. Review the prototype (don't review the source code behind, not before the ) and read the documentation.
-2. Hire, approving the first milestone (Proof of concept).
+1. Review the prototype (don't review the source code behind, in it's first iteration) and read the documentation.
+2. Hire, approving the first milestone ("Proof of concept").
 
 > I can provide further details as required
 

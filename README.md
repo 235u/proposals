@@ -10,6 +10,7 @@ Submitted for jobs posted on Upwork
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
 |[Excel Chart Exporter](EzparkTechnology)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
+|[Game Price Comparison](GamePriceComparison)|:heavy_minus_sign:|
 |[Google Search](GoogleSearch)|:x:|
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
