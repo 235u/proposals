@@ -10,7 +10,7 @@ It sounds like a one-way ticket (aka throw-away application). How much data do y
 
 Once, for a single article?
 
-Always, like the short stock market overview in the navigations bars of The New York Times [landing page](https://www.nytimes.com) and its [business section](https://www.nytimes.com/section/business), and/or the [full market overview](https://markets.on.nytimes.com/research/markets/overview/overview.asp).
+Always, like the short stock market overview in the navigations bars of The New York Times [landing page](https://www.nytimes.com) and the [business section](https://www.nytimes.com/section/business), and/or the [full market overview](https://markets.on.nytimes.com/research/markets/overview/overview.asp)?
 
 Data in which form? Via aditional JSON web API, as a facade, mashing up multiple APIs, aggregating the data?
 
@@ -31,15 +31,22 @@ Note that this functionality is not part of the official API, see:
 - Stackoverflow, [How to get the price of an app in Steam WebAPI?](https://stackoverflow.com/questions/13784059/how-to-get-the-price-of-an-app-in-steam-webapi)
 - Official Team Fortress Wiki, [Rough documentation for the storefront API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI#Known_methods) - exposed via [Big Picture mode](https://support.steampowered.com/kb_article.php?ref=5006-ASLN-3202&l=english).
 
-Do you need the current prices of all the games available on Steam? That's more than **80K** titles, see [app-list.json](docs/app-list.json) (taking 5+ MiB), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint.
+Do you need the current prices of all the games available on Steam? That's more than **80K**  titles (see [app-list.json](docs/app-list.json), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint and taking 5+ MiB), being mutable (chaning its properties, e.g. titles, discounts).
 
 Note that
 
 - every title requires at least one additional request for pricing;
-- the officially unsupported API required might be limited to n requests per unit of time;
-- every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages/bundles and DLCs not considered;
-- some titles (e.g. specific editions) are unavailable for some countries (on Steam).
+- the officially unsupported API as the officially supported public API might be limited to `n` requests per unit of time. 
+
+See [official documentation](https://partner.steamgames.com/doc/webapi_overview#2):
+
+> If you're a publisher, then Steam also provides a partner-only Web API server hosted at https://partner.steam-api.com. The intent of this service is to have higher availability than the public host […]
  
+Also note that
+
+- every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages/bundles and DLCs not considered;
+- some titles (e.g. specific editions) are not available in some countries (for sale on Steam).
+
 > and something to show which country has the cheapest price for the games.
 
 Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
