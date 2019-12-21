@@ -2,6 +2,31 @@
 
 See [job details](docs/job-details.pdf) (one-time project, fixed price), as posted on December 20, 2019, within `Full Stack Development`, asking for expertise in `HTML`, `JavaScript`, `JSON API`.
 
+## Proof of concept
+
+Live at https://price-comparison.azurewebsites.net,
+
+<a href="https://https://price-comparison.azurewebsites.net">
+  <img src="docs/prototype.png" alt="Prototype" width="640">
+</a>
+
+taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
+
+Price conversions are done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentina with Mexico, using mexican pesos).
+
+## Proposal
+
+1. Review the prototype and read the documentation, highlighting some "simple" complexity.
+2. Hire, approving the first milestone ("Proof of concept").
+
+> I can provide further details as required
+
+1. Provide ALL the details you can.
+2. Clarify following questions.
+3. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
+4. …
+5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
+
 ## Description
 
 > The idea is to provide data so that it can be used to publish on a news website
@@ -67,31 +92,6 @@ Please explain how these "basic filters" are supposed
 > to show how expensive UK gaming is compared to other places.
 
 Keep in mind that the ability to filter on game title requires all game titles (available in English, bound to unique app IDs) to be prefetched. 
-
-## Proof of concept
-
-Live at https://price-comparison.azurewebsites.net,
-
-<a href="https://https://price-comparison.azurewebsites.net">
-  <img src="docs/prototype.png" alt="Prototype" width="640">
-</a>
-
-taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
-
-Price conversions are done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentina with Mexico, using mexican pesos).
-
-## Proposal
-
-1. Review the prototype and read the documentation, highlighting some "simple" complexity.
-2. Hire, approving the first milestone ("Proof of concept").
-
-> I can provide further details as required
-
-1. Provide ALL the details you can.
-2. Clarify the given questions.
-3. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
-4. …
-5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
 
 ## Backlog
 
