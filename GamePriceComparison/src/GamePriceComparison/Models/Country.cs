@@ -4,7 +4,7 @@ namespace GamePriceComparison.Models
 {
     public enum Country
     {
-        [Display(Name = "U.K.", ShortName = "uk")]
+        [Display(Name = "UK", ShortName = "uk")]
         UnitedKingdom,
 
         [Display(ShortName = "ru")]

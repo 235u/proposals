@@ -16,7 +16,7 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 
 ## Proposal
 
-1. Review the prototype and read the documentation, highlighting some "simple" complexity.
+1. Review the prototype and read the documentation, highlighting some complexity.
 2. Hire, approving the first milestone ("Proof of concept").
 
 > I can provide further details as required
