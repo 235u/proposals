@@ -100,10 +100,23 @@ A breakdown of additional work to be done, in form of an **un**ordered list of r
 - refactoring;
 - performance optimization;
 - specials (10 titles pushed by Steam);
-- new releases (top 30 titles)
-- selection of displayed categories: specials, top sellers, and new releases;
-- selection of displayed fields: initial and final prices, in base and/or native currency, actual discount in percent, categories, genres, and supported platforms (Windows, Mac, Linux);
-- base currency selection (different to GBP);
-- base country (as reference for specials, top sellers, and new releases, different to UK) and countries to compare selection,
+- new releases (top 30 titles);
+- bundle and package coverage;
 
 to be reviewed and continued.
+
+### Speculations
+
+Depending on project scope and budget:
+
+- selection of displayed sections: specials, top sellers, and new releases;
+- selection of displayed fields: initial and final prices, in base and/or native currency, actual discount in percent, categories, genres, and supported platforms (Windows, Mac, Linux);
+- base currency selection (different to GBP);
+- base country (as reference for specials, top sellers, and new releases, different to UK) and countries-to-compare selection;
+- filtering (by title, discounts, categories, genres, and platforms);
+- sorting (by column, ascending and descending);
+- grouping,
+- statistics (minimum, maximum, average, etc.)
+
+**OR** mined data export - to do all of the above in Excel by hand.
+
