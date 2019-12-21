@@ -55,7 +55,7 @@ Note that prices are given in different currencies, which can be converted to on
 
 Also note that initial prices (being the final prices on launch, sometimes, considering early access prices etc.) try to match locally specific price ranges (psychological barriers), pretty-printed as 1199.00 or 29.99, e.g., being broken by conversion (and discounts in whole numbers as well).
 
-This may sound trivial, but "cheap" does not necessarily mean "good", "bad", or "high price-performance ratio", being a vague, subjective characteristic.
+This may sound trivial, but "cheap" is a vague, highly subjective characteristic, in comparison with the less subjective "high price-performance ratio" (according to the "I'm not rich enough to buy cheap things" proverb).
 
 > Some basic filters should be added also.
 
