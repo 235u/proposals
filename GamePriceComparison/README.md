@@ -1,16 +1,16 @@
 # Simple Steam game price comparison web tool using API
 
-See [job details](docs/job-details.pdf) (one-time project, fixed price), as posted on December 20, 2019 within `Full Stack Development`, asking for expertise in `HTML`, `JavaScript`, `JSON API`.
+See [job details](docs/job-details.pdf) (one-time project, fixed price), as posted on December 20, 2019, within `Full Stack Development`, asking for expertise in `HTML`, `JavaScript`, `JSON API`.
 
 ## Description
 
 > The idea is to provide data so that it can be used to publish on a news website
 
-Sounds like a one-way ticket / throw-away application. How much data do you want to provide? And how often? Once?
+It sounds like a one-way ticket (aka throw-away application). How much data do you want to provide? And how often? Once?
 
 > to show how expensive UK gaming is compared to other places.
 
-That's the ultimate goal? Representing a hypothesis (to be proven right or wrong by real-world data analysis), or the final conclusion (being quite obvious when comparing United Kingdom and Sierra Leone, e.g.)?
+That's the ultimate goal? Representing a hypothesis (to be proven right or wrong by real-world data analysis), or the conclusion (being quite obvious when comparing the United Kingdom with Sierra Leone, e.g.)?
 
 > The data will be pulled using https://steamapi.xpaw.me/
 
@@ -25,12 +25,12 @@ Note that this functionality is not part of the official API, see:
 - Stackoverflow, [How to get the price of an app in Steam WebAPI?](https://stackoverflow.com/questions/13784059/how-to-get-the-price-of-an-app-in-steam-webapi)
 - Official Team Fortress Wiki, [Rough documentation for the storefront API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI#Known_methods) - exposed via [Big Picture mode](https://support.steampowered.com/kb_article.php?ref=5006-ASLN-3202&l=english).
 
-Do you need the current prices of all games available on Steam? That's more than **80K** titles, see [app-list.json](docs/app-list.json) (taking 5+ MiB), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint.
+Do you need the current prices of all the games available on Steam? That's more than **80K** titles, see [app-list.json](docs/app-list.json) (taking 5+ MiB), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint.
 
 Note that
 
-- each and every title requires at least one additional request for pricing;
-- the oficcially unsupported API required might be limited to n requests per unit of time;
+- every title requires at least one additional request for pricing;
+- the officially unsupported API required might be limited to n requests per unit of time;
 - every title has an initial price and often one discount price (e.g. 20% off), the latter mutating over time, various packages/bundles and DLCs not considered;
 - some titles (e.g. specific editions) are unavailable for some countries (on Steam).
  
@@ -40,7 +40,7 @@ Something like highlighting the cheapest price for a specific title?
 
 Note that prices have different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
-Also note that "cheap" does not neccessarily mean "high price-performance ratio", being a vague,  subjective characteristic.
+Also note that "cheap" does not necessarily mean "high price-performance ratio", being a vague,  subjective characteristic.
 
 > Some basic filters should be added also.
 
@@ -60,7 +60,7 @@ Live at https://price-comparison.azurewebsites.net,
 
 taking about 2 seconds to load, without any optimizations (12 requests to 3 different APIs, on the back-end, in sequence, without caching, etc.)
 
-Price conversions done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentine with Mexico, using mexican pesos).
+Price conversions are done using [reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates) from the ECB (European Central Bank), not available for argentine pesos (replacing Argentine with Mexico, using mexican pesos).
 
 ## Proposal
 
@@ -70,7 +70,7 @@ Price conversions done using [reference exchange rates](https://www.ecb.europa.e
 > I can provide further details as required
 
 1. Provide ALL the details you can.
-2. Clarify given questions.
-3. Negotiate next milestones, based on further proposals and indefinite estimates.
+2. Clarify the given questions.
+3. Negotiate the next milestones, based on further proposals and indefinite estimates.
 4. …
 5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
