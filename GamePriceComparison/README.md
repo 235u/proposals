@@ -86,7 +86,7 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 
 1. Provide ALL the details you can.
 2. Clarify the given questions.
-3. Negotiate the next milestones, based on further proposals and indefinite estimates.
+3. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
 4. …
 5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
 
