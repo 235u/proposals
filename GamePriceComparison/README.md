@@ -1,6 +1,6 @@
 # Simple Steam game price comparison web tool using API
 
-See [job details](docs/job-details.pdf) (one-time project, fixed price), as posted on December 20, 2019, within `Full Stack Development`, asking for expertise in `HTML`, `JavaScript`, `JSON API`.
+See [job details](docs/job-details.pdf) (one-time project, fixed price), as posted on December 20, 2019, within `Full Stack Development`, asking for expertise in `HTML`, `JavaScript`, and `JSON API`.
 
 ## Proof of concept
 
@@ -21,17 +21,17 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 
 > I can provide further details as required
 
-1. Provide ALL the details you can.
-2. Clarify following questions.
-3. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
-4. …
-5. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
+3. Provide ALL the details you can.
+4. Clarify following questions.
+5. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
+6. …
+7. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
 
 ## Description
 
 > The idea is to provide data so that it can be used to publish on a news website
 
-It sounds like a one-way ticket (aka throw-away application). How much data do you want to provide? And how often?
+It sounds like a [one-way ticket](https://youtu.be/D4y_acTR0MY) (aka throw-away application). How much data do you want to provide? And how often?
 
 Once, for a single article?
 
@@ -47,21 +47,21 @@ That's the ultimate goal? Representing a hypothesis (to be proven right or wrong
 
 The data won't be pulled from a third-party "static page that is automatically generated from" an [endpoint](https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil#GetSupportedAPIList) of the [Steamwork Web API](https://partner.steamgames.com/doc/webapi_overview), which "is [also] used to build this [official] documentation".
 
-Memo: https://xpaw.me/ is beautiful.
+Memo: https://xpaw.me is beautiful.
 
 > I need a basic webpage tool to populate current prices of steam games in Uk, Russia and Argentina
 
-Note that this functionality is not part of the official API, see:
+Note that this functionality is not part of the [official API](https://partner.steamgames.com/doc/api), see:
 
 - Stackoverflow, [How to get the price of an app in Steam WebAPI?](https://stackoverflow.com/questions/13784059/how-to-get-the-price-of-an-app-in-steam-webapi)
 - Official Team Fortress Wiki, [Rough documentation for the storefront API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI#Known_methods) - exposed via [Big Picture mode](https://support.steampowered.com/kb_article.php?ref=5006-ASLN-3202&l=english).
 
-Do you need the current prices of all the games available on Steam? That's more than **80K**  titles (see [app-list.json](docs/app-list.json), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint and taking 5+ MiB), being mutable (chaning its properties, e.g. product titles, discounts).
+Do you need the current prices of all the games available on Steam? That's more than **80K**  titles (see [app-list.json](docs/app-list.json), returned by the [GetAppList](https://partner.steamgames.com/doc/webapi/ISteamApps#GetAppList) endpoint and taking 5+ MiB), being mutable - changing its properties (like title and discount) over time.
 
 Note that
 
 - every title requires at least one additional request for pricing;
-- the officially unsupported API as the officially supported public API might be limited to `n` requests per unit of time. 
+- the [officially unsupported API](https://wiki.teamfortress.com/wiki/User:RJackson/StorefrontAPI) as the officially supported public API might be limited to `n` requests per unit of time. 
 
 See [official documentation](https://partner.steamgames.com/doc/webapi_overview#2):
 
@@ -77,7 +77,7 @@ Also note that
 
 > and something to show which country has the cheapest price for the games.
 
-Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically using charts? 
+Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically, using charts? 
 
 Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 
