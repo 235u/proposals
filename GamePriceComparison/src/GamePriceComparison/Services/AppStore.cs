@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace GamePriceComparison.Services
 {
@@ -22,7 +23,7 @@ namespace GamePriceComparison.Services
                 .Single(c => c.GetShortName() == code);
         }
 
-        public IEnumerable<App> GetTopSellers(Country country = Country.UnitedKingdom)
+        public async Task<IEnumerable<App>> GetTopSellersAsync(Country country = Country.UnitedKingdom)
         {
             var topSellers = new List<App>();
 
@@ -30,7 +31,7 @@ namespace GamePriceComparison.Services
             request.AddParameter("cc", country.GetShortName());
             request.AddParameter("l", DefaultLanguage);
 
-            IRestResponse response = _client.Get(request);
+            IRestResponse response = await _client.ExecuteTaskAsync(request);
             using (var document = JsonDocument.Parse(response.Content))
             {
                 JsonElement items = document.RootElement.GetProperty("top_sellers").GetProperty("items");
@@ -64,11 +65,11 @@ namespace GamePriceComparison.Services
                 }
             }
 
-            Update(topSellers, country);
+            await UpdateAsync(topSellers, country);
             return topSellers;
         }
 
-        public void Update(IEnumerable<App> apps, Country baseCountry)
+        public async Task UpdateAsync(IEnumerable<App> apps, Country baseCountry)
         {
             IEnumerable<int> appIds = apps.Select(a => a.Id);
             var appIdsString = string.Join(',', appIds);
@@ -85,7 +86,7 @@ namespace GamePriceComparison.Services
                 request.AddParameter("cc", country.GetShortName());
                 request.AddParameter("l", "en");
 
-                IRestResponse response = _client.Get(request);
+                IRestResponse response = await _client.ExecuteTaskAsync(request);
                 using (var document = JsonDocument.Parse(response.Content))
                 {
                     foreach (var item in document.RootElement.EnumerateObject())

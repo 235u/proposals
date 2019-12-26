@@ -77,7 +77,7 @@ Also note that
 
 > and something to show which country has the cheapest price for the games.
 
-Something like highlighting the cheapest price for a specific title? Something to be expressend in concrete numbers and/or graphically, using charts? 
+Something like highlighting the cheapest price for a specific title? Something to be expressed in concrete numbers and/or graphically, using charts? 
 
 Note that prices are given in different currencies, which can be converted to one base currency (e.g. pound sterling) for comparison, nominally, ignoring the [purchasing power parity](https://en.wikipedia.org/wiki/Purchasing_power_parity) (PPP) and cultural specifics (like fundamental resistance against copyright).
 

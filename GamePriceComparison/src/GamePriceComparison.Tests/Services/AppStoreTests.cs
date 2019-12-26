@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GamePriceComparison.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace GamePriceComparison.Services
 {
@@ -8,10 +9,10 @@ namespace GamePriceComparison.Services
     public class AppStoreTests
     {
         [TestMethod]
-        public void GetTopSellers()
+        public async Task GetTopSellers()
         {
             var store = new AppStore();
-            IEnumerable<App> topSellers = store.GetTopSellers();
+            IEnumerable<App> topSellers = await store.GetTopSellersAsync();
         }
     }
 }

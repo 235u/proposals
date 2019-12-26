@@ -1,62 +1,24 @@
-﻿@model IEnumerable<App>
-@{
+﻿@{
     ViewData["Title"] = "Game Price Comparison";
 }
 
 <h1 class="display-1">@ViewData["Title"]</h1>
 <p class="lead">Shows how expensive UK gaming is compared to other places.</p>
 <h2>Top Sellers</h2>
-<table class="table table-bordered table-striped">
-    <caption>Representing Steam's (quite volatile) @Country.UnitedKingdom.GetName() top ten ranking (filtering out duplicates) and final prices (after discount),<br />using reference exchange rates from the ECB.</caption>
-    <thead>
-        <tr>
-            <th scope="col" class="text-right">#</th>
-            <th scope="col">Game</th>
-            @foreach (Country country in Enum.GetValues(typeof(Country)))
-            {
-                if (country == Country.UnitedKingdom)
-                {
-                    <th scope="col" class="text-right" style="width: 12%">@country.GetName()</th>
-                }
-                else
-                {
-                    <th scope="col" colspan="2" class="text-right" style="width: 24%">@country.GetName()</th>
-                }
-            }
-        </tr>
-    </thead>
-    <tbody>
-        @{
-            int rank = 0;
-            foreach (App app in Model)
-            {
-                rank += 1;
-                <tr>
-                    <th scope="row" class="text-right">@rank</th>
-                    <td>@app.EnglishName</td>
-                    @foreach (Country country in Enum.GetValues(typeof(Country)))
-                    {
-                        if (country == Country.UnitedKingdom)
-                        {
-                            <td class="text-right" style="width: 12%">@app.LocalPrice.ToString()</td>
-                        }
-                        else
-                        {
-                            var originalValue = "--";
-                            var localValue = "--";
+<div id="top-sellers">
+    <div class="d-flex justify-content-center align-items-center" style="height: 580px">
+        <div class="mr-3"><strong>Loading...</strong></div>
+        <div class="spinner-border" role="status"></div>
+    </div>
+</div>
 
-                            if (app.LocalizedPrices.ContainsKey(country))
-                            {
-                                originalValue = app.LocalizedPrices[country].OriginalPrice.ToString();
-                                localValue = app.LocalizedPrices[country].BasePrice.ToString();
-                            }
-
-                            <td class="text-right" style="width: 12%">@originalValue</td>
-                            <td class="text-right" style="width: 12%">@localValue</td>
-                        }
-                    }
-                </tr>
-            }
-        }
-    </tbody>
-</table>
+<script>
+    fetch("Home/TopSellers")
+        .then((response) => {
+            response.text()
+                .then((text) => {
+                    const container = document.querySelector("#top-sellers");
+                    container.innerHTML = text;
+                });
+        });
+</script>
