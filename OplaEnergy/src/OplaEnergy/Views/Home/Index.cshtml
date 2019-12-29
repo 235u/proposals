@@ -1,0 +1,156 @@
+﻿@{
+    ViewData["Title"] = "Well Info";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Alpha</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Wells</a></li>
+                    <li class="breadcrumb-item active">Alpha</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Well Info</h3>
+                    </div>
+                    <form role="form">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="job-number">OPLA job number</label>
+                                        <input type="text" class="form-control" id="job-number" value="OPLA-10001" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="well-name">Well name</label>
+                                        <input type="text" class="form-control" id="well-name" value="Alpha" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="field-name">Field name</label>
+                                        <input type="text" class="form-control" id="field-name" value="Bravo" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="operator-company">Operator company</label>
+                                        <input type="text" class="form-control" id="operator-company" value="Actin Uranium" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="rig-contractor">Rig contractor</label>
+                                        <input type="text" class="form-control" id="rig-contractor" value="Actin Uranium" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input type="text" class="form-control" id="country" value="Austria" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" class="form-control" id="state" value="Styria" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="latitude">Latitude</label>
+                                        <input type="text" class="form-control" id="latitude" value="47.07249" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="longitude">Longitude</label>
+                                        <input type="text" class="form-control" id="longitude" value="15.4175" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="time-zone">Time zone</label>
+                                        <input type="text" class="form-control" id="time-zone" value="(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info"><i class="far fa-bell"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Well depth</span>
+                        <span class="info-box-number">1.18 <small>m</small></span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="info-box-icon bg-success"><i class="far fa-bell"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Bit depth</span>
+                        <span class="info-box-number">1.18 <small>m</small></span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="info-box-icon bg-warning"><i class="far fa-bell"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Pump rate</span>
+                        <span class="info-box-number">1.821 <small>m³/min</small></span>
+                    </div>
+                </div>
+                <div class="info-box bg-danger">
+                    <span class="info-box-icon"><i class="far fa-bell"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">SBP</span>
+                        <span class="info-box-number">101.3 <small>kPa</small></span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 10%"></div>
+                        </div>
+                        <span class="progress-description">10% of the target SPB</span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <span class="info-box-icon bg-secondary"><i class="far fa-bell-slash"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">BHP</span>
+                        <span class="info-box-number">116.3 <small>kPa</small></span>
+                    </div>
+                </div>
+                <div class="info-box bg-info">
+                    <span class="info-box-icon"><i class="far fa-calendar"></i></span>
+                    <div class="info-box-content">                        
+                        <span class="info-box-text">Date</span>
+                        <span class="info-box-number">2019-12-23 <small>YYYY-MM-DD</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
