@@ -12,6 +12,7 @@ Submitted for jobs posted on Upwork
 |[Ezpark Technology](EzparkTechnology)|:x:|
 |[Game Price Comparison](GamePriceComparison)|:heavy_minus_sign:|
 |[Google Search](GoogleSearch)|:x:|
+|[Opla Energy](OplaEnergy)|:heavy_minus_sign:|
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
