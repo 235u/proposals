@@ -39,9 +39,15 @@ Circumvention, which is **not** part of this proposal, might be possible via
 
 Please note, that the site to be scraped might reside on a weak server also, unable to deliver expected response rates on its own (lacking physical hardware and network resources).
 
-### Proof of concept
+## Proposal
+
+Embrace the limitations, enqueue your requests and wait for them to finish (running in a background / web job; persisting / caching the results, eventually),
 
 ![Service](docs/service.png)
+
+throttling on the client-side (scraper- / crawler-side; configuration values to find out experimentally).
+
+### Proof of concept
 
 Using [Wargaming.net API](https://developers.wargaming.net/documentation/guide/principles/), having limitations
 
@@ -55,7 +61,9 @@ Being 5 requests per second, actually, on the [https://api.worldoftanks.eu/wot/c
 
 ![Data model](docs/models.png)
 
-giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (98 KiB) in JSON format. Armed with the meta-data  
+giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (taking 98 KiB in JSON format).
+
+Armed with the meta-data from the first response, make hundreds of calls,  
 
 ```csharp
 [TestMethod]
@@ -98,5 +106,5 @@ public async Task GetClansConcurrently()
 }
 ```
 
-about [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) in about 3 minutes (5 requests per second).
+which gives [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) within 3 minutes (5 requests per second).
 
