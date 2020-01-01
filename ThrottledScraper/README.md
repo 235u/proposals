@@ -1,10 +1,12 @@
 # .NET function to scrape JSON from site with throttling
 
-See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on January 1, 2020 within `Scripting and Automation`, asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`.
+See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on January 1, 2020 within `Scripting and Automation`, from
 
-## Proposal
+> a VB.Net coder
 
+asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`, to deliver 
 
+> a VB.net function - actual source code - that I can incorporate into my own Visual Studio project to reliably scrape the site.
 
 ## Do you have experience with bypassing mechanisms meant to prevent site scraping? 
 
@@ -27,17 +29,17 @@ Please note, that this might violate site's terms of use, see Upwork's [API Term
 
 ### Elaboration
 
-Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/):
+See Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/) (or any other web server / proxy / middleware):
 
 > Using dynamic IP restrictions means the administrator does not need to identify the IP addresses that need to be blocked. Instead, the administrator can configure the system so that it blocks any IP address that meets the set criteria. This can include blocking a remote client if the number of concurrent HTTP connection requests from that client exceeds a specific number, or blocking a client if the number of requests received over a period of time exceeds a specific number.
 
-Circumvention, which is **not** part of this proposal, might be possible via 
+Circumvention of the IP-based protection, which is **not** part of this proposal, might be possible via 
 
 - multiple instances of the scraper running at different IPs;
 - paid proxy services like [Luminati](https://luminati.io/) or [oxylabs](https://oxylabs.io/);
 - the volunteer overlay network from [The Tor Project](https://www.torproject.org/) (accessed via locally running web proxies).
 
-Please note, that the site to be scraped might reside on a weak server also, unable to deliver expected response rates on its own (lacking physical hardware and network resources).
+Please keep in mind, that the public site in question (to be scraped) might reside on a weak server, unable to deliver expected response rates on its own, lacking physical hardware and network resources (being finite), to be shared between all the public (based on fair use).
 
 ## Proposal
 
@@ -53,7 +55,7 @@ Using [Wargaming.net API](https://developers.wargaming.net/documentation/guide/p
 
 > To provide the stable service functioning, the number of requests sent to API is limited.
 
-and
+like
 
 > The limit is set on the number of requests sent from one IP address at the same time and in general equal to 10 requests per second.
 
