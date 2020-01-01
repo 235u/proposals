@@ -4,13 +4,13 @@ See [job details](docs/job-details.pdf) (one-time project, fixed-price), as post
 
 > a VB.Net coder
 
-asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`, to deliver 
+asking for expertise in `C#` [sic], `Data Scraping`, and `Web Crawler`, to deliver 
 
 > a VB.net function - actual source code - that I can incorporate into my own Visual Studio project to reliably scrape the site.
 
 ## Do you have experience with bypassing mechanisms meant to prevent site scraping? 
 
-Please note, that this might violate site's terms of use, see Upwork's [API Terms of Use](https://www.upwork.com/legal#api) for example:
+To begin with, please note, that this might violate site's terms of use, see Upwork's [API Terms of Use](https://www.upwork.com/legal#api) for example:
 
 > Developer and the Developer Application must not do the following:
 
@@ -29,7 +29,7 @@ Please note, that this might violate site's terms of use, see Upwork's [API Term
 
 ### Elaboration
 
-See Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/) (or any other web server / proxy / middleware):
+See Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/) (or any other web server / proxy / middleware documentation):
 
 > Using dynamic IP restrictions means the administrator does not need to identify the IP addresses that need to be blocked. Instead, the administrator can configure the system so that it blocks any IP address that meets the set criteria. This can include blocking a remote client if the number of concurrent HTTP connection requests from that client exceeds a specific number, or blocking a client if the number of requests received over a period of time exceeds a specific number.
 
@@ -39,7 +39,7 @@ Circumvention of the IP-based protection, which is **not** part of this proposal
 - paid proxy services like [Luminati](https://luminati.io/) or [oxylabs](https://oxylabs.io/);
 - the volunteer overlay network from [The Tor Project](https://www.torproject.org/) (accessed via locally running web proxies).
 
-Please keep in mind, that the public site in question (to be scraped) might reside on a weak server, unable to deliver expected response rates on its own, lacking physical hardware and network resources (being finite), to be shared between all the public (based on fair use).
+Please keep in mind, that the public site in question (to be scraped) might be hosted on a weak server, unable to deliver expected response rates on its own, lacking physical hardware and network resources (being finite), to be shared between all the public (based on fair use).
 
 ## Proposal
 
