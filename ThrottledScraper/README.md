@@ -1,0 +1,102 @@
+# .NET function to scrape JSON from site with throttling
+
+See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on January 1, 2020 within `Scripting and Automation`, asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`.
+
+## Proposal
+
+
+
+## Do you have experience with bypassing mechanisms meant to prevent site scraping? 
+
+Please note, that this might violate site's terms of use, see Upwork's [API Terms of Use](https://www.upwork.com/legal#api) for example:
+
+> Developer and the Developer Application must not do the following:
+
+[…]
+
+> - Try to exceed or circumvent limitations on calls and use. This includes creating multiple Developer Applications for identical, or largely similar, purposes.
+> - Download, scrape, post, or transmit, in any form or by any means, any part of the Site or Site Services, including data retrieved by web browser plugins.
+
+[…]
+
+> Except as provided in the API Terms, Developer may not copy or store any Upwork Content, or any information expressed by or representing Upwork Content (such as hashed or otherwise transformed data).
+
+[…]
+
+> Solely for the purpose of improving user experience, Developer may cache Upwork Content for no more than twenty-four (24) hours.
+
+### Elaboration
+
+Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/):
+
+> Using dynamic IP restrictions means the administrator does not need to identify the IP addresses that need to be blocked. Instead, the administrator can configure the system so that it blocks any IP address that meets the set criteria. This can include blocking a remote client if the number of concurrent HTTP connection requests from that client exceeds a specific number, or blocking a client if the number of requests received over a period of time exceeds a specific number.
+
+Circumvention, which is **not** part of this proposal, might be possible via 
+
+- multiple instances of the scraper running at different IPs;
+- paid proxy services like [Luminati](https://luminati.io/) or [oxylabs](https://oxylabs.io/);
+- the volunteer overlay network from [The Tor Project](https://www.torproject.org/) (accessed via locally running web proxies).
+
+Please note, that the site to be scraped might reside on a weak server also, unable to deliver expected response rates on its own (lacking physical hardware and network resources).
+
+### Proof of concept
+
+![Service](docs/service.png)
+
+Using [Wargaming.net API](https://developers.wargaming.net/documentation/guide/principles/), having limitations
+
+> To provide the stable service functioning, the number of requests sent to API is limited.
+
+and
+
+> The limit is set on the number of requests sent from one IP address at the same time and in general equal to 10 requests per second.
+
+Being 5 requests per second, actually, on the [https://api.worldoftanks.eu/wot/clans/list](https://developers.wargaming.net/reference/all/wot/clans/list/?r_realm=eu) endpoint, asking for
+
+![Data model](docs/models.png)
+
+giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (98 KiB) in JSON format. Armed with the meta-data  
+
+```csharp
+[TestMethod]
+public async Task GetClansConcurrently()
+{
+    var tasks = new List<Task<string>>();
+    var allClans = new List<Clan>();
+
+    using (var client = new ThrottledHttpClient())
+    {
+        string content = await client.GetStringAsync(Url);
+        var clanList = JsonSerializer.Deserialize<ClanList>(content, DeserializationOptions);
+        allClans.AddRange(clanList.Data);                
+
+        int pageCount = GetPageCount(clanList.Meta);
+        for (int page = 2; page <= pageCount; page++)
+        {
+            Task<string> task = client.GetStringAsync(Url + $"&page_no={page}");
+            tasks.Add(task);
+        }
+
+        string[] results = await Task.WhenAll(tasks);
+        foreach (string result in results)
+        {
+            clanList = JsonSerializer.Deserialize<ClanList>(content, DeserializationOptions);
+            allClans.AddRange(clanList.Data);
+        }                                
+    }
+
+    using (var stream = File.OpenWrite("eu.clan-list.final.json"))
+    using (var writer = new Utf8JsonWriter(stream))
+    {
+        var serializationOptions = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        };
+                
+        JsonSerializer.Serialize(writer, allClans, serializationOptions);
+    }            
+}
+```
+
+about [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) in about 3 minutes (5 requests per second).
+
