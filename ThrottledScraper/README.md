@@ -29,7 +29,7 @@ To begin with, please note, that this might violate site's terms of use, see Upw
 
 ### Elaboration
 
-See Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/) (or any other web server / proxy / middleware documentation):
+See Microsoft, IIS, [Dynamic IP Security](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/dynamicipsecurity/) (or any other web server/proxy/middleware documentation):
 
 > Using dynamic IP restrictions means the administrator does not need to identify the IP addresses that need to be blocked. Instead, the administrator can configure the system so that it blocks any IP address that meets the set criteria. This can include blocking a remote client if the number of concurrent HTTP connection requests from that client exceeds a specific number, or blocking a client if the number of requests received over a period of time exceeds a specific number.
 
@@ -43,11 +43,11 @@ Please keep in mind, that the public site in question (to be scraped) might be h
 
 ## Proposal
 
-Embrace the limitations, enqueue your requests and wait for them to finish (running in a background / web job; persisting / caching the results, eventually),
+Embrace the limitations, enqueue your requests and wait for them to finish (running in a background/web job; persisting/caching the results, eventually),
 
 ![Service](docs/service.png)
 
-throttling on the client-side (scraper- / crawler-side; configuration values to find out experimentally).
+throttling on the client-side (scraper-/crawler-side; configuration values to find out experimentally).
 
 ### Proof of concept
 
@@ -65,7 +65,7 @@ Being 5 requests per second, actually, on the [https://api.worldoftanks.eu/wot/c
 
 giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (taking 98 KiB in JSON format).
 
-Armed with the meta-data from the first response, make hundreds of calls,  
+Armed with the meta-data from the first response, make hundreds of calls (`C#` code [converted](http://converter.telerik.com/) to ``),  
 
 ```vb.net
 <TestMethod>
@@ -77,15 +77,14 @@ Public Async Function GetClansConcurrently() As Task
         Dim content As String = Await client.GetStringAsync(Url)
         Dim clanList = JsonSerializer.Deserialize(Of ClanList)(content, DeserializationOptions)
         allClans.AddRange(clanList.Data)
-        Dim pageCount As Integer = GetPageCount(clanList.Meta)
 
+        Dim pageCount As Integer = GetPageCount(clanList.Meta)
         For page As Integer = 2 To pageCount
             Dim task As Task(Of String) = client.GetStringAsync(Url & $"&page_no={page}")
             tasks.Add(task)
         Next
 
         Dim results As String() = Await Task.WhenAll(tasks)
-
         For Each result As String In results
             clanList = JsonSerializer.Deserialize(Of ClanList)(content, DeserializationOptions)
             allClans.AddRange(clanList.Data)
@@ -93,7 +92,6 @@ Public Async Function GetClansConcurrently() As Task
     End Using
 
     Using stream = File.OpenWrite("eu.clan-list.final.json")
-
         Using writer = New Utf8JsonWriter(stream)
             Dim serializationOptions = New JsonSerializerOptions With {
                 .PropertyNamingPolicy = JsonNamingPolicy.CamelCase
