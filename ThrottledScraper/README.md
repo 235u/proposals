@@ -4,7 +4,7 @@ See [job details](docs/job-details.pdf) (one-time project, fixed-price), as post
 
 > a VB.Net coder
 
-asking for expertise in `C#` [sic], `Data Scraping`, and `Web Crawler`, to deliver 
+asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`, to deliver 
 
 > a VB.net function - actual source code - that I can incorporate into my own Visual Studio project to reliably scrape the site.
 
@@ -66,47 +66,6 @@ Being 5 requests per second, actually, on the [https://api.worldoftanks.eu/wot/c
 giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (taking 98 KiB in JSON format).
 
 Armed with the meta-data from the first response, make hundreds of calls,  
-
-```csharp
-[TestMethod]
-public async Task GetClansConcurrently()
-{
-    var tasks = new List<Task<string>>();
-    var allClans = new List<Clan>();
-
-    using (var client = new ThrottledHttpClient())
-    {
-        string content = await client.GetStringAsync(Url);
-        var clanList = JsonSerializer.Deserialize<ClanList>(content, DeserializationOptions);
-        allClans.AddRange(clanList.Data);                
-
-        int pageCount = GetPageCount(clanList.Meta);
-        for (int page = 2; page <= pageCount; page++)
-        {
-            Task<string> task = client.GetStringAsync(Url + $"&page_no={page}");
-            tasks.Add(task);
-        }
-
-        string[] results = await Task.WhenAll(tasks);
-        foreach (string result in results)
-        {
-            clanList = JsonSerializer.Deserialize<ClanList>(content, DeserializationOptions);
-            allClans.AddRange(clanList.Data);
-        }                                
-    }
-
-    using (var stream = File.OpenWrite("eu.clan-list.final.json"))
-    using (var writer = new Utf8JsonWriter(stream))
-    {
-        var serializationOptions = new JsonSerializerOptions
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        };
-                
-        JsonSerializer.Serialize(writer, allClans, serializationOptions);
-    }            
-}
-```
 
 ```vb.net
 <TestMethod>
