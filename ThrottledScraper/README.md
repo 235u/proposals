@@ -108,5 +108,42 @@ public async Task GetClansConcurrently()
 }
 ```
 
+```vb.net
+<TestMethod>
+Public Async Function GetClansConcurrently() As Task
+    Dim tasks = New List(Of Task(Of String))()
+    Dim allClans = New List(Of Clan)()
+
+    Using client = New ThrottledHttpClient()
+        Dim content As String = Await client.GetStringAsync(Url)
+        Dim clanList = JsonSerializer.Deserialize(Of ClanList)(content, DeserializationOptions)
+        allClans.AddRange(clanList.Data)
+        Dim pageCount As Integer = GetPageCount(clanList.Meta)
+
+        For page As Integer = 2 To pageCount
+            Dim task As Task(Of String) = client.GetStringAsync(Url & $"&page_no={page}")
+            tasks.Add(task)
+        Next
+
+        Dim results As String() = Await Task.WhenAll(tasks)
+
+        For Each result As String In results
+            clanList = JsonSerializer.Deserialize(Of ClanList)(content, DeserializationOptions)
+            allClans.AddRange(clanList.Data)
+        Next
+    End Using
+
+    Using stream = File.OpenWrite("eu.clan-list.final.json")
+
+        Using writer = New Utf8JsonWriter(stream)
+            Dim serializationOptions = New JsonSerializerOptions With {
+                .PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            }
+            JsonSerializer.Serialize(writer, allClans, serializationOptions)
+        End Using
+    End Using
+End Function
+```
+
 which gives [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) within 3 minutes (5 requests per second).
 
