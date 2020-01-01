@@ -102,5 +102,5 @@ Public Async Function GetClansConcurrently() As Task
 End Function
 ```
 
-which gives [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) within 3 minutes (5 requests per second).
+which gives ca. [100K clans](docs/eu.clan-list.final.json) (taking 10+ MiB in JSON format) within 3 minutes (5 requests per second).
 
