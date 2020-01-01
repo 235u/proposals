@@ -65,7 +65,7 @@ Being 5 requests per second, actually, on the [https://api.worldoftanks.eu/wot/c
 
 giving (with valid `application_id` provided) the [top-100 clans](docs/eu.clan-list.first-page.raw.json) (taking 98 KiB in JSON format).
 
-Armed with the meta-data from the first response, make hundreds of calls (`C#` code [converted](http://converter.telerik.com/) to ``),  
+Armed with the meta-data from the first response, make hundreds of calls (`C#` code [converted](http://converter.telerik.com/) to `VB.NET`),
 
 ```vb.net
 <TestMethod>
