@@ -1,6 +1,6 @@
 # .NET function to scrape JSON from site with throttling
 
-See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on January 1, 2020 within `Scripting and Automation`, from
+See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on January 1, 2020 within `Scripting and Automation`, by
 
 > a VB.Net coder
 
