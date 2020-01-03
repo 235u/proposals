@@ -8,22 +8,26 @@ asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`, to deliver
 
 > a VB.net function - actual source code - that I can incorporate into my own Visual Studio project to reliably scrape the site.
 
+The following proposal has been rejected by the client on January 3, 2020 for the following reason (job still being open to the public for proposals):
+
+> Right now I am corresponding with 2 other people, and they both seem to have concluded that this site is a special problem scraping it with using .net, so for now I'm not going to accept any further proposals.
+
 ## Do you have experience with bypassing mechanisms meant to prevent site scraping? 
 
 To begin with, please note, that this might violate site's terms of use, see Upwork's [API Terms of Use](https://www.upwork.com/legal#api) for example:
 
 > Developer and the Developer Application must not do the following:
 
-[…]
+[â€¦]
 
 > - Try to exceed or circumvent limitations on calls and use. This includes creating multiple Developer Applications for identical, or largely similar, purposes.
 > - Download, scrape, post, or transmit, in any form or by any means, any part of the Site or Site Services, including data retrieved by web browser plugins.
 
-[…]
+[â€¦]
 
 > Except as provided in the API Terms, Developer may not copy or store any Upwork Content, or any information expressed by or representing Upwork Content (such as hashed or otherwise transformed data).
 
-[…]
+[â€¦]
 
 > Solely for the purpose of improving user experience, Developer may cache Upwork Content for no more than twenty-four (24) hours.
 
