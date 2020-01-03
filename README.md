@@ -17,5 +17,5 @@ Submitted for jobs posted on Upwork
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
-|[Throttled Scraper](ThrottledScraper)|:heavy_minus_sign:|
+|[Throttled Scraper](ThrottledScraper)|:x:|
 |[Yandex.Taxi Scraper](YandexTaxiScraper)|:x:|
