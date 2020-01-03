@@ -8,7 +8,7 @@ asking for expertise in `C#`, `Data Scraping`, and `Web Crawler`, to deliver
 
 > a VB.net function - actual source code - that I can incorporate into my own Visual Studio project to reliably scrape the site.
 
-The following proposal has been rejected by the client on January 3, 2020 for the following reason (job still being open to the public for proposals):
+The following proposal has been **rejected** by the client on January 3, 2020 for the following "reason" (job still being open to the public for proposals):
 
 > Right now I am corresponding with 2 other people, and they both seem to have concluded that this site is a special problem scraping it with using .net, so for now I'm not going to accept any further proposals.
 
