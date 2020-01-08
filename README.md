@@ -8,6 +8,7 @@ Submitted for jobs posted on Upwork
 |[Diamond Price Calculator](DiamondPriceCalculator)|:heavy_check_mark:|
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
+|[Esports Design](EsportsDesign)|:x:|
 |[Excel Chart Exporter](EzparkTechnology)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
 |[Game Price Comparison](GamePriceComparison)|:heavy_minus_sign:|
