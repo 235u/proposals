@@ -103,50 +103,59 @@ See [Architecting Modern Web Applications with ASP.NET Core and Azure](https://a
 
 Libraries being written in specific languages; frameworks being larger than libraries / compositions of multiple libraries (and other components, e.g. runtimes), written in specific / multiple languages, targeting same / other languages, often being extensions / dialects of another languages.
 
-###	Server-Side Development
+- [Server-Side Development](docs/_static/server-side-development.pdf])
+- [Client-Side Development](docs/_static/client-side-development.pdf])
 
-For back-end and front-end development across all layers:
+## Tools
 
-<table style="text-align: center">
-    <tr>
-        <td rowspan="2" style="width: 33%">Web API</td>
-        <td colspan="3">Identity</td>
-    </tr>
-    <tr>
-        <td style="width: 16%">Razor Pages</td>
-        <td style="width: 16%">MVC</td>
-        <td rowspan="2" style="width: 33%">
-            Entity Framework Core /
-            Dapper
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3">ASP.NET Core</td>
-    </tr>
-    <tr>
-        <td colspan="4">.NET Core / C#</td>
-    </tr>
-</table>
+### Desktop Applications
 
+Most actual versions of:
 
+- Adobe Creative Cloud;
+- Microsoft Office Professional Plus;
+- Microsoft SQL Server Management Studio;
+- Microsoft Visio Professional;
+- Microsoft Visual Studio Enterprise as IDE (for editing, compiling, debugging, profiling, modelling, testing) and Visual Studio Code (v. 1.39) as basic / lightweight text editor;
+- Skype for calling, messaging (depending on functional requirements / personal preferences), screen sharing;
+- Upwork Desktop App for messaging, time logging and hourly payment protection, for clients and freelancers (requires, among other requirements, a verified billing method from the client).
 
+### Mobile Applications
 
-	
+- Skype for Mobile, for calling, messaging;
+- Upwork for Freelancers App / Upwork for Clients App, for formal project management, messaging, notifications.
 
+### Web Applications
 
+The online / cloud services from Braintree / PayPal, Google, Microsoft and Upwork:
 
+- Braintree (a PayPal service), for online payments;
+- Twilio, as communications-platform-as-a-service (CPaaS) provider:
+  - Twilio SMS, for SMS
+  - Twilio SendGrid, for Email
+- Microsoft Azure (Portal) as infrastructure-, platform- and software-as-a-service (IaaS, PaaS, SaaS):
+  - Azure DevOps (Boards, Pipelines, Repos), for functional / technical project management, documentation (above self-explaining, commented code including automated tests);
+  - Azure App Service (DNS, Domain [Buy / Migrate], Certificate), as staged (dev / test, production) runtime environment;
+	Azure SQL Database / Azure Cosmos DB (depending on performance requirements / data structures), for data storage;
+  - Azure Maps (or Google Maps Platform, depending on functional requirements), for advanced geospatial functionality.
+- Upwork Portal, for finance, formal project management, calling / messaging, screen sharing, notifications.
 
+## Enterprise Architecture
 
+TOGAF and ArchiMate standards, specifications and certifications from The Open Group, BPMN and UML diagrams are not part of this proposal.
 
+## Product Road Map
 
-and / or 
+- Single product (service) in form of a single progressive web application,
+- continually delivered on successful automated builds;
+- always live, since initial deployment to product environment.
 
-Telerik UI for ASP.NET Core (based on Kendo UI Professional)
-Braintree Server SDK /
-SendGrid / Twilio
+## Maintenance Period
 
-ASP.NET Core
+Infrastructural maintenance (version-control system, runtime environment, database, geo / map services) being done by the platform-as-a-service (PaaS) / software-as-a-service (SaaS) provider of choice (Microsoft Azure / Google Cloud / Amazon Web Services).
 
-.NET Core / C#
+Quotation does not include costs for these services, billed per use by the provider.
 
-Integrating components / packages via [NuGet](https://www.nuget.org/).
+### Timeline
+
+Date of initial deployment of the web application to production environment – open end / product (service) lifetime.
