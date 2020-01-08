@@ -102,3 +102,51 @@ See [Architecting Modern Web Applications with ASP.NET Core and Azure](https://a
 ###	Frameworks, Languages and Libraries
 
 Libraries being written in specific languages; frameworks being larger than libraries / compositions of multiple libraries (and other components, e.g. runtimes), written in specific / multiple languages, targeting same / other languages, often being extensions / dialects of another languages.
+
+###	Server-Side Development
+
+For back-end and front-end development across all layers:
+
+<table style="text-align: center">
+    <tr>
+        <td rowspan="2" style="width: 33%">Web API</td>
+        <td colspan="3">Identity</td>
+    </tr>
+    <tr>
+        <td style="width: 16%">Razor Pages</td>
+        <td style="width: 16%">MVC</td>
+        <td rowspan="2" style="width: 33%">
+            Entity Framework Core /
+            Dapper
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">ASP.NET Core</td>
+    </tr>
+    <tr>
+        <td colspan="4">.NET Core / C#</td>
+    </tr>
+</table>
+
+
+
+
+	
+
+
+
+
+
+
+
+and / or 
+
+Telerik UI for ASP.NET Core (based on Kendo UI Professional)
+Braintree Server SDK /
+SendGrid / Twilio
+
+ASP.NET Core
+
+.NET Core / C#
+
+Integrating components / packages via [NuGet](https://www.nuget.org/).
