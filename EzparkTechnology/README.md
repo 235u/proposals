@@ -1,6 +1,6 @@
 # Ezpark Technology
 
-The Airbnb Of Parking, according to [Google Play](https://play.google.com/store/apps/details?id=com.ezparkapp.ezpark) and [Apple App](https://apps.apple.com/us/app/ezpark-shared-parking/id1449009586?ls=1) store apps; see [job details](docs/_static/job-details.pdf) (ongoing project, hourly), as posted on October 28, 2019.
+*The Airbnb Of Parking*, according to [Google Play](https://play.google.com/store/apps/details?id=com.ezparkapp.ezpark) and [Apple App](https://apps.apple.com/us/app/ezpark-shared-parking/id1449009586?ls=1) store apps; see [job details](docs/_static/job-details.pdf) (ongoing project, hourly), as posted on October 28, 2019.
 
 ## Quotation
 
@@ -8,11 +8,11 @@ The Airbnb Of Parking, according to [Google Play](https://play.google.com/store/
 **hourly rate** between **$32.00** and **$64.00**, up for negotiation, depending on your budget / total amount of hours you are willing to pay for to achieve your goals, **results in**   
 **total price**.
 
-E.g. Minimal hours amount of 256, as an assumption, results in a minimal price of 256 by hourly rate.
+E.g. minimal hours amount of 256, as an assumption, results in a minimal price of 256 by hourly rate.
 
 ###	Timeline
 
-Project start date / date of hire / date of proposal submission / **08/01/2020 – open end**.
+Project start date / date of hire / date of proposal submission / **08/01/2020** – **open end** (as *ongoing project*).
 
 E.g. 32 hours per week up to 256 hours results in a project start date plus 8 weeks timeline.
 
@@ -52,4 +52,53 @@ Organizational, cooperative tasks, running in parallel, targeting all parties in
 
 See rather technical [description](docs/competence.md).
 
+## Platform
 
+### Features
+
+Follow the links in [Web Applications](#web-application) for details about the (nowadays very large) feature sets of each and every proposed cloud platform / service.
+
+###	Benefits
+
+The benefits of cloud computing in general are:
+
+- reduced investment in upfront costs (hardware, software, space, server management); try before you buy (and buy what you really need then);
+- flexible pricing (pay based on usage, not for idle capacity);
+- centralized configuration / metering / billing / management of multiple services (from the biggest providers; not to confuse with geographical distribution of their data centers);
+- flexible capacity; scale up or down based on actual needs (unlimited by the infrastructure, in theory; depending on web application's own implementation, in practice);
+- extreme reliability and world-class security (depending on final customer's implementation and configuration, again).
+
+###	Lifecycle
+
+The lifecycles of the proposed platforms in general are: date of announcement / launch date / date of commercial availability – today, staying well and healthy, being a bigger player on or even controlling the market / having significant market share, not going to die in the near future.
+
+For timelines of major milestones of the biggest providers (continuously updating their already mature services) see:
+
+- [Amazon Web Services](https://en.wikipedia.org/wiki/Timeline_of_Amazon_Web_Services) (commercially available since 2006);
+- [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform#Timeline) (commercially available since 2010);
+- [Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure#Timeline) (commercially available since 2010).
+
+## High-Level Design
+
+Single, multi-purpose, cloud-based, progressive web application with driver / parking, owner / offering, administrator / management areas, n-factor authentication and role-based authorization.
+
+For details, see [Frameworks, Languages and Libraries](#frameworks-languages-and-libraries), follow the corresponding links for more details / the sub-components.
+
+## Proposals
+
+### Programming Methodology
+
+- Structured, imperative, object-oriented (class-based and prototype-based), functional, procedural, generic, reflective, asynchronous / concurrent / parallel, aspect-, event-, task- and test-driven programming,
+- with client- and server-side code execution.
+
+###	Architectural Styles and Patterns
+
+- Monolithic (deployed as a single unit, not as a collection of interacting services and applications), component-based, database-centric, distributed system;
+- with layered / multilayered / multitier / n-tier / three-tier / client-server architecture;
+- utilizing model-view-controller, publish-subscribe and cloud computing patterns.
+
+See [Architecting Modern Web Applications with ASP.NET Core and Azure](https://aka.ms/webappebook) for more details.
+
+###	Frameworks, Languages and Libraries
+
+Libraries being written in specific languages; frameworks being larger than libraries / compositions of multiple libraries (and other components, e.g. runtimes), written in specific / multiple languages, targeting same / other languages, often being extensions / dialects of another languages.
