@@ -144,7 +144,7 @@ The online / cloud services from Braintree / PayPal, Google, Microsoft and Upwor
 
 ## Enterprise Architecture
 
-`TOGAF` and `ArchiMate` standards, specifications and certifications from [The Open Group](https://www.opengroup.org/), `BPMN` and `UML` diagrams are not part of this proposal.
+TOGAF and ArchiMate standards, specifications and certifications from [The Open Group](https://www.opengroup.org/), BPMN and UML diagrams are not part of this proposal.
 
 ## Product Road Map
 
