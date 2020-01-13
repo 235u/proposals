@@ -103,8 +103,10 @@ See [Architecting Modern Web Applications with ASP.NET Core and Azure](https://a
 
 Libraries being written in specific languages; frameworks being larger than libraries / compositions of multiple libraries (and other components, e.g. runtimes), written in specific / multiple languages, targeting same / other languages, often being extensions / dialects of another languages.
 
-- [Server-Side Development](docs/_static/server-side-development.pdf])
-- [Client-Side Development](docs/_static/client-side-development.pdf])
+#### Stacks
+
+- [Server-Side Development](docs/_static/server-side-development.pdf)
+- [Client-Side Development](docs/_static/client-side-development.pdf)
 
 ## Tools
 
@@ -112,37 +114,37 @@ Libraries being written in specific languages; frameworks being larger than libr
 
 Most actual versions of:
 
-- Adobe Creative Cloud;
-- Microsoft Office Professional Plus;
-- Microsoft SQL Server Management Studio;
-- Microsoft Visio Professional;
-- Microsoft Visual Studio Enterprise as IDE (for editing, compiling, debugging, profiling, modelling, testing) and Visual Studio Code (v. 1.39) as basic / lightweight text editor;
-- Skype for calling, messaging (depending on functional requirements / personal preferences), screen sharing;
-- Upwork Desktop App for messaging, time logging and hourly payment protection, for clients and freelancers (requires, among other requirements, a verified billing method from the client).
+- [Adobe Creative Cloud](https://www.adobe.com/creativecloud);
+- [Microsoft Office](https://products.office.com/en-us/home) Professional Plus;
+- [Microsoft SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms);
+- [Microsoft Visio Professional](https://products.office.com/en-us/visio/flowchart-software);
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com/) Enterprise as IDE (for editing, compiling, debugging, profiling, modelling, testing) and [Visual Studio Code](https://code.visualstudio.com/) as basic / lightweight text editor;
+- [Skype](https://www.skype.com/en/get-skype/) for calling, messaging (depending on functional requirements / personal preferences), screen sharing;
+- [Upwork Desktop App](https://www.upwork.com/ab/downloads/) for messaging, [time logging](https://support.upwork.com/hc/en-us/articles/211068288-Hourly-Protection) and hourly [payment protection](https://support.upwork.com/hc/en-us/articles/211062568), for clients and freelancers (requires, among other requirements, a verified billing method from the client).
 
 ### Mobile Applications
 
-- Skype for Mobile, for calling, messaging;
-- Upwork for Freelancers App / Upwork for Clients App, for formal project management, messaging, notifications.
+- [Skype for Mobile](https://www.skype.com/en/get-skype/skype-for-mobile/), for calling, messaging;
+- [Upwork for Freelancers App](https://support.upwork.com/hc/en-us/articles/360015504093-Upwork-for-Freelancers-App) / [Upwork for Clients App](https://support.upwork.com/hc/en-us/articles/211064028-Upwork-for-Clients-App), for formal project management, messaging, notifications.
 
 ### Web Applications
 
 The online / cloud services from Braintree / PayPal, Google, Microsoft and Upwork:
 
-- Braintree (a PayPal service), for online payments;
-- Twilio, as communications-platform-as-a-service (CPaaS) provider:
-  - Twilio SMS, for SMS
-  - Twilio SendGrid, for Email
-- Microsoft Azure (Portal) as infrastructure-, platform- and software-as-a-service (IaaS, PaaS, SaaS):
-  - Azure DevOps (Boards, Pipelines, Repos), for functional / technical project management, documentation (above self-explaining, commented code including automated tests);
-  - Azure App Service (DNS, Domain [Buy / Migrate], Certificate), as staged (dev / test, production) runtime environment;
-	Azure SQL Database / Azure Cosmos DB (depending on performance requirements / data structures), for data storage;
-  - Azure Maps (or Google Maps Platform, depending on functional requirements), for advanced geospatial functionality.
-- Upwork Portal, for finance, formal project management, calling / messaging, screen sharing, notifications.
+- [Braintree](https://www.braintreepayments.com/) (a PayPal service), for online payments;
+- [Twilio](https://www.twilio.com/), as communications-platform-as-a-service (CPaaS) provider:
+  - [Twilio SMS](https://www.twilio.com/sms), for SMS
+  - [Twilio SendGrid](https://www.twilio.com/sendgrid), for Email
+- [Microsoft Azure](https://azure.microsoft.com/en-us/) ([Portal](https://portal.azure.com/)) as infrastructure-, platform- and software-as-a-service (IaaS, PaaS, SaaS):
+  - [Azure DevOps](https://azure.microsoft.com/en-au/services/devops/) ([Boards](https://azure.microsoft.com/en-au/services/devops/boards/), [Pipelines](https://azure.microsoft.com/en-au/services/devops/pipelines/), [Repos](https://azure.microsoft.com/en-au/services/devops/repos/)), for functional / technical project management, documentation (above self-explaining, commented code including automated tests);
+  - [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/) ([DNS](https://docs.microsoft.com/en-us/azure/dns/dns-overview), Domain [[Buy](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain) / [Migrate](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-migrate-domain)], [Certificate](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate)), as staged (dev / test, production) runtime environment;
+  - [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) / [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/) (depending on performance requirements / data structures), for data storage;
+  - [Azure Maps](https://azure.microsoft.com/en-us/services/azure-maps/) (or [Google Maps Platform](https://cloud.google.com/maps-platform), depending on functional requirements), for advanced geospatial functionality.
+- [Upwork Portal](https://www.upwork.com/), for finance, formal project management, calling / messaging, screen sharing, notifications.
 
 ## Enterprise Architecture
 
-TOGAF and ArchiMate standards, specifications and certifications from The Open Group, BPMN and UML diagrams are not part of this proposal.
+`TOGAF` and `ArchiMate` standards, specifications and certifications from [The Open Group](https://www.opengroup.org/), `BPMN` and `UML` diagrams are not part of this proposal.
 
 ## Product Road Map
 
@@ -152,7 +154,7 @@ TOGAF and ArchiMate standards, specifications and certifications from The Open G
 
 ## Maintenance Period
 
-Infrastructural maintenance (version-control system, runtime environment, database, geo / map services) being done by the platform-as-a-service (PaaS) / software-as-a-service (SaaS) provider of choice (Microsoft Azure / Google Cloud / Amazon Web Services).
+Infrastructural maintenance (version-control system, runtime environment, database, geo / map services) being done by the platform-as-a-service (PaaS) / software-as-a-service (SaaS) provider of choice (**Microsoft Azure** / Google Cloud / Amazon Web Services).
 
 Quotation does not include costs for these services, billed per use by the provider.
 
