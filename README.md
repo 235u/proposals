@@ -11,7 +11,7 @@ Submitted for jobs posted on Upwork
 |[Esports Design](EsportsDesign)|:x:|
 |[Excel Chart Exporter](EzparkTechnology)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
-|[Game Price Comparison](GamePriceComparison)|:heavy_minus_sign:|
+|[Game Price Comparison](GamePriceComparison)|:x:|
 |[Google Search](GoogleSearch)|:x:|
 |[Opla Energy](OplaEnergy)|:heavy_check_mark:|
 |[Identity Customization](IdentityCustomization)|:x:|
