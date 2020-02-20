@@ -17,7 +17,7 @@ Submitted for jobs posted on Upwork
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
 |[Plentix](Plentix)|:x:|
-|[Scale Converter](Scale Converter)|:heavy_minus_sign:|
+|[Scale Converter](ScaleConverter)|:heavy_minus_sign:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
 |[Throttled Scraper](ThrottledScraper)|:x:|
