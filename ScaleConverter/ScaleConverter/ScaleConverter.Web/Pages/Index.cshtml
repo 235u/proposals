@@ -1,0 +1,73 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="de" class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Maßstabsumrechner</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body class="h-100 d-flex">
+    <main class="container m-auto">
+        @*See: https://stackoverflow.com/questions/5392853/html-css-denoting-a-preferred-place-for-a-line-break*@
+        <h1 class="display-4">Maßstabs&#8203;umrechner</h1>
+        <p class="lead">Im Prinzip ist es super-simpel.</p>
+        <div class="form-row">
+            <div class="form-group col-lg">
+                <label>Maßstab</label>
+                <div class="input-group">
+                    <input type="text" class="form-control custom-control text-right" value="1" readonly />
+                    <input type="number" class="form-control" style="padding-right: 28px" value="100000" />
+                </div>
+            </div>
+            <div class="form-group col-lg">
+                <label>Karte</label>
+                <div class="input-group">
+                    <input class="form-control text-right" id="from-value" type="number" value="1" min="1" />
+                    <select class="custom-select" id="from-unit">
+                        <option value="km">Kilometer</option>
+                        <option>Meter</option>
+                        <option selected>Zentimeter</option>
+                        <option>Meile</option>
+                        <option>Yard</option>
+                        <option>Fuß</option>
+                        <option>Zoll</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-lg">
+                <label>Realität</label>
+                <div class="input-group">
+                    <input type="text" class="form-control custom-control text-right" value="1" />
+                    <select class="custom-select text-center">
+                        <option selected>Kilometer</option>
+                        <option>Meter</option>
+                        <option>Zentimeter</option>
+                        <option>Meile</option>
+                        <option>Yard</option>
+                        <option>Fuß</option>
+                        <option>Zoll</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <footer class="text-right text-muted mb-5">
+            © 2020 <a class="text-dark" href="https://www.235u.net">Actin Uranium</a> |
+            <a class="text-dark" href="https://github.com/235u/proposals/">GitHub</a>
+        </footer>
+    </main>
+    <script src="~/js/main.js"></script>
+</body>
+</html>
