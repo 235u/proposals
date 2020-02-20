@@ -16,6 +16,7 @@ Submitted for jobs posted on Upwork
 |[Opla Energy](OplaEnergy)|:heavy_check_mark:|
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
+|[Plentix](Plentix)|:heavy_minus_sign:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
 |[Throttled Scraper](ThrottledScraper)|:x:|
