@@ -17,7 +17,7 @@
         <p class="lead">Im Prinzip ist es super-simpel.</p>
         <div class="form-row">
             <div class="form-group col-lg">
-                <label>Maßstab</label>
+                <label for="scale-value">Maßstab</label>
                 <div class="input-group">
                     <input type="number" class="form-control custom-control text-right" value="1" readonly />
                     <select class="custom-select" id="scale-value">
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="form-group col-lg">
-                <label>Kartenstrecke</label>
+                <label for="first-value">Kartenstrecke</label>
                 <div class="input-group">
                     <input class="form-control custom-control text-right" id="first-value" type="number" min="0" value="1" />
                     <select class="custom-select" id="first-unit">
@@ -49,9 +49,9 @@
                 </div>
             </div>
             <div class="form-group col-lg">
-                <label>Naturstrecke</label>
+                <label for="second-value">Naturstrecke</label>
                 <div class="input-group">
-                    <input type="text" class="form-control custom-control text-right" id="second-value" value="1" />
+                    <input class="form-control custom-control text-right" id="second-value" type="number" min="0" value="1" />
                     <select class="custom-select" id="second-unit">
                         <option value="km">Kilometer</option>
                         <option value="m" selected>Meter</option>
