@@ -53,16 +53,60 @@
         { from: "in", to: "mi", rate: 1 / 4 / 3 / 1760 },
         { from: "in", to: "yd", rate: 1 / 4 / 3 },
         { from: "in", to: "ft", rate: 1 / 4 },
-               
+
         { from: "in", to: "km", rate: 0.0254 / 1000 },
         { from: "in", to: "m", rate: 0.0254 },
         { from: "in", to: "cm", rate: 2.54 }
     ];
 
-    const fromValueControl = document.getElementById("from-value");   
-    fromValueControl.onchange = (e) => {
-        
-    };
+    const scaleValue = document.getElementById("scale-value");
+    scaleValue.onchange = convertFirstValueToSecondValue;
 
+    const firstValue = document.getElementById("first-value");
+    firstValue.oninput = convertFirstValueToSecondValue;
 
+    const firstUnit = document.getElementById("first-unit");
+    firstUnit.onchange = convertFirstValueToSecondValue;       
+
+    const secondValue = document.getElementById("second-value");
+    secondValue.oninput = convertSecondValueToFirstValue;
+
+    const secondUnit = document.getElementById("second-unit");        
+    secondUnit.onchange = convertFirstValueToSecondValue;
+
+    function convertFirstValueToSecondValue() {
+        const scale = Number.parseFloat(scaleValue.value);
+        const fromValue = Number.parseFloat(firstValue.value) * scale;
+        const fromUnit = firstUnit.value;
+        const toUnit = secondUnit.value;        
+        secondValue.value = convert(fromValue, fromUnit, toUnit);
+    }
+
+    function convertSecondValueToFirstValue() {
+        const scale = Number.parseFloat(scaleValue.value);
+        const fromValue = Number.parseFloat(secondValue.value) / scale;
+        const fromUnit = secondUnit.value;
+        const toUnit = firstUnit.value;
+        firstValue.value = convert(fromValue, fromUnit, toUnit);
+    }
+
+    function convert(fromValue, fromUnit, toUnit) {
+        if (isNaN(fromValue) || (fromValue < 0)) {
+            return "";
+        }
+
+        const rate = getConversionRate(fromUnit, toUnit);
+        const result = fromValue * rate;
+
+        if (Number.isInteger(result)) {
+            return result.toString();
+        } else {
+            return result.toFixed(3);
+        }
+    }
+
+    function getConversionRate(from, to) {
+        const conversion = conversionRates.find(conversion => (conversion.from === from) && (conversion.to === to));
+        return conversion !== undefined ? conversion.rate : 1;
+    }
 }());
