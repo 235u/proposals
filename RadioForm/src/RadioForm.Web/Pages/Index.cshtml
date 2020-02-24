@@ -16,19 +16,23 @@
         <hr />
         <section>
             <h2 id="menu-heading">List menu contains 11 items</h2>
-            <select class="custom-select" id="menu">
-                <option selected>Item 1</option>
-                <option>Item 2</option>
-                <option>Item 3</option>
-                <option>Item 4</option>
-                <option>Item 5</option>
-                <option>Item 6</option>
-                <option>Item 7</option>
-                <option>Item 8</option>
-                <option>Item 9</option>
-                <option>Item 10</option>
-                <option>Item 11</option>
-            </select>
+            <div class="form-row">
+                <div class="col-6">
+                    <select class="custom-select" id="menu">
+                        <option selected>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                        <option>Item 4</option>
+                        <option>Item 5</option>
+                        <option>Item 6</option>
+                        <option>Item 7</option>
+                        <option>Item 8</option>
+                        <option>Item 9</option>
+                        <option>Item 10</option>
+                        <option>Item 11</option>
+                    </select>
+                </div>
+            </div>
             <small class="form-text text-muted">When user selects from list menu, radio button choices appear with one-liner and image.</small>
         </section>
         <section class="mt-2">
@@ -41,7 +45,7 @@
                         <label class="custom-control-label" id="radio-1-label" for="radio-1">Item 1, selection a</label>
                     </div>
                 </div>
-                <div class="col-3" id="radio-2-col"> 
+                <div class="col-3" id="radio-2-col">
                     <img class="img-fluid" id="radio-2-img" src="~/img/books-1245690_640.jpg" />
                     <div class="custom-control custom-radio mt-1">
                         <input type="radio" id="radio-2" name="radios" class="custom-control-input">
