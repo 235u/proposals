@@ -1,0 +1,75 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web Form</title>
+    <link href="~/favicon.ico" rel="icon" asp-append-version="true">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <main class="container">
+        <h1 class="mt-3">Web Form</h1>
+        <hr />
+        <section>
+            <h2 id="menu-heading">List menu contains 11 items</h2>
+            <select class="custom-select" id="menu">
+                <option selected>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+                <option>Item 4</option>
+                <option>Item 5</option>
+                <option>Item 6</option>
+                <option>Item 7</option>
+                <option>Item 8</option>
+                <option>Item 9</option>
+                <option>Item 10</option>
+                <option>Item 11</option>
+            </select>
+            <small class="form-text text-muted">When user selects from list menu, radio button choices appear with one-liner and image.</small>
+        </section>
+        <section class="mt-2">
+            <h2>User can choose from maximum of 4 items in radio button choices</h2>
+            <div class="form-row mt-2">
+                <div class="col-3" id="radio-1-col">
+                    <img class="img-fluid" id="radio-1-img" src="~/img/audience-868074_640.jpg" />
+                    <div class="custom-control custom-radio mt-1">
+                        <input type="radio" id="radio-1" name="radios" class="custom-control-input">
+                        <label class="custom-control-label" id="radio-1-label" for="radio-1">Item 1, selection a</label>
+                    </div>
+                </div>
+                <div class="col-3" id="radio-2-col"> 
+                    <img class="img-fluid" id="radio-2-img" src="~/img/books-1245690_640.jpg" />
+                    <div class="custom-control custom-radio mt-1">
+                        <input type="radio" id="radio-2" name="radios" class="custom-control-input">
+                        <label class="custom-control-label" id="radio-2-label" for="radio-2">Item 1, selection b</label>
+                    </div>
+                </div>
+                <div class="col-3" id="radio-3-col">
+                    <img class="img-fluid" id="radio-3-img" src="~/img/chicago-690364_640.jpg" />
+                    <div class="custom-control custom-radio mt-1">
+                        <input type="radio" id="radio-3" name="radios" class="custom-control-input">
+                        <label class="custom-control-label" id="radio-3-label" for="radio-3">Item 1, selection c</label>
+                    </div>
+                </div>
+                <div class="col-3" id="radio-4-col">
+                    <img class="img-fluid" id="radio-4-img" src="~/img/girl-1246525_640.jpg" />
+                    <div class="custom-control custom-radio mt-1">
+                        <input type="radio" id="radio-4" name="radios" class="custom-control-input">
+                        <label class="custom-control-label" id="radio-4-label" for="radio-4">Item 1, selection d</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <footer class="text-right text-muted mb-3">
+            © 2020 <a class="text-dark" href="https://www.235u.net">Actin Uranium</a> |
+            <a class="text-dark" href="https://github.com/235u/proposals/tree/master/ScaleConverter">GitHub</a>
+        </footer>
+    </main>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
