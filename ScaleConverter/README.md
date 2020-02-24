@@ -6,6 +6,6 @@ S. https://www.twago.de/project/ma-stabsumrechner/154850/
 
 ## Prototyp
 
-Live unter: http://scale-converter.azurewebsites.net
+Live unter: https://scale-converter.azurewebsites.net
 
 ![UI-Screenshot](ScaleConverter.Web/wwwroot/img/ui-screenshot.png)
