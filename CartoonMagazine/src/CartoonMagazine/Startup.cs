@@ -23,11 +23,8 @@ namespace CartoonMagazine
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Service setup
             services.AddPiranha(options =>
             {
-                options.AddRazorRuntimeCompilation = true;
-
                 options.UseFileStorage();
                 options.UseImageSharp();
                 options.UseManager();
@@ -47,10 +44,7 @@ namespace CartoonMagazine
                 app.UseDeveloperExceptionPage();
             }
 
-            // Initialize Piranha
             App.Init(api);
-
-            // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
             // Build content types
