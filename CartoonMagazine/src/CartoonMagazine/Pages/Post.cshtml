@@ -11,7 +11,7 @@
         <header>
             @if (Model.Data.Hero.PrimaryImage.HasValue)
             {
-                <img src="@Url.Content(Model.Data.Hero.PrimaryImage.Resize(WebApp.Api, 930, 360))">
+                <img src="@Url.Content(Model.Data.Hero.PrimaryImage.Resize(WebApp.Api, 930))">
             }
             <h1>@Model.Data.Title</h1>
             <p class="post-meta">
@@ -34,6 +34,4 @@
         </header>
         @Html.DisplayFor(m => m.Data.Blocks)
     </article>
-
-    <partial name="Partial/_PostCommentForm"></partial>
 </div>

@@ -35,13 +35,13 @@
     } else if (Model.Data.Archive.Year.HasValue) {
         <div class="row">
             <div class="col blog-filter-header">
-                <h1>Posts from @MonthName() @Model.Data.Archive.Year</h1>
+                <h1>Cartoons from @MonthName() @Model.Data.Archive.Year</h1>
             </div>
         </div>
     } else {
         <div class="row">
             <div class="col blog-filter-header">
-                <h1>Latest posts</h1>
+                <h1>Latest cartoons</h1>
             </div>
         </div>
     }
@@ -76,7 +76,7 @@
             <div class="ingress">
                 @Html.Raw(post.Regions.Hero.Ingress)
             </div>
-            <p><a class="btn btn-link" href="@post.Permalink">Read more</a></p>
+            @*<p><a class="btn btn-link" href="@post.Permalink">Read more</a></p>*@
         </article>
     }
     @if (Model.Data.Archive.TotalPages > 1) {

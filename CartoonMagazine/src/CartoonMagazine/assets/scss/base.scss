@@ -40,26 +40,14 @@ header[role="banner"] {
         }
     }
 
-    .navbar-toggler {
-        background: #333;
-        width: 2.3rem;
-        height: 2.3rem;
-        padding: .25rem 0;
-        border-radius: 1.15rem;
-
-        .navbar-toggler-icon {
-            color: #fff;
-        }
-    }
-
     .buttons {
         padding: .75rem 0;
-    
+
         a {
             padding-left: .5rem;
             opacity: .75;
             transition: opacity ease-in-out 0.1s;
-    
+
             img {
                 height: 20px;
             }
@@ -100,18 +88,6 @@ header[role="banner"] {
     }
 }
 
-footer {
-    border-top: solid 1px $border-color;
-    text-align: right;
-    padding: 2rem 0;
-    margin-top: 2rem;
-    font-size: .8rem;
-
-    a {
-        font-weight: 400;
-    }
-}
-
 .btn-link {
     color: $text_regular;
     border: solid 1px $text_primary;
@@ -130,7 +106,7 @@ footer {
 .archive {
     article {
         padding: 2rem 0 1rem;
-        border-bottom: solid 1px $border_color;;
+        border-bottom: solid 1px $border_color;
 
         &:first-child {
             padding-top: 0;
