@@ -11,3 +11,5 @@ asking for expertise in `Mobile UI Design`, `User Experienmce Design`, and `Visu
 ## Solution
 
 Live at https://cartoon-magazine.azurewebsites.net, [administration area](https://cartoon-magazine.azurewebsites.net/manager) credentials are `admin` / `password`.
+
+![Single Post, Mobile View](docs/single-post-mobile.png)
