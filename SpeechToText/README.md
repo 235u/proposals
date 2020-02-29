@@ -1,6 +1,6 @@
 # Build Azure Speech to Text JavaScript C# proof of concept
 
-See [job details](docs/job-details.pdf) (one-timme project project, fixed-price), as posted on February 28, 2020 within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
+See [job details](docs/job-details.pdf) (one-timme project project, fixed-price), as posted / renewed on February 27, 2020 within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
 
 ## Asked questions
 
@@ -24,13 +24,13 @@ What bonus? What does "early delivery" mean to you (having a vague time frame of
 
 ### What past project or job have you had that is most like this one and why?
 
-I had a small project in reverse order (text-to-speech), using Microsoft technologies (via `C#` / `PInvoke`), years before Azure though.
+I've had a small project in reverse order (text-to-speech), using Microsoft technologies (via `C#` / `PInvoke`), years before Azure though.
 
 ### What questions do you have about the project?
 
 Could you explain the purpose of this project? Which concept do you want to proof exactly?
 
-If you want to test the service, to verify its accuracy / quality yourself (using Microsoft Edge browser): https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/#features
+If you want to test the service, to verify its accuracy / quality yourself, see the [official demo](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/#features) (using Microsoft Edge browser; I wasn't lucky with Google Chrome):
 
 ![Microsoft Demo](docs/microsoft-demo.png)
 
@@ -38,13 +38,13 @@ Please note that there is no need in multiple text boxes / areas (for the reques
 
 ### Do you already have these skills, and if not, can you learn missing skills quickly?
 
-Let my work speak for itself - see the [live demo]().
+Let my work speak for itself - see the [live demo](https://speech-to-text.azurewebsites.net).
 
 ## Technical notes
 
 > Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 
-In order to secure the keys you should not pass them to the client, whether in `HTML` nor in `JavaScript`.
+In order to secure the [keys](#keys) you should not pass them to the client, whether in `HTML` nor in `JavaScript`.
 
 > Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
 
@@ -104,6 +104,7 @@ public static async Task RecognizeSpeechAsync()
 ```
 
 Thank you,
+
 ![Microsoft Demo](docs/captain-obvious.jpg)
 
 Using Visual Studio 2019, [Go To Definition](https://docs.microsoft.com/en-us/visualstudio/ide/go-to-and-peek-definition?view=vs-2019) (**F12**):
