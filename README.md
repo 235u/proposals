@@ -23,5 +23,6 @@ Submitted for jobs posted on Upwork
 |[Scale Converter](ScaleConverter)|:heavy_minus_sign:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
+|[Speech to Text](SpeechToText)|:heavy_minus_sign:|
 |[Throttled Scraper](ThrottledScraper)|:x:|
 |[Yandex.Taxi Scraper](YandexTaxiScraper)|:x:|
