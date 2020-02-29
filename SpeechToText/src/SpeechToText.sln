@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2C5C87A-AC11-44E4-85C3-F57BB1D6CC5C}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToText.Configuration", "SpeechToText.Configuration\SpeechToText.Configuration.csproj", "{605FEF27-BD37-4951-8ACF-EC08EF95538C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToText.Console", "SpeechToText.Console\SpeechToText.Console.csproj", "{91A1039C-DEDF-4F98-92B5-646932D950D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Debug|x64.Build.0 = Debug|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Release|x64.ActiveCfg = Release|Any CPU
+		{605FEF27-BD37-4951-8ACF-EC08EF95538C}.Release|x64.Build.0 = Release|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Debug|x64.Build.0 = Debug|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Release|x64.ActiveCfg = Release|Any CPU
+		{91A1039C-DEDF-4F98-92B5-646932D950D1}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56D6361C-9499-4F74-B472-72F39F5F7F32}
+	EndGlobalSection
+EndGlobal
