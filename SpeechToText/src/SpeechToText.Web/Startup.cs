@@ -11,8 +11,8 @@ namespace SpeechToText.Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages()
-                .AddRazorRuntimeCompilation();
+            ////services.AddRazorPages()
+            ////    .AddRazorRuntimeCompilation();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -26,7 +26,10 @@ namespace SpeechToText.Web
                 app.UseHsts();
             }
 
+            app.UseDeveloperExceptionPage();
             app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
             app.UseStaticFiles(new StaticFileOptions
             {
                 OnPrepareResponse = (context) =>
@@ -35,13 +38,15 @@ namespace SpeechToText.Web
                     string cacheControlHeaderValue = $"public, max-age={CachePeriodInSeconds}";
                     context.Context.Response.Headers.Append(HeaderNames.CacheControl, cacheControlHeaderValue);
                 }
-            });
+            });                        
 
-            app.UseRouting();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
+            ////app.UseRouting();
+            ////app.UseEndpoints(endpoints =>
+            ////{
+            ////    endpoints.MapRazorPages();
+            ////});
+
+
         }
     }
 }

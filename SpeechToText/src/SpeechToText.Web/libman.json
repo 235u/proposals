@@ -9,6 +9,16 @@
         "dist/css/bootstrap.css",
         "LICENSE"
       ]
+    },
+    {
+      "library": "microsoft-cognitiveservices-speech-sdk@1.9.1",
+      "destination": "wwwroot/lib/microsoft-cognitiveservices-speech-sdk/",
+      "files": [
+        "LICENSE",
+        "distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.js",
+        "distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.js.map",
+        "distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle.min.js"
+      ]
     }
   ]
 }

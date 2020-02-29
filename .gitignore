@@ -338,3 +338,4 @@ ASALocalRun/
 /ScaleConverter/ScaleConverter.Web/wwwroot/lib/bootstrap
 /RadioForm/src/RadioForm.Web/wwwroot/lib/bootstrap
 /SpeechToText/src/SpeechToText.Web/wwwroot/lib/bootstrap
+/SpeechToText/src/SpeechToText.Web/wwwroot/lib/microsoft-cognitiveservices-speech-sdk

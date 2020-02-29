@@ -38,23 +38,45 @@ Please note that there is no need in multiple text boxes / areas (for the reques
 
 ### Do you already have these skills, and if not, can you learn missing skills quickly?
 
-Let my work speak for itself - see the [live demo](https://speech-to-text.azurewebsites.net).
+I'd like to let my work speak for me.
 
 ## Technical notes
 
 > Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 
-In order to secure the [keys](#keys) you should not pass them to the client, whether in `HTML` nor in `JavaScript`.
+The [keys](#keys) should not get passed to the client, whether in `HTML` nor in `JavaScript`.
+
+> An authorization token is a more secure method to authenticate for a browser deployment as it allows the subscription keys to be kept secure on a server and a 10 minute use token to be handed out to clients from an endpoint that can be protected from unauthorized access.
+
+> Each request requires an authorization header.
+
+> When using the `Authorization: Bearer` header, you're required to make a request to the issueToken endpoint. In this request, you exchange your subscription key for an access token that's valid for 10 minutes. In the next few sections you'll learn how to get a token, and use a token.
+
+See [Speech-to-text REST API, Authentication](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#authentication) for details.
 
 > Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
 
-I'd like to use `(ASP).NET Core`, and I'd like to dispense with `jQuery`. I could downgrade to `(ASP).NET Framwork` / `WebForms` later / on hire.
+
+I'd like to use `(ASP).NET Core`, and I'd like to dispense with `jQuery`, besides I'd like to use `Bootstrap` for (minimal) styling. I could downgrade to `(ASP).NET Framwork` / `WebForms` / custom `CSS` later / on hire.
+
+> Demonstrate both REST side technology and Server side SDK technology.
+
+There is no "REST side" technology, but a role concept, in a client-server relationship (in a computer network), where operations might be executed either by / on the server[-side] or by / on the client[-side].
+
+The (Speech to Text) [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) is the lower-level basis for the higher-level [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk)(s), available for various programming languages / platforms, giving "your applications access to the functions of the Speech service, making it easier to develop speech-enabled software." Easier compared to the REST API, which might be used "as an alternative to the Speech SDK", in the case there is no SDK for the language / platform of choice.
+
+> Before using the speech-to-text REST API, understand:
+> 
+> - Requests that use the REST API and transmit audio directly can only contain up to 60 seconds of audio.
+> - The speech-to-text REST API only returns final results. Partial results are not provided.
+>
+> If sending longer audio is a requirement for your application, consider using the Speech SDK or a file-based REST API, like [batch transcription](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription).
+
+The Speech SDK might be used both on client- and server-side, using the REST API under the hood, in both cases.
 
 > Thoroughly document code.
 
-I'm going to provide extensive technical documentation for the project in `Markdown`, version controlled.
-
-The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), its [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are documented very well; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
+I'm going to provide extensive technical documentation for the project in `Markdown`. The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), its [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are already very well documented; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
 
 See [this code sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnetcore/from-microphone) on GitHub:
 
@@ -123,15 +145,15 @@ Using [Option 1](https://docs.microsoft.com/en-us/azure/cognitive-services/speec
 
 > Immediately get **free trial** API keys without providing any credit card info (you need to have an existing Azure account). The **free trial** lasts 30 days and data is deleted at the end. This option is best for quick experimentation with the service.
 
-which gives two API keys for the West US region.
+which gives two [?] API keys for the West US region.
 
 ```sh
-dotnet user-secrets set "UnifiedSpeechServices:FirstKey" "[key]" --id "8db5ff65-0e5a-483b-bd76-8b63b9c71f34"
+dotnet user-secrets set "UnifiedSpeechServices:FirstKey" "[key]" --id "8db5ff65-0e5a-483b-bd76-8b63b9c71f34"ation
 ```
 
 ## Demo
 
-Live at https://speech-to-text.azurewebsites.net
+Live at https://speech-services.azurewebsites.net, based on https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/samples/js/browser.
 
 ## Status quo
 
@@ -141,9 +163,9 @@ Live at https://speech-to-text.azurewebsites.net
 - [ ] Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 - [ ] Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
 - [x] Webforms would be ideal, but can be any web page, such as MVC or just HTML page.
-- [ ] Have one client side text box display spoken text up to 60 seconds in "chunk" mode after "Speak" button is clicked.
-- [ ] Have other client side text box display spoken text once, "batch" mode, after spoken text is finished.
-- [ ] Demonstrate both REST side technology and Server side SDK technology.
+- [x] Have one client side text box display spoken text up to 60 seconds in "chunk" mode after "Speak" button is clicked.
+- [x] Have other client side text box display spoken text once, "batch" mode, after spoken text is finished.
+- [x] Demonstrate both REST side technology and Server side SDK technology.
 - [ ] Thoroughly document code.
 - [ ] Review code with me.
 
