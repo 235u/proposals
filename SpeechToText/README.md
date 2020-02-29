@@ -56,7 +56,7 @@ I'm going to provide extensive technical documentation for the project here, in 
 
 The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), its [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are documented very well; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
 
-See [this code sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnetcore/from-microphone/helloworld/Program.cs) on GitHub:
+See [this code sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnetcore/from-microphone) on GitHub:
 
 ```csharp
 public static async Task RecognizeSpeechAsync()
@@ -124,6 +124,10 @@ Using [Option 1](https://docs.microsoft.com/en-us/azure/cognitive-services/speec
 > Immediately get **free trial** API keys without providing any credit card info (you need to have an existing Azure account). The **free trial** lasts 30 days and data is deleted at the end. This option is best for quick experimentation with the service.
 
 which gives two API keys for the West US region.
+
+```sh
+dotnet user-secrets set "UnifiedSpeechServices:FirstKey" "[key]" --id "8db5ff65-0e5a-483b-bd76-8b63b9c71f34"
+```
 
 ## Demo
 
