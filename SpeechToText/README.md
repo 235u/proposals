@@ -1,6 +1,6 @@
 # Build Azure Speech to Text JavaScript C# proof of concept
 
-See [job details](docs/job-details.pdf) (one-timme project project, fixed-price), as posted / renewed on February 27, 2020 within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
+See [job details](docs/job-details.pdf) (one-time project project, fixed-price), as posted / renewed on February 27, 2020 within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
 
 ## Asked questions
 
