@@ -162,10 +162,10 @@ Live at https://speech-services.azurewebsites.net, based on https://github.com/A
 - [x] Follow good coding standards.
 - [ ] Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 - [ ] Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
-- [x] Webforms would be ideal, but can be any web page, such as MVC or just HTML page.
+- [ ] Webforms would be ideal, but can be any web page, such as MVC or just HTML page.
 - [x] Have one client side text box display spoken text up to 60 seconds in "chunk" mode after "Speak" button is clicked.
 - [x] Have other client side text box display spoken text once, "batch" mode, after spoken text is finished.
-- [x] Demonstrate both REST side technology and Server side SDK technology.
+- [ ] Demonstrate both REST side technology and Server side SDK technology.
 - [ ] Thoroughly document code.
 - [ ] Review code with me.
 
