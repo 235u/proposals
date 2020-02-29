@@ -6,10 +6,6 @@ See [job details](docs/job-details.pdf) (one-timme project project, fixed-price)
 
 ### Do you have any questions about the job description?
 
-Why did you place this job within `Front-End Development`?
-
-
-
 > Review code with me.
 
 Do you mean explaining the code to you? (This might take a while, depending on your coding experience.)
