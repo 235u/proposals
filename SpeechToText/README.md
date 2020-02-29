@@ -52,7 +52,7 @@ I'd like to use `(ASP).NET Core`, and I'd like to dispense with `jQuery`. I coul
 
 > Thoroughly document code.
 
-I'm going to provide extensive technical documentation for the project here, in `Markdown`, version controlled.
+I'm going to provide extensive technical documentation for the project in `Markdown`, version controlled.
 
 The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), its [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are documented very well; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
 
@@ -138,13 +138,13 @@ Live at https://speech-to-text.azurewebsites.net
 - [ ] Provide step by step instructions for me to reproduce on my machine with my Azure account.
 - [x] Use Visual Studio 2019.
 - [x] Follow good coding standards.
-- [x] Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
+- [ ] Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 - [ ] Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
 - [x] Webforms would be ideal, but can be any web page, such as MVC or just HTML page.
-- [x] Have one client side text box display spoken text up to 60 seconds in "chunk" mode after "Speak" button is clicked.
-- [x] Have other client side text box display spoken text once, "batch" mode, after spoken text is finished.
-- [x] Demonstrate both REST side technology and Server side SDK technology.
-- [x] Thoroughly document code.
+- [ ] Have one client side text box display spoken text up to 60 seconds in "chunk" mode after "Speak" button is clicked.
+- [ ] Have other client side text box display spoken text once, "batch" mode, after spoken text is finished.
+- [ ] Demonstrate both REST side technology and Server side SDK technology.
+- [ ] Thoroughly document code.
 - [ ] Review code with me.
 
 
