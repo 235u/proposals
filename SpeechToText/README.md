@@ -16,7 +16,7 @@ Meaning April 13, 2020?
 
 > There will be a bonus provided for early delivery and exceptional work.
 
-What bonus? What does "early delivery" mean to you (having a vague time frame of around two weeks)? Can you diffentiate between "exceptional" and ordinary work? (Do you have the asked skills yourself?)
+What bonus? What does "early delivery" mean to you (having a vague time frame of around two weeks)? Can you differentiate between "exceptional" and ordinary work? (Do you have the asked skills yourself?)
 
 ### What past project or job have you had that is most like this one and why?
 
