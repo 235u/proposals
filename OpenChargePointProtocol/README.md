@@ -16,7 +16,9 @@ Which OCCP version(s) ([1.5](https://www.openchargealliance.org/protocols/ocpp-1
 
 > We are looking for someone able to do the job in record time, a rock star, so if you think you are the one, we are ready to agree a much better deal for you.
 
-What does "record time" mean to you (as a period of time, and as an amount of work in hours)? Can you afford a "rock star"? What does "a much better deal" mean in numbers?
+What does "record time" mean to you (as a period of time, and as an amount of work in hours)? Could you (always) respond in "record time" yourself, providing valuable feedback (within 24 hours)?
+
+Can you afford a "rock star"? What does "a much better deal" mean in numbers?
 
 Could you provide a "rock star" requirements specification, covering functional and non-functional requirements as well (besides the [official OCCP documentation](https://www.openchargealliance.org/downloads))?
 
@@ -28,9 +30,9 @@ This tool being (marketed as) the reference implementation for all OCCP versions
 
 ## Deliverables
 
-- `API` and `API Integration`: Which (third party?) API(s) do you want to integrate?
+- `API` and `API Integration`: Which (third party?) `API`(s) do you want to integrate?
 - `Custom PHP`: While asking for `ASP.NET` at the same time?
-- `Database Architecture`: Which database engine(s) would you like to use?
-- `Desktop Applications`: You are also asking for multiple desktop applications?
+- `Database Architecture`: Which database engine(s) would you like to use? What amounts of data would you like to handle (as an order of magnitude, like thousands / millions / billions of records)?
+- `Desktop Applications`: You are asking for multiple desktop applications?
 - `e-Commerce Website`: Like a webshop? What are you going to sell (hardware / software / services)? 
 - `Web Application`, `Web Design`, and `Website Development` (I doubt the latter to be deliverable): The `Web Application` and the `Website` (to be developed) are not the same (being two different web applications)?
