@@ -1,6 +1,6 @@
 ﻿# Open Charge Point Protocol (OCPP) Full Stack Development for EV Charging Equipment
 
-See [job details](docs/job-details.pdf) (ongoing project, fixed-price), as posted on March 1, 2020, within `Full Stack Development`, asking for expertise in `ASP.NET` and `Bootstrap`.
+See [job details](docs/job-details.pdf) (ongoing project, fixed-price), as posted on February 28, 2020, within `Full Stack Development`, asking for expertise in `ASP.NET` and `Bootstrap`.
 
 > Deliverables will be a full stack front end, back end, android and ios application for running and operating electrical equipment that is Open Chargepoint Point Protocol (OCPP).
 
