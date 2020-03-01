@@ -15,6 +15,7 @@ Submitted for jobs posted on Upwork
 |[Fraction Converter](FractionConverter)|:heavy_minus_sign:|
 |[Game Price Comparison](GamePriceComparison)|:x:|
 |[Google Search](GoogleSearch)|:x:|
+|[OpenChargePointProtocol](Open Charge Point Protocol)|:heavy_minus_sign:|
 |[Opla Energy](OplaEnergy)|:heavy_check_mark:|
 |[Identity Customization](IdentityCustomization)|:x:|
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
