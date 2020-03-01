@@ -26,7 +26,7 @@ Do you have access to the [OCPP Compliance Testing Tool](https://www.openchargea
 
 > OCPP Compliance Testing Tool is a tool to assist OCA members to test the systems implementing the OCPP version for the conformance to the guidelines specified in the OCPP specification. The tool can test the compliancy of both charge point and Central System.
 
-This tool being (marketed as) the reference implementation for all OCCP versions and flavors, able to simulate all the specified use cases (according to my understanding), and being priced between 6.000 and 16.000 euros.
+This tool being (marketed as) the reference implementation for all OCCP versions and flavors, able to simulate all the specified use cases (according to my understanding), and priced between 6.000 and 16.000 euros.
 
 ## Deliverables
 
