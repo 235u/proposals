@@ -1,6 +1,6 @@
 # Build Azure Speech to Text JavaScript C# proof of concept
 
-See [job details](docs/job-details.pdf) (one-time project project, fixed-price), as posted / renewed on February 27, 2020 within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
+See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted / renewed on February 27, 2020, within `Front-End Development`, looking for a mix of experience and value in `JavaScript`, `C#`, and `Azure Cognitive Speech to Text`.
 
 ## Asked questions
 
@@ -24,7 +24,7 @@ I've had a small project in reverse order (text-to-speech), using Microsoft tech
 
 ### What questions do you have about the project?
 
-Could you explain the purpose of this project? Which concept do you want to proof exactly?
+Could you explain the purpose of this project? Which concept do you want to prove exactly?
 
 If you want to test the service, to verify its accuracy / quality yourself, see the [official demo](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/#features) (using Microsoft Edge browser; I wasn't lucky with Google Chrome):
 
@@ -40,20 +40,19 @@ I'd like to let my work speak for me.
 
 > Ensure proper security is used, where server side authentication token is passed to client, where it is not exposed in HTML (not using Hidden Field)
 
-The [keys](#keys) should not get passed to the client, whether in `HTML` nor in `JavaScript`.
+The [keys](#keys) should not get passed to the client, whether in `HTML` nor `JavaScript`.
 
 > An authorization token is a more secure method to authenticate for a browser deployment as it allows the subscription keys to be kept secure on a server and a 10 minute use token to be handed out to clients from an endpoint that can be protected from unauthorized access.
 
 > Each request requires an authorization header.
 
-> When using the `Authorization: Bearer` header, you're required to make a request to the issueToken endpoint. In this request, you exchange your subscription key for an access token that's valid for 10 minutes. In the next few sections you'll learn how to get a token, and use a token.
+> When using the `Authorization: Bearer` header, you're required to make a request to the `issueToken` endpoint. In this request, you exchange your subscription key for an access token that's valid for 10 minutes.
 
 See [Speech-to-text REST API, Authentication](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#authentication) for details.
 
 > Use ASP.NET Framework (not Core), C#, JavaScript and jQuery. (No Angular/React/etc.)
 
-
-I'd like to use `(ASP).NET Core`, and I'd like to dispense with `jQuery`, besides I'd like to use `Bootstrap` for (minimal) styling. I could downgrade to `(ASP).NET Framwork` / `WebForms` / custom `CSS` later / on hire.
+I'd like to use `(ASP).NET Core`, and I'd like to dispense with `jQuery`, besides I'd like to use `Bootstrap` for (minimal) styling. I could downgrade to `(ASP).NET Framework` / `WebForms` / custom `CSS` later / on hire.
 
 > Demonstrate both REST side technology and Server side SDK technology.
 
@@ -68,11 +67,11 @@ The (Speech to Text) [REST API](https://docs.microsoft.com/en-us/azure/cognitive
 >
 > If sending longer audio is a requirement for your application, consider using the Speech SDK or a file-based REST API, like [batch transcription](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/batch-transcription).
 
-The Speech SDK might be used both on client- and server-side, using the REST API under the hood, in both cases.
+The Speech SDK might be used both on the client- and server-side, using the REST API under the hood, in both cases.
 
 > Thoroughly document code.
 
-I'm going to provide extensive technical documentation for the project in `Markdown`. The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), its [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are already very well documented; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
+I'm going to provide extensive technical documentation for the project in `Markdown`. The [service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-to-text), the [Speech SDK](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk) / [REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text) are already very well documented; there won't be a lot of custom code to document (inline, in code, regarding self-explaining code).
 
 See [this code sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/dotnetcore/from-microphone) on GitHub:
 
