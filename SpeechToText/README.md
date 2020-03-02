@@ -143,7 +143,7 @@ Using [Option 1](https://docs.microsoft.com/en-us/azure/cognitive-services/speec
 which gives two [?] API keys for the West US region.
 
 ```sh
-dotnet user-secrets set "UnifiedSpeechServices:FirstKey" "[key]" --id "8db5ff65-0e5a-483b-bd76-8b63b9c71f34"ation
+dotnet user-secrets set "UnifiedSpeechServices:FirstKey" "[key]" --id "8db5ff65-0e5a-483b-bd76-8b63b9c71f34"
 ```
 
 ## Demo
