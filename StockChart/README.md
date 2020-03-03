@@ -2,9 +2,9 @@
 
 See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on March 3, 2020, within `Desktop Software Development`, asking for expertise in `C#`.
 
-> Location: Bulgaria, Croatia, Ukraine, Romania, Russia, Poland, Bosnia and Herzegovina
+> Preferred qualifications, location: Bulgaria, Croatia, Ukraine, Romania, Russia, Poland, Bosnia and Herzegovina
 
-I'm from Russia, living in Austria.
+I'm from Russia, living in Austria (UTC+01:00).
 
 > detailed step-by-step instructions for tweaks that need to be done will be provided
 
