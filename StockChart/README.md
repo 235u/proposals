@@ -26,9 +26,11 @@ I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using 
 
 ### This project pays (agreed amount + bonus) only after fully tested code is delivered. No milestone or escrow payments will be made (a minimum escrow payment required by upwork will be done when we begin). Is this understood and ok?
 
-Ehm, it's not OK if you are asking me to agree on a $10 project (fixed-price, to be paid at the end, by project; covered by the Upwork fixed-price protection, promising more ("agreed amount + bonus") at the end. Please correct me If I am wrong.
+Ehm, it's not OK, I suppose (also depending on other answers, your response times, infrastructure, and code base quality), if you are asking me to agree on a $10 project (fixed-price, to be paid at the end, by project; covered by the Upwork fixed-price protection), promising more ("agreed amount + bonus") at the end. Please correct me If I am wrong.
 
 "Fully tested code" tested by you? Automated "front-end" testing (charts especially) is not "simple/straightforward".
+
+How do you expect the code to be delivered (version control)? 
 
 ### Are you the developer who will be working on this project if selected (no subcontracting)?
 
