@@ -22,7 +22,7 @@ I do expect detailed instructions on "additional work" before being hired. I'm n
 
 > Core skills needed for the project: Telerik UI for WPF/Radchartview
 
-I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using various controls, including charts). Please note that I don't have a Telerik subscription myself now, you'll have to provide the libraries (the most actual version, I hope) required by the https://docs.telerik.com/devtools/wpf/controls/radchartview/overview.
+I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using various controls, including charts). Please note that I don't have a Telerik subscription myself now, you'll have to provide the libraries required by the https://docs.telerik.com/devtools/wpf/controls/radchartview/overview (in the most actual version, I hope).
 
 ## Asked questions
 
@@ -36,7 +36,7 @@ How do you expect the code to be delivered (version control)?
 
 ### Are you the developer who will be working on this project if selected (no subcontracting)?
 
-Yes, no subcontracting. Are you the primary developer of the application in question (no subcontracting)?
+Yes, no subcontracting. Who do you represent? Are you the primary developer of the application in question (no subcontracting)?
 
 >  You will add/modify some features on top of this application. The project itself is fairly simple/straightforward and detailed step-by-step instructions for tweaks that need to be done will be provided.
 
