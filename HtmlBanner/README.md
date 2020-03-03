@@ -34,7 +34,7 @@ Please note that I'd need some JavaScript too (for sliding, pausing on hover, et
 
 Integration of the banner (on a / your website) is not part of this project, right? 
 
-According to Upwork you have 3 jobs posted (including 1 job being open) with a 0% hire rate, could you explain that (the zero-percent hire rate)?
+According to Upwork you have 3 jobs posted (including 1 job being open) with a 0% hire rate. Could you explain that (the zero-percent hire rate)?
 
 ### What past project or job have you had that is most like this one and why?
 
