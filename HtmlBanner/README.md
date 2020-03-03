@@ -44,3 +44,4 @@ See https://www.235u.net (the sliders).
 
 Live at https://html-banner.azurewebsites.net, using [Bootstrap's Carousel](https://getbootstrap.com/docs/4.4/components/carousel/):
 
+![Demo Screenshot](docs/demo-screenshot.png)
