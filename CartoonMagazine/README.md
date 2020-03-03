@@ -1,6 +1,6 @@
 # Publishing a digital/mobile fist management cartoon magazine
 
-See [job details](docs/job-details.pdf) (ongoing project project, fixed-price), as posted on February 24, 2020 within `Mobile Design`, including following images [cropped and renamed] posted as attachments,
+See [job details](docs/job-details.pdf) (ongoing project project, fixed-price), as posted on February 24, 2020 within `Mobile Design`, including following images [cropped and renamed] posted as attachments:
 
 - [Not Found](docs/not-found.jpg)
 - [Russian Intelligence HQ](docs/russian-intelligence-hq.jpg)
