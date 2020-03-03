@@ -15,6 +15,7 @@ Submitted for jobs posted on Upwork
 |[Fraction Converter](FractionConverter)|:heavy_minus_sign:|
 |[Game Price Comparison](GamePriceComparison)|:x:|
 |[Google Search](GoogleSearch)|:x:|
+|[HTML Banner](HtmlBanner)|:heavy_minus_sign:|
 |[Open Charge Point Protocol](OpenChargePointProtocol)|:heavy_minus_sign:|
 |[Opla Energy](OplaEnergy)|:heavy_check_mark:|
 |[Identity Customization](IdentityCustomization)|:x:|
@@ -25,5 +26,6 @@ Submitted for jobs posted on Upwork
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
 |[Speech to Text](SpeechToText)|:x:|
+|[Stock Chart](StockChart)|:heavy_minus_sign:|
 |[Throttled Scraper](ThrottledScraper)|:x:|
 |[Yandex.Taxi Scraper](YandexTaxiScraper)|:x:|
