@@ -1,6 +1,6 @@
 # Add some features to a wpf application (c#/Telerik)
 
-See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on March 3, 2020 within `Desktop Software Development`, asking for expertise in `C#`.
+See [job details](docs/job-details.pdf) (one-time project, fixed-price), as posted on March 3, 2020, within `Desktop Software Development`, asking for expertise in `C#`.
 
 > Location: Bulgaria, Croatia, Ukraine, Romania, Russia, Poland, Bosnia and Herzegovina
 
@@ -12,7 +12,9 @@ I do expect these instructions to be provided before being hired (if you decide 
 
 > If you are an experienced C# developer with good work ethic, eye for detail and sound coding practices please apply.
 
-See https://github.com/235u for my coding practices, https://www.235u.net for visual details, and https://www.acm.org/code-of-ethics I'm trying to adhere to. Does your code base follow "sound coding practices"?
+See https://github.com/235u for my coding practices, https://www.235u.net for visual details, and https://www.acm.org/code-of-ethics I'm trying to adhere to.
+
+Do you have a website? Does your code base follow "sound coding practices"?
 
 > We [...] will offer bonus over our agreed amount and additional work for job well done.
 
@@ -20,7 +22,7 @@ I do expect detailed instructions on "additional work" before being hired. I'm n
 
 > Core skills needed for the project: Telerik UI for WPF/Radchartview
 
-I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using various  controls, including charts). Please note that I don't have a Telerik subscription myself now, you'll have to provide the libraries (the most actual version, I hope) required by the https://docs.telerik.com/devtools/wpf/controls/radchartview/overview
+I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using various controls, including charts). Please note that I don't have a Telerik subscription myself now, you'll have to provide the libraries (the most actual version, I hope) required by the https://docs.telerik.com/devtools/wpf/controls/radchartview/overview.
 
 ## Asked questions
 
@@ -28,7 +30,7 @@ I have worked with "Telerik UI for ASP.NET MVC" for 2 years (2016 - 2018, using 
 
 Ehm, it's not OK, I suppose (also depending on other answers, your response times, infrastructure, and code base quality), if you are asking me to agree on a $10 project (fixed-price, to be paid at the end, by project; covered by the Upwork fixed-price protection), promising more ("agreed amount + bonus") at the end. Please correct me If I am wrong.
 
-"Fully tested code" tested by you? Automated "front-end" testing (charts especially) is not "simple/straightforward".
+"Fully tested code" tested by you? (Automated "front-end" testing, and charts especially, is not that "simple/straightforward".)
 
 How do you expect the code to be delivered (version control)? 
 
@@ -42,7 +44,7 @@ Why don't you do it yourself, being that "simple/straightforward" and having "de
 
 ### Is it understood that this project is not available to work on hourly basis?
 
-Yes. Because of this question I have to ask you: Why is this project not available to work on hourly basis?
+Yes. Because of this question I have to ask you: Why is this project not available to work on an hourly basis?
 
 Hypothetically speaking, your budget is limited to $500, how many hours of "expert level" work do you expect to get for this money (as a rough estimate), being "willing to pay higher rates for the most experienced freelancers"?
 
@@ -54,4 +56,4 @@ Hypothetically speaking, your budget is limited to $500, how many hours of "expe
 
 I could start the next day after being hired, and I could spend between 20 highly-concentrated and 60 less-highly-concentrated hours a week on this project.
 
-How many hours of "high quality work" would it take you / your developers to get this job "done right" (as a rough estimate)?
+How many hours of "high quality work" would it take you / your team to get this job "done right" (as a rough estimate)?
