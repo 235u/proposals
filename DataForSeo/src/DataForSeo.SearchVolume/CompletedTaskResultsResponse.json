@@ -1,0 +1,184 @@
+{
+  "version": "0.1.20200229",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0 sec.",
+  "cost": 0,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "03041938-2020-0110-0000-0aee564de167",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0 sec.",
+      "cost": 0,
+      "result_count": 2,
+      "path": [
+        "v3",
+        "keywords_data",
+        "google",
+        "search_volume",
+        "task_get",
+        "03041938-2020-0110-0000-0aee564de167"
+      ],
+      "data": {
+        "api": "keywords_data",
+        "function": "search_volume",
+        "se": "google",
+        "location_name": "United States",
+        "language_code": "en",
+        "keywords": [
+          "average page rpm adsense",
+          "what is this all about"
+        ]
+      },
+      "result": [
+        {
+          "keyword": "what is this all about",
+          "location_code": 2840,
+          "language_code": "en",
+          "competition": 0.012048192771084338,
+          "cpc": 0,
+          "search_volume": 140,
+          "categories": [
+            10011
+          ],
+          "monthly_searches": [
+            {
+              "year": 2020,
+              "month": 1,
+              "search_volume": 260
+            },
+            {
+              "year": 2019,
+              "month": 12,
+              "search_volume": 140
+            },
+            {
+              "year": 2019,
+              "month": 11,
+              "search_volume": 170
+            },
+            {
+              "year": 2019,
+              "month": 10,
+              "search_volume": 170
+            },
+            {
+              "year": 2019,
+              "month": 9,
+              "search_volume": 140
+            },
+            {
+              "year": 2019,
+              "month": 8,
+              "search_volume": 140
+            },
+            {
+              "year": 2019,
+              "month": 7,
+              "search_volume": 110
+            },
+            {
+              "year": 2019,
+              "month": 6,
+              "search_volume": 110
+            },
+            {
+              "year": 2019,
+              "month": 5,
+              "search_volume": 140
+            },
+            {
+              "year": 2019,
+              "month": 4,
+              "search_volume": 110
+            },
+            {
+              "year": 2019,
+              "month": 3,
+              "search_volume": 110
+            },
+            {
+              "year": 2019,
+              "month": 2,
+              "search_volume": 110
+            }
+          ]
+        },
+        {
+          "keyword": "average page rpm adsense",
+          "location_code": 2840,
+          "language_code": "en",
+          "competition": 0.09523809523809523,
+          "cpc": 0,
+          "search_volume": 10,
+          "categories": null,
+          "monthly_searches": [
+            {
+              "year": 2020,
+              "month": 1,
+              "search_volume": 10
+            },
+            {
+              "year": 2019,
+              "month": 12,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 11,
+              "search_volume": 10
+            },
+            {
+              "year": 2019,
+              "month": 10,
+              "search_volume": 10
+            },
+            {
+              "year": 2019,
+              "month": 9,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 8,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 7,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 6,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 5,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 4,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 3,
+              "search_volume": 0
+            },
+            {
+              "year": 2019,
+              "month": 2,
+              "search_volume": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": "0.1.20200229",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1792 sec.",
+  "cost": 0,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "03041943-2020-0178-0000-76b603c76bb9",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1280 sec.",
+      "cost": 0,
+      "result_count": 5,
+      "path": [
+        "v3",
+        "keywords_data",
+        "google",
+        "search_volume",
+        "tasks_ready"
+      ],
+      "data": {
+        "api": "keywords_data",
+        "function": "tasks_ready",
+        "se": "google"
+      },
+      "result": [
+        {
+          "id": "03041553-2020-0110-0000-8c770fca7fff",
+          "se": "google",
+          "function": "search_volume",
+          "date_posted": "2020-03-04 13:53:44 +00:00",
+          "endpoint": "\/v3\/keywords_data\/google\/search_volume\/task_get\/03041553-2020-0110-0000-8c770fca7fff"
+        },
+        {
+          "id": "03041911-2020-0110-0000-15b2f9160ee1",
+          "se": "google",
+          "function": "search_volume",
+          "date_posted": "2020-03-04 17:11:04 +00:00",
+          "endpoint": "\/v3\/keywords_data\/google\/search_volume\/task_get\/03041911-2020-0110-0000-15b2f9160ee1"
+        },
+        {
+          "id": "03041912-2020-0110-0000-9fe346aee706",
+          "se": "google",
+          "function": "search_volume",
+          "date_posted": "2020-03-04 17:12:44 +00:00",
+          "endpoint": "\/v3\/keywords_data\/google\/search_volume\/task_get\/03041912-2020-0110-0000-9fe346aee706"
+        },
+        {
+          "id": "03041921-2020-0110-0000-b4626385d9c2",
+          "se": "google",
+          "function": "search_volume",
+          "date_posted": "2020-03-04 17:21:14 +00:00",
+          "endpoint": "\/v3\/keywords_data\/google\/search_volume\/task_get\/03041921-2020-0110-0000-b4626385d9c2"
+        },
+        {
+          "id": "03041938-2020-0110-0000-0aee564de167",
+          "se": "google",
+          "function": "search_volume",
+          "date_posted": "2020-03-04 17:38:55 +00:00",
+          "endpoint": "\/v3\/keywords_data\/google\/search_volume\/task_get\/03041938-2020-0110-0000-0aee564de167"
+        }
+      ]
+    }
+  ]
+}

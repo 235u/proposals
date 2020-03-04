@@ -1,0 +1,38 @@
+{
+  "version": "0.1.20200229",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1154 sec.",
+  "cost": 0.05,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "03041938-2020-0110-0000-0aee564de167",
+      "status_code": 20100,
+      "status_message": "Task Created.",
+      "time": "0.0024 sec.",
+      "cost": 0.05,
+      "result_count": 0,
+      "path": [
+        "v3",
+        "keywords_data",
+        "google",
+        "search_volume",
+        "task_post"
+      ],
+      "data": {
+        "api": "keywords_data",
+        "function": "search_volume",
+        "se": "google",
+        "location_name": "United States",
+        "language_code": "en",
+        "keywords": [
+          "average page rpm adsense",
+          "what is this all about"
+        ]
+      },
+      "result": null
+    }
+  ]
+}
