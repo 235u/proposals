@@ -59,7 +59,7 @@ namespace DataForSeo.SearchVolume
 
                     if (result.status_code == InternalStatusCode.OK)
                     {
-                        var output = string.Empty;
+                        var output = new List<object>();
 
                         foreach (var task in result.tasks)
                         {
@@ -69,11 +69,13 @@ namespace DataForSeo.SearchVolume
                                     $"/v3/keywords_data/google/search_volume/task_get/{entry.id}");
 
                                 responseContent = await responseMessage.Content.ReadAsStringAsync();
-                                output += responseContent;
+                                var taskResult = JsonConvert.DeserializeObject<dynamic>(responseContent);
+                                output.Add(taskResult);
                             }
                         }
 
-                        File.WriteAllText(OutputFileName, output);
+                        string json = JsonConvert.SerializeObject(output.ToArray(), Formatting.Indented);
+                        File.WriteAllText(OutputFileName, json);
                     }
                 }
             }

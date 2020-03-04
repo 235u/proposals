@@ -4,13 +4,9 @@ See [job details](docs/job-details.pdf) (ongoing project project, fixed-price), 
 
 ## Search Volume lookup for list of keywords
 
-> What I expect from you is to create a small tool that for a given list of keywords and a given configuration file (see below) will lookup the search volume by calling DataForSEO via API. 
-
-
-
 > Goal is to divide list of keywords in groups of 700 and make an API call per group. 
 
-Note that there is no need to make an API call per group (via `HTTP POST`), as multiple tasks can be created in a single [Task POST](https://docs.dataforseo.com/v3/keywords_data/google/search_volume/task_post) request. 
+Note that there is no need to make an API call per keyword group (via multiple `HTTP POST` requests), as multiple tasks can be created by a single [Task POST](https://docs.dataforseo.com/v3/keywords_data/google/search_volume/task_post) request. 
 
 >> You can send up to 700 keywords in one `keywords` array. Our system will charge your account per request, no matter what number of keywords an array has, the price for 1 or 700 keywords will be the same.
 
@@ -18,11 +14,11 @@ The limitation of 700 keywords is for a single task (as I did understand).
 
 > Output should be written in a `Output.csv` file.
 
-The `.csv` format (comma-separated values, for tabular data) might be inappropriate for the output because of hierarchical data in the response (see [CompletedTaskResultsResponse.json](src/DataForSeo.SearchVolume/CompletedTaskResultsResponse.json)).
+The `.csv` format (comma-separated values, for tabular data) might be inappropriate for the output because of hierarchical data in the response (see [CompletedTaskResultsResponse.json](src/DataForSeo.SearchVolume/CompletedTaskResultsResponse.json); I'd stick to `JSON`, as being used by the [API](https://docs.dataforseo.com/v3/keywords_data/overview)).
 
 > Please empty `keywords.txt` file with the keywords that have successfully been queried to DataForSEO while program is running.
 
-Note that "plus symbol '+' will be decoded to a space character", "maximum number of words for each keyword phrase" is 10, and "the maximum number of characters for each keyword" is 80.
+Note that the "plus symbol '+' will be decoded to a space character", "maximum number of words for each keyword phrase" is 10, and "the maximum number of characters for each keyword" is 80.
 
 Following `Keywords.txt`
 
@@ -45,4 +41,4 @@ Note that these settings have to be set within the `<appSettings></appSettings>`
 
 > Please return Cost of task in execution window when program has finished running.
 
-Note that "your account will be charged only for setting a task", and the `cost` value is being returned on the [Task POST](https://docs.dataforseo.com/v3/keywords_data/google/search_volume/task_post) request as "total tasks cost, USD" (for all created tasks), being available before task(s) completion (created with `Standard` priority) and results retrieval.
+Note that "your account will be charged only for setting a task", and the `cost` value is being returned on the [Task POST](https://docs.dataforseo.com/v3/keywords_data/google/search_volume/task_post) request as "total tasks cost, USD" (for all tasks created by this request), being available before task(s) completion (created with `Standard` priority) and results retrieval.
