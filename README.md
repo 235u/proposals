@@ -6,7 +6,7 @@ Submitted for jobs posted on Upwork
 |[Bootstrap Theming](BootstrapTheming)|:x:|
 |[Box Folder Creator](BoxFolderCreator)|:x:|
 |[Cartoon Magazine](CartoonMagazine)|:x:|
-|[Data for SEO](DataForSeo)|:heavy_minus_sign:|
+|[DataForSEO](DataForSeo)|:heavy_minus_sign:|
 |[Diamond Price Calculator](DiamondPriceCalculator)|:heavy_check_mark:|
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
