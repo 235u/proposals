@@ -11,7 +11,6 @@ Submitted for jobs posted on Upwork
 |[DIMDEX Registration](DimdexRegistration)|:heavy_check_mark:|
 |[ELMAH Configuration](ElmahConfiguration)|:x:|
 |[Esports Design](EsportsDesign)|:x:|
-|[Excel Chart Exporter](EzparkTechnology)|:x:|
 |[Ezpark Technology](EzparkTechnology)|:x:|
 |[Fraction Converter](FractionConverter)|:heavy_minus_sign:|
 |[Game Price Comparison](GamePriceComparison)|:x:|
