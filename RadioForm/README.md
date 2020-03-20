@@ -10,6 +10,6 @@ Funny one:
 
 ## Working solution
 
-Live at: https://radio-form.azurewebsites.net/
+Live at: https://radio-form.azurewebsites.net
 
 ![UI-Screenshot](docs/ui-screenshot.png)
