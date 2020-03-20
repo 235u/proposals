@@ -1,5 +1,6 @@
 # Upwork Proposals
-Submitted for jobs posted on Upwork
+
+Submitted for jobs posted on [Upwork](https://upwork.com)
 
 |Job|Hired|
 |:--|:---:|
