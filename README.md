@@ -22,7 +22,6 @@ Submitted for jobs posted on Upwork
 |[Outlook Synchronisation](OutlookSynchronisation)|:x:|
 |[Plentix](Plentix)|:x:|
 |[Radio Form](RadioForm)|:heavy_minus_sign:|
-|[Scale Converter](ScaleConverter)|:heavy_minus_sign:|
 |[Self Update Utility](SelfUpdateUtility)|:x:|
 |[SharpNEAT Serialization](SharpNeatSerialization)|:x:|
 |[Speech to Text](SpeechToText)|:x:|
