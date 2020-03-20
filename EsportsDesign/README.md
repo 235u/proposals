@@ -17,4 +17,4 @@ January 2, 2020: StarCraft 2, World of Tanks.
 
 ## What is your understanding about Esports?
 
-Thousands of hours playing Quake / Unreal Tournament / Counter-Strike / StarCraft / WarCraft / DotA / HearthStone; thousands of thematic videos / broadcasts on Twitch / YouTube.
+Thousands of hours playing Quake / Unreal Tournament / Counter-Strike / StarCraft / WarCraft / DotA / HearthStone; watching thousands of thematic videos / streams on Twitch / YouTube.
