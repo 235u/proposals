@@ -41,12 +41,14 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 - **CSS** (style sheet language);
 - **HTML** (markup language);
 - **JavaScript** / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language);
+- LaTeX (markup language);
 - **Mardown** (markup language);
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language);
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language);
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain]);
 - **SVG** (markup language);
 - **TypeScript** / JavaScript / ECMAScript (class-based superset of JavaScript);
+- UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting);
 - **XML** (meta markup language).
 
@@ -117,7 +119,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 ### Error Handling	
 
 - Comes up with guidelines on exception handling for the entire system;
-- codes to detect possible exception before;
+- codes to detect possible exceptions before;
 - maintains consistent exception handling strategy in all layers of code;
 - ensures that errors / exceptions leave the program in a well-defined state; resources, connections and memory is all cleaned up properly.
 
@@ -130,14 +132,11 @@ Relates to the entire set of artifacts that define the system.
 - No circular dependencies; binaries, libs, docs, builds, third-party code all organized into appropriate folders;
 - physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.
 
-
 ### Code Organization Across Files
-
 
 - Related source files are grouped into folders;
 - each physical file has a unique purpose (for e.g. one class definition, one feature implementation etc.);
 - code organization at the physical level closely matches design, and looking at file names and folder distribution provides insights into design.
-
 
 ### Code Organization Within a File
 
@@ -145,11 +144,8 @@ Relates to the entire set of artifacts that define the system.
 - code is grouped into regions and well commented with references to other source files;
 - consistent white space usage; files look beautiful.
 
-
 ### Code Readability
 
 - Good names for files, folders, variables, classes, methods etc.;
 - no long functions; comments explaining unusual code, bug fixes and code assumptions;
 - code flows naturally; no deep nesting of conditionals or methods.
-
-
