@@ -2,7 +2,6 @@
 
 Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, oldie but goldie.
 
-
 ## Knowledge
 
 - Has heard of upcoming technologies in the field;
@@ -48,7 +47,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain]);
 - **SVG** (markup language);
 - **TypeScript** / JavaScript / ECMAScript (class-based superset of JavaScript);
-- UML (modeling language)
+- UML (modeling language);
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting);
 - **XML** (meta markup language).
 
