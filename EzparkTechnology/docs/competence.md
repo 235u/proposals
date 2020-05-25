@@ -46,7 +46,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language);
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain]);
 - **SVG** (markup language);
-- **TypeScript** / JavaScript / ECMAScript (class-based superset of JavaScript);
+- **TypeScript** (class-based superset of JavaScript);
 - UML (modeling language);
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting);
 - **XML** (meta markup language).
