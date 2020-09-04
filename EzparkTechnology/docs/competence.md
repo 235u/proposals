@@ -39,6 +39,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 - **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language);
 - **CSS** (style sheet language);
 - **HTML** (markup language);
+- **Java** (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language);
 - **JavaScript** / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language);
 - LaTeX (markup language);
 - **Mardown** (markup language);
