@@ -35,6 +35,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 ### Languages
 
 <dl>
+  <dt style="font-weight: normal">C</dt><dd>Compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management.</dd>
   <dt>C</dt><dd>Compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management.</dd>
 </dl>
 
