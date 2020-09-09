@@ -34,6 +34,10 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ### Languages
 
+<dl>
+  <dt>C</dt><dd>Compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management.</dd>
+</dl>
+
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management);
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management);
 - **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language);
