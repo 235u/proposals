@@ -24,7 +24,7 @@ Price conversions are done using [reference exchange rates](https://www.ecb.euro
 3. Provide ALL the details you can.
 4. Clarify following questions.
 5. Negotiate the next milestones, based on further proposals and (indefinite by nature) estimates.
-6. …
+6. â€¦
 7. Redistribute the functionality between back- and front-end, targeting a JavaScript-only solution (for client-side execution)?
 
 ## Description
@@ -47,7 +47,7 @@ That's the ultimate goal? Representing a hypothesis (to be proven right or wrong
 
 The data won't be pulled from a third-party "static page that is automatically generated from" an [endpoint](https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil#GetSupportedAPIList) of the [Steamwork Web API](https://partner.steamgames.com/doc/webapi_overview), which "is [also] used to build this [official] documentation".
 
-Memo: https://xpaw.me is beautiful.
+Memo: https://xpaw.me ~~is~~ was beautiful.
 
 > I need a basic webpage tool to populate current prices of steam games in Uk, Russia and Argentina
 
@@ -65,7 +65,7 @@ Note that
 
 See [official documentation](https://partner.steamgames.com/doc/webapi_overview#2):
 
-> If you're a publisher, then Steam also provides a partner-only Web API server hosted at https://partner.steam-api.com. The intent of this service is to have higher availability than the public host […]
+> If you're a publisher, then Steam also provides a partner-only Web API server hosted at https://partner.steam-api.com. The intent of this service is to have higher availability than the public host [â€¦]
  
 Also note that
 
