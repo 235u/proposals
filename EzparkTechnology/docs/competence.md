@@ -8,7 +8,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 - Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks;
 - has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API;
-- automated unit tests / code in TDD manner.
+- automated unit tests; code in TDD manner.
 
 ### Languages
 
@@ -39,34 +39,33 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ## Capacity
 
-- Able to understand the complete picture;
+- Is able to understand the complete picture;
 - recognize and code dynamic programming solutions;
 - communicate thoughts / design / ideas / specs in an unambiguous manner;
 - effectively use the IDE using menus and keyboard shortcuts for the most used operations.
 
 ### Configuration Management
 
-- Able to setup automated functional, load / performance and UI tests;
-- continuous delivery and deployment;
+- Can setup automated functional, load / performance and UI tests; continuous delivery and deployment;
 - is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial); 
 - knows how to branch and merge, setup repository properties etc.
 
 ### Systems Decomposition
 
-- Able to break up problem space and design solutions, that span multiple technologies / platforms;
+- Is able to break up problem space and design solutions, that span multiple technologies / platforms;
 - visualize and design systems with multiple product lines and integrations with external systems;
 - design operations support systems like monitoring, reporting etc.
 
 ### Problem Decomposition
 
-- Able to break up problems into multiple functions;
+- Is able to break up problems into multiple functions;
 - come up with reusable functions / objects that solve the overall problem;
 - write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change,
 - using appropriate data structures and algorithms.
 
 ### Data Processing
 
-- Able to design good and normalized database schemas keeping in mind the queries that will have to be run;
+- Is able to design good and normalized database schemas keeping in mind the queries that will have to be run;
 - knows basic sorting, searching and data structure traversal and retrieval algorithms;
 - is proficient in use of the ORM tools;
 - can do basic database administration, performance / index / query optimization, write advanced select queries;
@@ -98,8 +97,8 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 ### Error Handling	
 
 - Comes up with guidelines on exception handling for the entire system;
-- codes to detect possible exceptions before;
 - maintains consistent exception handling strategy in all layers of code;
+- codes to detect possible exceptions before;
 - ensures that errors / exceptions leave the program in a well-defined state; resources, connections and memory is all cleaned up properly.
 
 ## Delivery
@@ -126,8 +125,8 @@ Relates to the entire set of artifacts that define the system.
 ### Code Readability
 
 - Good names for files, folders, variables, classes, methods etc.;
-- no long functions; comments explaining unusual code, bug fixes and code assumptions;
-- code flows naturally; no deep nesting of conditionals or methods.
+- comments explaining unusual code, bug fixes and code assumptions;
+- no long functions, no deep nesting of conditionals; code flows naturally.
 
 ## Knowledge
 
@@ -136,17 +135,13 @@ Relates to the entire set of artifacts that define the system.
 
 ### Data Structures 
 
-- Knows basic database concepts, normalization, ACID, transactions;
-- knows the difference between clustered and non-clustered indexes;
-- understands how data and indexes are stored internally;
+- Understands basic database concepts, normalization, indices, transactions;
 - knows how hashtables can be implemented and how to handle collisions;
-- knows space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
+- considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
 
 ### Systems Programming
 
-- Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing);
-- understands static / dynamic, weak / strong typing, type inference, lazy evaluation;
-- understands what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
-- knows about virtual memory and paging; 
-- understands kernel / user mode, multi-threading and synchronization primitives;
+- Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing; static / dynamic, weak / strong typing, type inference, lazy evaluation);
+- vaguelly remembers what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
+- knows about virtual memory and paging; kernel / user mode, multi-threading and synchronization primitives;
 - understands how networks work, understanding of network protocols and socket level programming.
