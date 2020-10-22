@@ -10,6 +10,8 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ### Languages
 
+Has written code in:
+
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management)
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management)
 - **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)
@@ -30,6 +32,8 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ### Platforms
 
+Has written code on and for:
+
 - Linux (Ubuntu / Debian)
 - **Microsoft Azure**
 - Microsoft DOS (6.22)
@@ -37,29 +41,31 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ## Capacity
 
-- Is able to understand the complete picture
+Is able to:
+
+- Understand the complete picture
 - Recognize and code dynamic programming solutions
 - Communicate thoughts / design / ideas / specs in an unambiguous manner
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
+
+### Systems Decomposition
+
+- Break up problem space and design solutions, that span multiple technologies / platforms
+- Visualize and design systems with multiple product lines and integrations with external systems
+- Design operations support systems like monitoring, reporting etc.
+
+### Problem Decomposition
+
+- Break up problems into multiple functions
+- Come up with reusable functions / objects that solve the overall problem
+- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change
+- Using appropriate data structures and algorithms
 
 ### Configuration Management
 
 - Can set up automated functional, load / performance and UI tests; continuous delivery and deployment
 - Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
 - Knows how to branch and merge, setup repository properties etc.
-
-### Systems Decomposition
-
-- Is able to break up problem space and design solutions, that span multiple technologies / platforms
-- Visualize and design systems with multiple product lines and integrations with external systems
-- Design operations support systems like monitoring, reporting etc.
-
-### Problem Decomposition
-
-- Is able to break up problems into multiple functions
-- Come up with reusable functions / objects that solve the overall problem
-- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change
-- Using appropriate data structures and algorithms
 
 ### Data Processing
 
@@ -103,7 +109,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 ### Source Tree Organization
 
-Relates to the entire set of artifacts that define the system.
+Relates to the entire set of artifacts that define the system:
 
 - No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.
 - Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.
