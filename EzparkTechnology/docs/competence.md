@@ -7,8 +7,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 15 years of professional experience.
 
 - Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks;
-- has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API;
-- automated unit tests; code in TDD manner.
+- has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API.
 
 ### Languages
 
@@ -142,6 +141,6 @@ Relates to the entire set of artifacts that define the system.
 ### Systems Programming
 
 - Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing; static / dynamic, weak / strong typing, type inference, lazy evaluation);
-- vaguelly remembers what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
+- vaguely remembers what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
 - knows about virtual memory and paging; kernel / user mode, multi-threading and synchronization primitives;
 - understands how networks work, understanding of network protocols and socket level programming.
