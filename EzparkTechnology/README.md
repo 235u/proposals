@@ -12,7 +12,7 @@ E.g. minimal hours amount of 256, as an assumption, results in a minimal price o
 
 ###	Timeline
 
-Project start date / date of hire / date of proposal submission / **08/01/2020** – **open end** (as *ongoing project*).
+Project start date / date of hire / date of proposal submission / **08/01/2020** â€“ **open end** (as *ongoing project*).
 
 E.g. 32 hours per week up to 256 hours results in a project start date plus 8 weeks timeline.
 
@@ -38,7 +38,7 @@ Primary, resultative task sequences, adding value to / forming the substance of 
 - **10%** system and process analysis, structural and object-oriented / process modelling;
 - **20%** architecture / design / evaluation of third-party components and services / prototyping;
 - **20%** construction / programming;
-- **30%** validation / verification / low-level- and high-level-testing / white-box- and black-box-testing / unit-, integration-, system-, load- and acceptance-testing / debugging.
+- **40%** validation / verification / low-level- and high-level-testing / white-box- and black-box-testing / unit-, integration-, system-, load- and acceptance-testing / debugging.
 
 #### Supportive Processes
 
@@ -70,7 +70,7 @@ The benefits of cloud computing in general are:
 
 ###	Lifecycle
 
-The lifecycles of the proposed platforms in general are: date of announcement / launch date / date of commercial availability – today, staying well and healthy, being a bigger player on or even controlling the market / having significant market share, not going to die in the near future.
+The lifecycles of the proposed platforms in general are: date of announcement / launch date / date of commercial availability â€“ today, staying well and healthy, being a bigger player on or even controlling the market / having significant market share, not going to die in the near future.
 
 For timelines of major milestones of the biggest providers (continuously updating their already mature services) see:
 
@@ -160,4 +160,4 @@ Quotation does not include costs for these services, billed per use by the provi
 
 ### Timeline
 
-Date of initial deployment of the web application to production environment – open end / product (service) lifetime.
+Date of initial deployment of the web application to production environment â€“ open end / product (service) lifetime.
