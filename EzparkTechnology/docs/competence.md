@@ -8,7 +8,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 - Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks;
 - has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API;
-- has written automated unit tests; has written code in TDD manner.
+- automated unit tests / code in TDD manner.
 
 ### Languages
 
@@ -32,7 +32,7 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 
 ### Platforms
 
-- Linux (Debian);
+- Linux (Ubuntu / Debian);
 - **Microsoft Azure**;
 - Microsoft DOS (6.22);
 - **Microsoft Windows** (CE / XP / Server / Vista / 7 / 8 / 10).
@@ -40,34 +40,35 @@ Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-c
 ## Capacity
 
 - Able to understand the complete picture;
-- able to recognize and code dynamic programming solutions;
-- able to communicate thoughts / design / ideas / specs in an unambiguous manner;
-- able to effectively use the IDE using menus and keyboard shortcuts for most used operations.
+- recognize and code dynamic programming solutions;
+- communicate thoughts / design / ideas / specs in an unambiguous manner;
+- effectively use the IDE using menus and keyboard shortcuts for the most used operations.
 
 ### Configuration Management
 
 - Able to setup automated functional, load / performance and UI tests;
-- able to setup continuous delivery and deployment;
-- proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial); 
+- continuous delivery and deployment;
+- is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial); 
 - knows how to branch and merge, setup repository properties etc.
 
 ### Systems Decomposition
 
 - Able to break up problem space and design solutions, that span multiple technologies / platforms;
-- able to visualize and design systems with multiple product lines and integrations with external systems;
-- able to design operations support systems like monitoring, reporting etc.
+- visualize and design systems with multiple product lines and integrations with external systems;
+- design operations support systems like monitoring, reporting etc.
 
 ### Problem Decomposition
 
 - Able to break up problems into multiple functions;
-- able to come up with reusable functions / objects that solve the overall problem;
-- able to write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change, using appropriate data structures and algorithms. 
+- come up with reusable functions / objects that solve the overall problem;
+- write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change,
+- using appropriate data structures and algorithms.
 
 ### Data Processing
 
 - Able to design good and normalized database schemas keeping in mind the queries that will have to be run;
 - knows basic sorting, searching and data structure traversal and retrieval algorithms;
-- proficient in use of ORM tools;
+- is proficient in use of the ORM tools;
 - can do basic database administration, performance / index / query optimization, write advanced select queries;
 - understands how databases can be mirrored, replicated etc.
 
@@ -144,7 +145,7 @@ Relates to the entire set of artifacts that define the system.
 ### Systems Programming
 
 - Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing);
-- understands static / dynamic typing, weak / strong typing, type inference, lazy evaluation;
+- understands static / dynamic, weak / strong typing, type inference, lazy evaluation;
 - understands what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
 - knows about virtual memory and paging; 
 - understands kernel / user mode, multi-threading and synchronization primitives;
