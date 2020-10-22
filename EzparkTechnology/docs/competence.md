@@ -1,6 +1,6 @@
 # Competence
 
-Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, oldie but goldie
+Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, oldie but goldie
 
 ## Experience
 
@@ -52,30 +52,16 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design operations support systems like monitoring, reporting etc.
+- Design good and normalized database schemas keeping in mind the queries that will have to be run
+- Implement operations support systems like monitoring, reporting etc.
 
 ### Problem Decomposition
 
 - Break up problems into multiple functions
 - Come up with reusable functions / objects that solve the overall problem
-- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change
-- Using appropriate data structures and algorithms
+- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change, using appropriate data structures and algorithms
 
-### Configuration Management
-
-- Can set up automated functional, load / performance and UI tests; continuous delivery and deployment
-- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
-- Knows how to branch and merge, setup repository properties etc.
-
-### Data Processing
-
-- Is able to design good and normalized database schemas keeping in mind the queries that will have to be run
-- Knows basic sorting, searching and data structure traversal and retrieval algorithms
-- Is proficient in use of the ORM tools
-- Can do basic database administration, performance / index / query optimization, write advanced select queries
-- Understands how databases can be mirrored, replicated etc.
-
-## Modus Operandi
+## Modus operandi
 
 Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretation](https://martinfowler.com/bliki/BeckDesignRules.html)), in order of importance:
 
@@ -90,7 +76,13 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 - Suggests better alternatives / flows to given requirements based on experience, feedback, tests and measurements
 - Adjusts communication as per the context (peers can understand what is being said)
 
-### Defensive Coding
+### Configuration management
+
+- Can set up automated functional, load / performance and UI tests; continuous delivery and deployment
+- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
+- Knows how to branch and merge, setup repository properties etc.
+
+### Defensive coding
 
 - Asserts critical assumptions in code
 - Checks externally set arguments
@@ -98,7 +90,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 - Comes up with good unit test cases for the code that is being written
 - Writes unit tests that simulate faults
 
-### Error Handling	
+### Error handling	
 
 - Comes up with guidelines on exception handling for the entire system
 - Maintains consistent exception handling strategy in all layers of code
@@ -107,26 +99,26 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 ## Delivery
 
-### Source Tree Organization
+### Source tree organization
 
 Relates to the entire set of artifacts that define the system:
 
 - No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.
 - Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.
 
-### Code Organization Across Files
+### Code organization across files
 
 - Related source files are grouped into folders.
 - Each physical file has a unique purpose (for e.g. one class definition, one feature implementation etc.).
 - Code organization at the physical level closely matches design, and looking at file names and folder distribution provides insights into design.
 
-### Code Organization Within a File
+### Code organization within a file
 
 - Methods are grouped logically and / or by accessibility.
 - Code is grouped into regions and well commented with references to other source files.
 - Consistent white space usage; files look beautiful.
 
-### Code Readability
+### Code readability
 
 - Good names for files, folders, variables, classes, methods etc.
 - Comments explaining unusual code, bug fixes and code assumptions
@@ -137,13 +129,17 @@ Relates to the entire set of artifacts that define the system:
 - Has heard of upcoming technologies in the field
 - Knows about alternatives to popular and standard tools
 
-### Data Structures 
+### Data structures 
 
 - Understands basic database concepts, normalization, indices, transactions
-- Knows how hashtables can be implemented and how to handle collisions
+- Can do basic database administration, performance / index / query optimization, write advanced select queries
+- Understands how databases can be mirrored, replicated etc.
+- Knows basic sorting, searching and data structure traversal and retrieval algorithms
+- Is proficient in use of the ORM tools
 - Considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
+- Knows how hashtables can be implemented and how to handle collisions
 
-### Systems Programming
+### Systems programming
 
 - Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing; static / dynamic, weak / strong typing, type inference, lazy evaluation)
 - Vaguely remembers what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode)
