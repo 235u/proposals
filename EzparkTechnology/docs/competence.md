@@ -2,28 +2,6 @@
 
 Based on the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, oldie but goldie.
 
-## Knowledge
-
-- Has heard of upcoming technologies in the field;
-- knows about alternatives to popular and standard tools.
-
-### Data Structures 
-
-- Knows basic database concepts, normalization, ACID, transactions;
-- knows the difference between clustered and non-clustered indexes;
-- understands how data and indexes are stored internally;
-- knows how hashtables can be implemented and how to handle collisions;
-- knows space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
-
-### Systems Programming
-
-- Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing);
-- understands static / dynamic typing, weak / strong typing, type inference, lazy evaluation;
-- understands what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
-- knows about virtual memory and paging; 
-- understands kernel / user mode, multi-threading and synchronization primitives;
-- understands how networks work, understanding of network protocols and socket level programming.
-
 ## Experience
 
 15 years of professional experience.
@@ -149,3 +127,25 @@ Relates to the entire set of artifacts that define the system.
 - Good names for files, folders, variables, classes, methods etc.;
 - no long functions; comments explaining unusual code, bug fixes and code assumptions;
 - code flows naturally; no deep nesting of conditionals or methods.
+
+## Knowledge
+
+- Has heard of upcoming technologies in the field;
+- knows about alternatives to popular and standard tools.
+
+### Data Structures 
+
+- Knows basic database concepts, normalization, ACID, transactions;
+- knows the difference between clustered and non-clustered indexes;
+- understands how data and indexes are stored internally;
+- knows how hashtables can be implemented and how to handle collisions;
+- knows space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
+
+### Systems Programming
+
+- Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing);
+- understands static / dynamic typing, weak / strong typing, type inference, lazy evaluation;
+- understands what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode); 
+- knows about virtual memory and paging; 
+- understands kernel / user mode, multi-threading and synchronization primitives;
+- understands how networks work, understanding of network protocols and socket level programming.
