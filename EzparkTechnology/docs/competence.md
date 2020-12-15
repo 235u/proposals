@@ -35,7 +35,7 @@ Has written code in:
 
 Has written code on and for:
 
-- Linux (Debian / Ubuntu)
+- GNU/Linux (Debian / Ubuntu)
 - **Microsoft Azure**
 - Microsoft DOS (6.22)
 - **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)
