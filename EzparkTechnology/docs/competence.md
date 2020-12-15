@@ -1,6 +1,6 @@
 # Competence
 
-Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, oldie but goldie
+Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programmer-competency-matrix/) by Sijin Joseph, an oldie but goldie
 
 ## Experience
 
@@ -54,7 +54,7 @@ Is able to:
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
 - Design good and normalized database schemas keeping in mind the queries that will have to be run
-- Implement operations support systems like monitoring, reporting etc.
+- Implement operations support systems like monitoring, reporting, etc.
 
 ### Problem Decomposition
 
@@ -74,14 +74,14 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 ### Requirements
 
 - Comes up with questions regarding missed cases / areas that need to be speced
-- Suggests better alternatives / flows to given requirements based on experience, feedback, tests and measurements
+- Suggests better alternatives / flows to given requirements based on experience, feedback, tests, and measurements
 - Adjusts communication as per the context (peers can understand what is being said)
 
 ### Configuration management
 
-- Can set up automated functional, load / performance and UI tests; continuous delivery and deployment
+- Can set up automated functional, load / performance, and UI tests; continuous delivery and deployment
 - Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
-- Knows how to branch and merge, setup repository properties etc.
+- Knows how to branch and merge, setup repository properties, etc.
 
 ### Defensive coding
 
@@ -96,7 +96,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 - Comes up with guidelines on exception handling for the entire system
 - Maintains consistent exception handling strategy in all layers of code
 - Codes to detect possible exceptions before
-- Ensures that errors / exceptions leave the program in a well-defined state (resources, connections and memory is all cleaned up properly)
+- Ensures that errors / exceptions leave the program in a well-defined state (resources, connections, and memory is all cleaned up properly)
 
 ## Delivery
 
@@ -110,8 +110,8 @@ Relates to the entire set of artifacts that define the system:
 ### Code organization across files
 
 - Related source files are grouped into folders.
-- Each physical file has a unique purpose (for e.g. one class definition, one feature implementation etc.).
-- Code organization at the physical level closely matches design, and looking at file names and folder distribution provides insights into design.
+- Each physical file has a unique purpose (for e.g. one class definition, one feature implementation, etc.).
+- Code organization at the physical level closely matches the design, and looking at file names and folder distribution provides insights into design.
 
 ### Code organization within a file
 
@@ -121,8 +121,8 @@ Relates to the entire set of artifacts that define the system:
 
 ### Code readability
 
-- Good names for files, folders, variables, classes, methods etc.
-- Comments explaining unusual code, bug fixes and code assumptions
+- Good names for files, folders, variables, classes, methods, etc.
+- Comments explaining unusual code, bug fixes, and code assumptions
 - No long functions, no deep nesting of conditionals; code flows naturally.
 
 ## Knowledge
@@ -134,15 +134,15 @@ Relates to the entire set of artifacts that define the system:
 
 - Understands basic database concepts, normalization, indices, transactions
 - Can do basic database administration, performance / index / query optimization, write advanced select queries
-- Understands how databases can be mirrored, replicated etc.
-- Knows basic sorting, searching and data structure traversal and retrieval algorithms
-- Is proficient in use of the ORM tools
-- Considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues etc.
+- Understands how databases can be mirrored, replicated, etc.
+- Knows basic sorting, searching, and data structure traversal and retrieval algorithms
+- Is proficient in the use of the ORM tools
+- Considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues, etc.
 - Knows how hashtables can be implemented and how to handle collisions
 
 ### Systems programming
 
-- Understands the entire programming stack (compilers, linkers and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing; static / dynamic, weak / strong typing, type inference, lazy evaluation)
+- Understands the entire programming stack (compilers, linkers, and interpreters; just-in-time compilation; static and dynamic linking; binary and assembly code; garbage collection, heap, stack, memory addressing; static / dynamic, weak / strong typing, type inference, lazy evaluation)
 - Vaguely remembers what assembly code is and how things work at the hardware level (CPU / memory / cache / interrupts / microcode)
-- Knows about virtual memory and paging; kernel / user mode, multi-threading and synchronization primitives
+- Knows about virtual memory and paging; kernel / user mode, multi-threading, and synchronization primitives
 - Understands how networks work, understanding of network protocols and socket level programming
