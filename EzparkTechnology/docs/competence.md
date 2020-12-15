@@ -35,10 +35,10 @@ Has written code in:
 
 Has written code on and for:
 
-- Linux (Ubuntu / Debian)
+- Linux (Debian / Ubuntu)
 - **Microsoft Azure**
 - Microsoft DOS (6.22)
-- **Microsoft Windows** (CE / XP / Server / Vista / 7 / 8 / 10)
+- **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)
 
 ## Capacity
 
