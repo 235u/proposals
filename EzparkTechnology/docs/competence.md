@@ -29,7 +29,7 @@ Has written code in:
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
 - XAML (user interface markup language)
-- **XML** (meta markup language)
+- [**XML**](https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter.Wpf) (meta markup language)
 
 ### Platforms
 
