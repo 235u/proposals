@@ -4,7 +4,7 @@ Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programme
 
 ## Experience
 
-- Has 15 years of professional experience<sup>[<a href="https://observablehq.com/@nikita-sharov/cv">1</a>]</sup>
+- Has [15 years of professional experience](https://observablehq.com/@nikita-sharov/cv)
 - Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks
 - Has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API
 
