@@ -28,8 +28,8 @@ Has written code in:
 - **TypeScript** (class-based superset of JavaScript)
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
-- XAML (user interface markup language)
-- [**XML**](https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter.Wpf) (meta markup language)
+- [XAML](https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter.Wpf) (user interface markup language)
+- **XML** (meta markup language)
 
 ### Platforms
 
