@@ -8,13 +8,13 @@
 **hourly rate** between **$NN** and **$NNN**, up for negotiation, depending on your budget / total amount of hours you are willing to pay for to achieve your goals, **results in**   
 **total price**.
 
-E.g. minimal hours amount of NNN, as an assumption, results in a minimal price of NNN by hourly rate.
+E.g. minimal hours amount of 256, as an assumption, results in a minimal price of 256 by hourly rate.
 
 ###	Timeline
 
 Project start date / date of hire / date of proposal submission / **YYYY-MM-DD** – **open end** (as *ongoing project*).
 
-E.g. NN hours per week up to NNN hours results in a project start date plus N weeks timeline.
+E.g. 32 hours per week up to 256 hours results in a project start date plus 8 weeks timeline.
 
 ## Work Structure
 
