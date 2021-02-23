@@ -46,7 +46,7 @@ Is able to:
 
 - Understand the [complete picture](https://github.com/235u/proposals/tree/master/EzparkTechnology)
 - Recognize and code dynamic programming solutions
-- Communicate thoughts / design / ideas / specs in an unambiguous manner
+- [Communicate](https://observablehq.com/@nikita-sharov/publications) thoughts / design / ideas / specs in an unambiguous manner
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
 
 ### Systems Decomposition
