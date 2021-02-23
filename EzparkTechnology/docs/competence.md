@@ -35,7 +35,7 @@ Has written code in:
 
 Has written code on and for:
 
-- Amazon Web Services<sup><a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility"></a></up>
+- Amazon Web Services<sup>[<a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">1</a>]</sup>
 - GNU/Linux (Debian / Ubuntu)
 - **Microsoft Azure**<sup>[<a href="">1</a>, <a href="">2</a>, , <a href="">3</a>, <a href="">4</a>, <a href="">5</a>]</sup>
 - Microsoft DOS (6.22)
