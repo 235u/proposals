@@ -14,7 +14,7 @@ Has written code in:
 
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management)
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management)
-- [**C#**](https://github.com/235u/website) (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>]</sup>
+- [**C#**](https://github.com/235u/website) (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language) <sup>[<a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>]</sup>
 - **CSS** (style sheet language)
 - **HTML** (markup language)
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
@@ -53,7 +53,7 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
+- Design good and normalized database schemas keeping in mind the queries that will have to be run <sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.
 
 ### Problem Decomposition
