@@ -53,7 +53,7 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design good and normalized database schemas keeping in mind the queries that will have to be run <sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
+- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.
 
 ### Problem Decomposition
@@ -79,7 +79,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 ### Configuration management
 
-- Can set up automated functional, load / performance, and UI tests; continuous integration<sup>[<a href="https://dev.azure.com/235u/ActinUranium.Web/_build">1</a>]</sup> and delivery<sup>[<a href="https://dev.azure.com/235u/ActinUranium.Web/_release">1</a>]</sup>
+- Can set up automated functional, load / performance, and UI tests; continuous [integration](https://dev.azure.com/235u/ActinUranium.Web/_build) and [delivery](https://dev.azure.com/235u/ActinUranium.Web/_release)
 - Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
 - Knows how to branch and merge, setup repository properties, etc.
 
