@@ -4,8 +4,8 @@ Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programme
 
 ## Experience
 
-- Has 15 years of professional experience
-- Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks
+- Has [15 years of professional experience](https://observablehq.com/@nikita-sharov/cv)
+- Has used more than one framework in a professional capacity and is well-versed with the idioms of the [frameworks](https://observablehq.com/@nikita-sharov/i-am-groot)
 - Has written libraries that sit [on top of the APIs](https://observablehq.com/@nikita-sharov/lodash-documentation-generator) to simplify frequently used tasks and to fill in [gaps in the API](https://observablehq.com/@nikita-sharov/stackshare-tools-categorized)
 
 ### Languages
