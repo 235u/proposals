@@ -79,7 +79,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 ### Configuration management
 
-- Can set up automated functional, load / performance, and UI tests; continuous delivery and deployment
+- Can set up automated functional, load / performance, and UI tests; continuous integration<sup>[<a href="https://dev.azure.com/235u/ActinUranium.Web/_build">1</a>]</sup> and delivery<sup>[<a href="https://dev.azure.com/235u/ActinUranium.Web/_release">1</a>]</sup>
 - Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
 - Knows how to branch and merge, setup repository properties, etc.
 
