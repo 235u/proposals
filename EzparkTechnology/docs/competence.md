@@ -53,7 +53,7 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design good and normalized database schemas keeping in mind the queries that will have to be run
+- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup><a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a></sup>
 - Implement operations support systems like monitoring, reporting, etc.
 
 ### Problem Decomposition
