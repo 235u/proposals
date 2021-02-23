@@ -18,7 +18,7 @@ Has written code in:
 - **CSS** (style sheet language)
 - **HTML** (markup language)
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
-- **JavaScript** / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)
+- [**JavaScript**](https://observablehq.com/@nikita-sharov) / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/js">1</a>]</sup>
 - LaTeX (markup language)
 - **Mardown** (markup language)
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
