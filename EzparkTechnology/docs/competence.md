@@ -38,7 +38,7 @@ Has written code on and for:
 - GNU/Linux (Debian / Ubuntu)
 - **Microsoft Azure**
 - Microsoft DOS (6.22)
-- **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)
+- **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)<sup>[<a href="https://github.com/nikita-sharov/word-counter">1</a>, <a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
 
 ## Capacity
 
