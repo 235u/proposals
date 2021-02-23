@@ -45,7 +45,7 @@ Has written code on and for:
 Is able to:
 
 - Understand the [complete picture](https://github.com/235u/proposals/tree/master/EzparkTechnology)
-- Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/hello-prism-js">1</a>, <a href="https://observablehq.com/@nikita-sharov/progress-bar">2</a>, <a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">3</a>]</sup>
+- Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/hello-prism-js">1</a>, <a href="https://observablehq.com/@nikita-sharov/progress-bar">2</a>, <a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">3</a>, <a href="https://observablehq.com/@nikita-sharov/synchronized-slider">4</a>, <a href="https://observablehq.com/@nikita-sharov/hello-schema-org">5</a>]</sup>
 - [Communicate](https://observablehq.com/@nikita-sharov/publications) thoughts / design / ideas / specs in an unambiguous manner
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
 
@@ -53,7 +53,7 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>, <a href="https://observablehq.com/@nikita-sharov/synchronized-slider">4</a>, <a href="https://observablehq.com/@nikita-sharov/hello-schema-org">5</a>]</sup>
+- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.
 
 ### Problem Decomposition
