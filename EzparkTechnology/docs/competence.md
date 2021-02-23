@@ -68,14 +68,14 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 1.	Passes the tests (including non-automated / manually executed tests)
 2.	Reveals intention (purpose is easy to understand)
-3.	Contains no duplication (everything should be said "once and only once")
+3.	Contains no duplication (everything should be said "once and only once")<sup>[<a href="https://github.com/nikita-sharov/docs.de-de">1</a>, <a href="">2</a>]</sup>
 4.	Minimizes the number of elements (anything that doesn't serve the three prior rules should be removed)
 
 ### Requirements
 
 - Comes up with questions regarding missed cases / areas that need to be speced<sup>[<a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">1</a>]</sup>
 - Suggests better alternatives / flows to given requirements based on experience, feedback, tests, and measurements<sup>[<a href="https://github.com/235u/proposals/tree/master/OutlookSynchronisation">1</a>, <a href="https://github.com/235u/proposals/tree/master/ThrottledScraper">2</a>, <a href="https://github.com/235u/proposals/tree/master/SpeechToText">3</a>]</sup>
-- Adjusts communication as per the context (peers can understand what is being said)<sup>[<a href="https://github.com/nikita-sharov/docs.de-de/blob/master/applications-for-employment/e-steiermark/gis-anwendungsbetreuer.md">1a<a>, <a href="https://observablehq.com/@nikita-sharov/metropolitan-france-map">1b</a>; <a href="https://acp.235u.net/">2a<a>, <a href="https://github.com/nikita-sharov/acp">2b</a>; <a href="https://github.com/nikita-sharov/alten">3a</a>, <a href="https://github.com/nikita-sharov/docs/blob/master/applications-for-employment/alten/software-developer-csharp/motivational-letter.md">3b</a>]</sup>
+- Adjusts communication as per the context (peers can understand what is being said)<sup>[<a href="https://github.com/nikita-sharov/docs.de-de/blob/master/applications-for-employment/e-steiermark/gis-anwendungsbetreuer.md">1a<a>, <a href="https://observablehq.com/@nikita-sharov/metropolitan-france-map">1b</a>; <a href="https://acp.235u.net/">2a<a>, <a href="https://github.com/nikita-sharov/acp">2b</a>, <a href="https://github.com/nikita-sharov/docs.de-de/blob/master/applications-for-employment/acp/senior-full-stack-developer.md">2c</a>; <a href="https://github.com/nikita-sharov/alten">3a</a>, <a href="https://github.com/nikita-sharov/docs/blob/master/applications-for-employment/alten/software-developer-csharp/motivational-letter.md">3b</a>]</sup>
 
 ### Configuration management
 
