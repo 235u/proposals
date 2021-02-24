@@ -53,9 +53,9 @@ Is able to:
 ### Systems Decomposition
 
 - Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">2</a>]</sup>
-- Visualize and design systems with multiple product lines and integrations with external systems
+- Visualize and design systems with multiple product lines and [integrations with external systems](https://observablehq.com/collection/@nikita-sharov/apis)<sup>[<a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">2</a>]</sup>
 - Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">3</a>]</sup>
-- Implement operations support systems like monitoring, reporting, etc.<sup>[<a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">1</a>, <a href="https://github.com/235u/proposals/tree/master/IdentityCustomization">2</a>]</sup>
+- Implement operations support systems like monitoring, reporting, etc.<sup>[<a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">1</a>, <a href="https://github.com/235u/proposals/tree/master/IdentityCustomization">2</a>, <a href="https://observablehq.com/@nikita-sharov/lodash-documentation">3</a>]</sup>
 
 ### Problem Decomposition
 
