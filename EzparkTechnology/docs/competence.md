@@ -35,11 +35,11 @@ Has written code in:
 
 Has written code on and for:
 
-- Amazon Web Services<sup>[<a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">1</a>]</sup>
+- [Amazon Web Services](https://github.com/235u/proposals/tree/master/SelfUpdateUtility)
 - GNU/Linux (Debian / Ubuntu)
-- **Microsoft Azure**<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/acp">2</a>, <a href="https://github.com/nikita-sharov/dimdex">3</a>, <a href="https://github.com/nikita-sharov/pure-legacy">4</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter">5</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">6</a>, <a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">7</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">8</a>]</sup>
+- [**Microsoft Azure**](https://github.com/235u/website)<sup>[<a href="https://github.com/nikita-sharov/acp">2</a>, <a href="https://github.com/nikita-sharov/dimdex">3</a>, <a href="https://github.com/nikita-sharov/pure-legacy">4</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter">5</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">6</a>, <a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">7</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">8</a>]</sup>
 - Microsoft DOS (6.22)
-- **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)<sup>[<a href="https://github.com/nikita-sharov/word-counter">1</a>, <a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
+- [**Microsoft Windows**](https://github.com/nikita-sharov/word-counter) (7 / 8 / 10 / CE / Server / Vista / XP)<sup>[<a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
 
 ## Capacity
 
@@ -52,7 +52,7 @@ Is able to:
 
 ### Systems Decomposition
 
-- Break up problem space and design solutions, that span multiple technologies / platforms
+- Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">2</a>]</sup>
 - Visualize and design systems with multiple product lines and integrations with external systems
 - Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.
