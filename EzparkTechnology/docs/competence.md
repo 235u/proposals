@@ -24,7 +24,7 @@ Has written code in:
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language)
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain])
-- **SVG** (markup language)
+- [**SVG**](https://observablehq.com/collection/@nikita-sharov/svg) (markup language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/img">2</a>]</sup>
 - **TypeScript** (class-based superset of JavaScript)
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
