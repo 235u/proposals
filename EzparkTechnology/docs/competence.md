@@ -54,8 +54,8 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">2</a>]</sup>
 - Visualize and design systems with multiple product lines and integrations with external systems
-- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">3</a>]</sup>
-- Implement operations support systems like monitoring, reporting, etc.
+- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">3</a>]</sup>
+- Implement operations support systems like monitoring, reporting, etc.<sup>[<a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">1</a>, <a href="https://github.com/235u/proposals/tree/master/IdentityCustomization">2</a>]</sup>
 
 ### Problem Decomposition
 
@@ -69,7 +69,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 1.	Passes the tests (including non-automated / manually executed tests)
 2.	Reveals intention (purpose is easy to understand)
-3.	Contains no duplication (everything should be said "once and only once")<sup>[<a href="https://github.com/nikita-sharov/docs.de-de">1</a>, <a href="">2</a>]</sup>
+3.	Contains no duplication (everything should be said "once and only once")<sup>[<a href="https://github.com/nikita-sharov/docs.de-de">1</a>, <a href="https://github.com/nikita-sharov/docs">2</a>]</sup>
 4.	Minimizes the number of elements (anything that doesn't serve the three prior rules should be removed)
 
 ### Requirements
@@ -81,7 +81,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 ### Configuration management
 
 - Can set up automated functional, [load / performance](https://github.com/nikita-sharov/word-counter/tree/main/tests/WordCounter.Tests), and UI tests; continuous [integration](https://dev.azure.com/235u/ActinUranium.Web/_build) and [delivery](https://dev.azure.com/235u/ActinUranium.Web/_release)
-- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git / Mercurial)
+- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems ([Git](https://github.com/235u)<sup>[<a href="https://github.com/nikita-sharov">2</a>]</sup> / Mercurial)
 - Knows how to branch and merge, setup repository properties, etc.
 
 ### Defensive coding
@@ -137,7 +137,7 @@ Relates to the entire set of artifacts that define the system:
 - Can do basic database administration, performance / index / query optimization, write advanced select queries
 - Understands how databases can be mirrored, replicated, etc.
 - Knows basic sorting, searching, and data structure traversal and retrieval algorithms
-- Is proficient in the use of the ORM tools
+- Is proficient in the use of the ORM tools<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Models">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Models">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Models">3</a>]</sup>
 - Considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues, etc.
 - Knows how hashtables can be implemented and how to handle collisions
 
