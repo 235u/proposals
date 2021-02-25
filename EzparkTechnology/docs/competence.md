@@ -20,7 +20,7 @@ Has written code in:
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
 - [**JavaScript**](https://observablehq.com/@nikita-sharov) / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/js">2</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/js">3</a>]</sup>
 - LaTeX (markup language)
-- **Mardown** (markup language)
+- [**Mardown**](https://raw.githubusercontent.com/235u/proposals/master/EzparkTechnology/docs/competence.md) (markup language)
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language)
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain])
@@ -67,10 +67,10 @@ Is able to:
 
 Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretation](https://martinfowler.com/bliki/BeckDesignRules.html)), in order of importance:
 
-1.	Passes the tests (including non-automated / manually executed tests)
-2.	Reveals intention (purpose is easy to understand)
-3.	Contains no duplication (everything should be said "once and only once")<sup>[<a href="https://github.com/nikita-sharov/docs.de-de">1</a>, <a href="https://github.com/nikita-sharov/docs">2</a>]</sup>
-4.	Minimizes the number of elements (anything that doesn't serve the three prior rules should be removed)
+1. Passes the tests (including non-automated / manually executed tests)
+2. Reveals intention (purpose is easy to understand)
+3. Contains no duplication (everything should be said "once and only once")<sup>[<a href="https://github.com/nikita-sharov/docs.de-de">1</a>, <a href="https://github.com/nikita-sharov/docs">2</a>]</sup>
+4. Minimizes the number of elements (anything that doesn't serve the three prior rules should be removed)
 
 ### Requirements
 
@@ -105,25 +105,25 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 Relates to the entire set of artifacts that define the system:
 
-- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.
-- Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.
+- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.<sup>[<a href="https://github.com/nikita-sharov/alten">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>]</sup>
+- Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.<sup>[<a href="https://github.com/nikita-sharov/alten/tree/master/src">1</a>, <a href="https://github.com/nikita-sharov/word-counter/tree/main/src">2</a>]</sup>
 
 ### Code organization across files
 
-- Related source files are grouped into folders.
-- Each physical file has a unique purpose (for e.g. one class definition, one feature implementation, etc.).
-- Code organization at the physical level closely matches the design, and looking at file names and folder distribution provides insights into design.
+- Related source files are grouped into folders.<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization">3</a>]</sup>
+- Each physical file has a unique purpose (for e.g. one class definition, one feature implementation, etc.).<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Helpers">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Controllers">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">3</a>, <a href="https://github.com/nikita-sharov/alten/tree/master/src/Alten.Jama/Models">4</a>, <a href="https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter">5</a>]</sup>
+- Code organization at the physical level closely matches the design, and looking at file names and folder distribution provides insights into design.<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Views">2</a>, <a href="https://github.com/nikita-sharov/word-counter/tree/main/tests/WordCounter.Tests">3</a>]</sup>
 
 ### Code organization within a file
 
-- Methods are grouped logically and / or by accessibility.
-- Code is grouped into regions and well commented with references to other source files.
+- Methods are grouped logically and / or by accessibility.<sup>[<a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Controllers/HeadlinesController.cs">1</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Helpers/ActinUraniumInfo.cs">2</a>, <a href="3"></a>]</sup>
+- Code is grouped into regions and is well commented with references to other source files.<sup>[<a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Helpers/Int32Lottery.cs">1</a>, <a href="">2</a>]</sup>
 - Consistent white space usage; files look beautiful.
 
 ### Code readability
 
 - Good names for files, folders, variables, classes, methods, etc.
-- Comments explaining unusual code, bug fixes, and code assumptions
+- Comments explaining unusual code, bug fixes, and code assumptions<sup>[<a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Controllers/HomeController.cs">1</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Helpers/ElementId.cs">2</a>]</sup>
 - No long functions, no deep nesting of conditionals; code flows naturally.
 
 ## Knowledge
