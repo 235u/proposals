@@ -92,12 +92,15 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 - Comes up with good unit test cases for the code that is being written<sup>[<a href="https://github.com/nikita-sharov/word-counter/tree/main/tests/WordCounter.Tests">1</a>, <a href="https://github.com/nikita-sharov/alten/tree/master/tests/Alten.Tests">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization.Tests">3</a>]</sup>
 - Writes unit tests that simulate faults
 
-### Error handling	
+### Error handling
 
 - Comes up with guidelines on exception handling for the entire system<sup>[<a href="https://github.com/235u/proposals.de-de/tree/master/PdfSplitter">1</a>]</sup>
-- Maintains consistent exception handling strategy in all layers of code<sup>[<a href="https://github.com/235u/proposals/tree/master/OutlookSynchronisation#2-do-you-have-suggestions-to-make-this-project-run-successfully">1</a>, <a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2<a>]</sup>
+- Maintains consistent exception handling strategy in all layers of code<sup>[<a href="https://github.com/235u/proposals/tree/master/OutlookSynchronisation#2-do-you-have-suggestions-to-make-this-project-run-successfully">1</a>, <a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
 - Codes to detect possible exceptions before<sup>[<a href="https://github.com/235u/proposals.de-de/blob/master/PdfSplitter/src/PdfSplitter/Splitter.cs">1</a>, <a href="https://github.com/235u/proposals/blob/master/SelfUpdateUtility/SelfUpdateUtility.Library/LocalTimestamp.cs">2</a>]</sup>
-- Ensures that errors / exceptions leave the program in a well-defined state (resources, connections, and memory is all cleaned up properly)<sup>[<a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/ParserHelper.cs">1</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter/MemoryEfficientParser.cs">2</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/Program.cs">3</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/PdfSplitter/src/PdfSplitter/Splitter.cs">4</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi/Services/ThrottledHttpClient.cs">5a</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi.Tests/ClanListTests.cs">5b</a>, <a href="https://github.com/235u/proposals/blob/master/SelfUpdateUtility/SelfUpdateUtility.Library/SelfUpdate.cs">6<a>]</sup>
+- Ensures that errors / exceptions leave the program in a well-defined state (resources, connections, and memory is all cleaned up properly)<sup>[<a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/ParserHelper.cs">1</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter/MemoryEfficientParser.cs">2</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/Program.cs">3</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/PdfSplitter/src/PdfSplitter/Splitter.cs">4</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi/Services/ThrottledHttpClient.cs">5a</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi.Tests/ClanListTests.cs">5b</a>, <a href="https://github.com/235u/proposals/blob/master/SelfUpdateUtility/SelfUpdateUtility.Library/SelfUpdate.cs">6</a>]</sup>
+
+
+
 
 ## Delivery
 
