@@ -4,9 +4,9 @@ Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programme
 
 ## Experience
 
-- Has [15 years of professional experience](https://observablehq.com/@nikita-sharov/cv)
-- Has used more than one framework in a professional capacity and is well-versed with the idioms of the [frameworks](https://observablehq.com/@nikita-sharov/i-am-groot)
-- Has written libraries that sit [on top of the APIs](https://observablehq.com/@nikita-sharov/lodash-documentation-generator) to simplify frequently used tasks and to fill in [gaps in the API](https://observablehq.com/@nikita-sharov/stackshare-tools-categorized)
+- Has 15 years of professional experience<sup>[<a href="https://observablehq.com/@nikita-sharov/person-in-a-nutshell">1</a>]</sup>
+- Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks<sup>[<a href="https://observablehq.com/@nikita-sharov/instrumentarium">1</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-logos">2</a>, <a href="https://observablehq.com/@nikita-sharov/partial-tree">3</a>]</sup>
+- Has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API<sup>[<a href="https://observablehq.com/@nikita-sharov/lodash-documentation-generator">1</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tools-categorized">2</a>]</sup>
 
 ### Languages
 
@@ -14,46 +14,46 @@ Has written code in:
 
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management)
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management)
-- [**C#**](https://github.com/235u/website) (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>]</sup>
-- [**CSS**](https://observablehq.com/collection/@nikita-sharov/css) (style sheet language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/css">2</a>]</sup>
-- [**HTML**](https://github.com/235u/proposals.de-de/blob/master/ScaleConverter/ScaleConverter.Web/Pages/Index.cshtml) (markup language)
+- **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>]</sup>
+- **CSS** (style sheet language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/css">1</a>]</sup>
+- **HTML** (markup language)<sup>[<a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter/ScaleConverter.Web/Pages/Index.cshtml">1</a>]</sup>
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
-- [**JavaScript**](https://observablehq.com/@nikita-sharov) / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/js">2</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/js">3</a>]</sup>
+- **JavaScript** / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/js">1</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/js">2</a>]</sup>
 - LaTeX (markup language)
-- [**Mardown**](https://raw.githubusercontent.com/235u/proposals/master/EzparkTechnology/docs/competence.md) (markup language)
+- **Mardown** (markup language)<sup>[<a href="https://raw.githubusercontent.com/235u/proposals/master/EzparkTechnology/docs/competence.md">1</a>]</sup>
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language)
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain])
-- [**SVG**](https://observablehq.com/collection/@nikita-sharov/svg) (markup language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/img">2</a>]</sup>
+- **SVG** (markup language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/img">1</a>]</sup>
 - **TypeScript** (class-based superset of JavaScript)
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
-- [XAML](https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter.Wpf) (user interface markup language)
+- XAML (user interface markup language)<sup>[<a href="https://github.com/nikita-sharov/word-counter/tree/main/src/WordCounter.Wpf">1</a>]</sup>
 - **XML** (meta markup language)
 
 ### Platforms
 
 Has written code on and for:
 
-- [Amazon Web Services](https://github.com/235u/proposals/tree/master/SelfUpdateUtility)
+- Amazon Web Services<sup>[<a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">1</a>]</sup>
 - GNU/Linux (Debian / Ubuntu)
-- [**Microsoft Azure**](https://github.com/235u/website)<sup>[<a href="https://github.com/nikita-sharov/acp">2</a>, <a href="https://github.com/nikita-sharov/dimdex">3</a>, <a href="https://github.com/nikita-sharov/pure-legacy">4</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter">5</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">6</a>, <a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">7</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">8</a>]</sup>
+- **Microsoft Azure**<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/acp">2</a>, <a href="https://github.com/nikita-sharov/dimdex">3</a>, <a href="https://github.com/nikita-sharov/pure-legacy">4</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter">5</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">6</a>, <a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">7</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">8</a>]</sup>
 - Microsoft DOS (6.22)
-- [**Microsoft Windows**](https://github.com/nikita-sharov/word-counter) (7 / 8 / 10 / CE / Server / Vista / XP)<sup>[<a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
+- **Microsoft Windows** (7 / 8 / 10 / CE / Server / Vista / XP)<sup>[<a href="https://github.com/nikita-sharov/word-counter">1</a>, <a href="https://github.com/235u/proposals/tree/master/SelfUpdateUtility">2</a>]</sup>
 
 ## Capacity
 
 Is able to:
 
-- Understand the [complete picture](https://github.com/235u/proposals/tree/master/EzparkTechnology)
+- Understand the complete picture<sup>[<a href="https://github.com/235u/proposals/tree/master/EzparkTechnology">1</a>]</sup>
 - Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/hello-prism-js">1</a>, <a href="https://observablehq.com/@nikita-sharov/progress-bar">2</a>, <a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">3</a>, <a href="https://observablehq.com/@nikita-sharov/synchronized-slider">4</a>, <a href="https://observablehq.com/@nikita-sharov/hello-schema-org">5</a>]</sup>
-- [Communicate](https://observablehq.com/@nikita-sharov/publications) thoughts / design / ideas / specs in an unambiguous manner
+- Communicate thoughts / design / ideas / specs in an unambiguous manner<sup>[<a href="https://observablehq.com/@nikita-sharov/publications">1</a>]</sup>
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
 
 ### Systems Decomposition
 
-- Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">2</a>]</sup>
-- Visualize and design systems with multiple product lines and [integrations with external systems](https://observablehq.com/collection/@nikita-sharov/apis)<sup>[<a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">2</a>]</sup>
+- Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1a</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">1b</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">2</a>]</sup>
+- Visualize and design systems with multiple product lines and integrations with external systems<sup>[<a href="https://observablehq.com/collection/@nikita-sharov/apis">1</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">2</a>]</sup>
 - Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">3</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.<sup>[<a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">1</a>, <a href="https://github.com/235u/proposals/tree/master/IdentityCustomization">2</a>, <a href="https://observablehq.com/@nikita-sharov/lodash-documentation">3</a>]</sup>
 
@@ -80,8 +80,8 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 ### Configuration management
 
-- Can set up automated functional, [load / performance](https://github.com/nikita-sharov/word-counter/tree/main/tests/WordCounter.Tests), and UI tests; continuous [integration](https://dev.azure.com/235u/ActinUranium.Web/_build) and [delivery](https://dev.azure.com/235u/ActinUranium.Web/_release)
-- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems ([Git](https://github.com/nikita-sharov)<sup>[<a href="https://github.com/235u">2</a>]</sup> / Mercurial)
+- Can set up automated functional, load / performance, and UI tests; continuous integration and delivery<sup>[<a href="https://github.com/nikita-sharov/word-counter/tree/main/tests/WordCounter.Tests">1</a>, <a href="https://dev.azure.com/235u/ActinUranium.Web/_build">2a</a>, <a href="https://dev.azure.com/235u/ActinUranium.Web/_release">2b</a>]</sup>
+- Is proficient in using centralized (CVS / SVN / TFS) and distributed version control systems (Git<sup>[<a href="">1</a>, <a href="https://github.com/235u">2</a>]</sup> / Mercurial)
 - Knows how to branch and merge, setup repository properties, etc.
 
 ### Defensive coding
@@ -99,16 +99,13 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 - Codes to detect possible exceptions before<sup>[<a href="https://github.com/235u/proposals.de-de/blob/master/PdfSplitter/src/PdfSplitter/Splitter.cs">1</a>, <a href="https://github.com/235u/proposals/blob/master/SelfUpdateUtility/SelfUpdateUtility.Library/LocalTimestamp.cs">2</a>]</sup>
 - Ensures that errors / exceptions leave the program in a well-defined state (resources, connections, and memory is all cleaned up properly)<sup>[<a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/ParserHelper.cs">1</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter/MemoryEfficientParser.cs">2</a>, <a href="https://github.com/nikita-sharov/word-counter/blob/main/src/WordCounter.WinForms/Program.cs">3</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/PdfSplitter/src/PdfSplitter/Splitter.cs">4</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi/Services/ThrottledHttpClient.cs">5a</a>, <a href="https://github.com/235u/proposals/blob/master/ThrottledScraper/src/WotApi.Tests/ClanListTests.cs">5b</a>, <a href="https://github.com/235u/proposals/blob/master/SelfUpdateUtility/SelfUpdateUtility.Library/SelfUpdate.cs">6</a>]</sup>
 
-
-
-
 ## Delivery
 
 ### Source tree organization
 
 Relates to the entire set of artifacts that define the system:
 
-- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.<sup>[<a href="https://github.com/nikita-sharov/alten">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>]</sup>
+- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.<sup>[<a href="https://github.com/nikita-sharov/alten">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy">3a</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/wwwroot">3b</a>]</sup>
 - Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.<sup>[<a href="https://github.com/nikita-sharov/alten/tree/master/src">1</a>, <a href="https://github.com/nikita-sharov/word-counter/tree/main/src">2</a>]</sup>
 
 ### Code organization across files
