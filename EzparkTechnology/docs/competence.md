@@ -6,7 +6,7 @@ Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programme
 
 - Has 15 years of professional experience<sup>[<a href="https://observablehq.com/@nikita-sharov/person-in-a-nutshell">1</a>]</sup>
 - Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks<sup>[<a href="https://observablehq.com/@nikita-sharov/instrumentarium">1</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-logos">2</a>, <a href="https://observablehq.com/@nikita-sharov/partial-tree">3</a>]</sup>
-- Has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API<sup>[<a href="https://observablehq.com/@nikita-sharov/lodash-documentation-generator">1</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tools-categorized">2</a>]</sup>
+- Has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API<sup>[<a href="https://observablehq.com/@nikita-sharov/stackshare-tools-categorized">1</a>, <a href="https://observablehq.com/@nikita-sharov/lodash-documentation-generator">2</a>, <a href="https://github.com/235u/proposals/tree/master/BoxFolderCreator">3</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">4</a>]</sup>
 
 ### Languages
 
@@ -14,9 +14,9 @@ Has written code in:
 
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management)
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management)
-- **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>]</sup>
-- **CSS** (style sheet language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/css">1</a>]</sup>
-- **HTML** (markup language)<sup>[<a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter/ScaleConverter.Web/Pages/Index.cshtml">1</a>]</sup>
+- **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>, <a href="https://github.com/235u/proposals.de-de/tree/master/PdfSplitter">7</a>]</sup>
+- **CSS** (style sheet language)<sup>[<a href="https://observablehq.com/@nikita-sharov/the-state-of-css">1a</a>, <a href="https://observablehq.com/@nikita-sharov/all-roads-lead-to-rome">1b</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/css">2</a>, <a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/css">3</a>]</sup>
+- **HTML** (markup language)<sup>[<a href="https://observablehq.com/@nikita-sharov/lodash-documentation">1</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter/ScaleConverter.Web/Pages/Index.cshtml">3</a>]</sup>
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
 - **JavaScript** / ECMAScript (curly-brace, embeddable [in source code, client- and server-side], extension, functional [impure], interactive mode, interpreted, garbage collected, multiparadigm, object-oriented [prototype-based], procedural, reflective, scripting language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/js">1</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/js">2</a>]</sup>
 - LaTeX (markup language)
@@ -24,7 +24,7 @@ Has written code in:
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language)
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain])
-- **SVG** (markup language)<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/img">1</a>]</sup>
+- **SVG** (markup language)<sup>[<a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">1a</a>, <a href="https://observablehq.com/@nikita-sharov/bootstrap-icon-inspector">1b</a>, <a href="https://observablehq.com/@nikita-sharov/morse-o-matic">2a</a>, <a href="https://observablehq.com/@nikita-sharov/phonetic-alphabet">2b</a>, <a href="https://observablehq.com/@nikita-sharov/we-are-family">3</a>, <a href="https://observablehq.com/@nikita-sharov/layer-cake">4</a>, <a href="https://observablehq.com/@nikita-sharov/diverging-area-chart">5</a>]</sup>
 - **TypeScript** (class-based superset of JavaScript)
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
