@@ -14,7 +14,7 @@ Has written code in:
 
 - C (compiled, curly-brace, imperative, procedural, system programming language with manual, deterministic memory management)
 - C++ (compiled, curly-brace, imperative, metaprogramming, multiparadigm, object-oriented [class-based, single dispatch], procedural, system programming language with manual, deterministic memory management)
-- **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>, <a href="https://github.com/235u/proposals.de-de/tree/master/PdfSplitter">7</a>]</sup>
+- **C#** (compiled [into IL], curly-brace, functional [impure], imperative, interactive mode, iterative, garbage collected, multiparadigm, object-oriented [class-based, single dispatch], procedural, reflective language)<sup>[<a href="https://github.com/235u/website">1</a>, <a href="https://github.com/nikita-sharov/alten">3</a>, <a href="https://github.com/nikita-sharov/acp">4</a>, <a href="https://github.com/nikita-sharov/dimdex">5</a>, <a href="https://github.com/nikita-sharov/pure-legacy">6</a>, <a href="https://github.com/235u/proposals.de-de/tree/master/PdfSplitter">7</a>]</sup>
 - **CSS** (style sheet language)<sup>[<a href="https://observablehq.com/@nikita-sharov/the-state-of-css">1a</a>, <a href="https://observablehq.com/@nikita-sharov/all-roads-lead-to-rome">1b</a>, <a href="https://github.com/nikita-sharov/opla-energy/tree/master/src/OplaEnergy/wwwroot/css">2</a>, <a href="https://github.com/235u/website/tree/master/ActinUranium.Web/wwwroot/css">3</a>]</sup>
 - **HTML** (markup language)<sup>[<a href="https://observablehq.com/@nikita-sharov/lodash-documentation">1</a>, <a href="https://acp.235u.net/">2a<a>, <a href="https://github.com/nikita-sharov/acp">2b</a>, <a href="https://scale-converter.azurewebsites.net/">3a</a>, <a href="https://github.com/235u/proposals.de-de/blob/master/ScaleConverter/ScaleConverter.Web/Pages/Index.cshtml">3b</a>]</sup>
 - Java (compiled [into IL], concurrent, curly-brace, functional (impure), imperative, interactive mode, garbage collected, multiparadigm, object-oriented [class-based, single-dispatch], procedural, reflective language)
@@ -24,7 +24,7 @@ Has written code in:
 - PHP (curly-brace, embeddable [in source code, server-side], imperative, interpreted, imperative, iterative, garbage collected [combined with automated reference counting], multiparadigm, object-oriented [class-based, single dispatch], reflective, scripting language)
 - **PowerShell** (command line interface, curly-brace, extension, garbage collected, imperative, interactive mode, interpreted, multiparadigm, procedural, reflective, scripting language)
 - **SQL** (data-oriented, declarative, fourth-generation, little language [serving a specialized problem domain])
-- **SVG** (markup language)<sup>[<a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">1a</a>, <a href="https://observablehq.com/@nikita-sharov/bootstrap-icon-inspector">1b</a>, <a href="https://observablehq.com/@nikita-sharov/morse-o-matic">2a</a>, <a href="https://observablehq.com/@nikita-sharov/phonetic-alphabet">2b</a>, <a href="https://observablehq.com/@nikita-sharov/we-are-family">3</a>, <a href="https://observablehq.com/@nikita-sharov/layer-cake">4</a>, <a href="https://observablehq.com/@nikita-sharov/diverging-area-chart">5</a>]</sup>
+- **SVG** (markup language)<sup>[<a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">1a</a>, <a href="https://observablehq.com/@nikita-sharov/bootstrap-icon-inspector">1b</a>, <a href="https://observablehq.com/@nikita-sharov/morse-o-matic">2a</a>, <a href="https://observablehq.com/@nikita-sharov/phonetic-alphabet">2b</a>, <a href="https://observablehq.com/@nikita-sharov/we-are-family">3</a>]</sup>
 - **TypeScript** (class-based superset of JavaScript)
 - UML (modeling language)
 - VBA (compiled [into IL], extension, procedural, scripting language with automated reference counting)
@@ -46,7 +46,7 @@ Has written code on and for:
 Is able to:
 
 - Understand the complete picture<sup>[<a href="https://github.com/235u/proposals/tree/master/EzparkTechnology">1</a>]</sup>
-- Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/hello-prism-js">1</a>, <a href="https://observablehq.com/@nikita-sharov/progress-bar">2</a>, <a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">3</a>, <a href="https://observablehq.com/@nikita-sharov/synchronized-slider">4</a>, <a href="https://observablehq.com/@nikita-sharov/hello-schema-org">5</a>]</sup>
+- Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/hello-prism-js">1</a>, <a href="https://observablehq.com/@nikita-sharov/progress-bar">2</a>, <a href="https://observablehq.com/@nikita-sharov/feather-icon-inspector">3</a>, <a href="https://observablehq.com/@nikita-sharov/synchronized-slider">4</a>, <a href="https://observablehq.com/@nikita-sharov/hello-schema-org">5</a>, <a href="https://observablehq.com/@nikita-sharov/layer-cake">5</a>, <a href="https://observablehq.com/@nikita-sharov/diverging-area-chart">6</a>, <a href="">7</a>]</sup>
 - Communicate thoughts / design / ideas / specs in an unambiguous manner<sup>[<a href="https://observablehq.com/@nikita-sharov/publications">1</a>]</sup>
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
 
@@ -60,8 +60,8 @@ Is able to:
 ### Problem Decomposition
 
 - Break up problems into multiple functions
-- Come up with reusable functions / objects that solve the overall problem
-- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change, using appropriate data structures and algorithms
+- Come up with reusable functions / objects that solve the overall problem<sup>[<a href="https://observablehq.com/@nikita-sharov/stepper">1a</a>, <a href="https://observablehq.com/@nikita-sharov/hello-chessground">1b</a>]</sup>
+- Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change, using appropriate data structures and algorithms<sup>[<a href="https://github.com/nikita-sharov/word-counter">1</a>]</sup>
 
 ## Modus operandi
 
@@ -105,7 +105,7 @@ Follows Kent Beck's four rules of Simple Design (in Martin Fowler's [interpretat
 
 Relates to the entire set of artifacts that define the system:
 
-- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.<sup>[<a href="https://github.com/nikita-sharov/alten">1</a>, <a href="https://github.com/nikita-sharov/word-counter">2</a>, <a href="https://github.com/nikita-sharov/pure-legacy">3a</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/wwwroot">3b</a>]</sup>
+- No circular dependencies; binaries, libs, docs, builds, third-party code are all organized into appropriate folders.<sup>[<a href="https://github.com/nikita-sharov/alten">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy">2a</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/wwwroot">2b</a>]</sup>
 - Physical layout of the source tree matches logical hierarchy and organization; directory naming and organization provide insights into the design of the whole system.<sup>[<a href="https://github.com/nikita-sharov/alten/tree/master/src">1</a>, <a href="https://github.com/nikita-sharov/word-counter/tree/main/src">2</a>]</sup>
 
 ### Code organization across files
