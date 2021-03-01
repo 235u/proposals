@@ -54,14 +54,16 @@ Is able to:
 
 - Break up problem space and design solutions, that span multiple technologies / platforms<sup>[<a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/server-side-development.pdf">1a</a>, <a href="https://github.com/235u/proposals/blob/master/EzparkTechnology/docs/_static/client-side-development.pdf">1b</a>, <a href="https://github.com/235u/proposals/tree/master/CartoonMagazine">2</a>]</sup>
 - Visualize and design systems with multiple product lines and integrations with external systems<sup>[<a href="https://observablehq.com/collection/@nikita-sharov/apis">1</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">2</a>]</sup>
-- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Services">3</a>]</sup>
+- Design good and normalized database schemas keeping in mind the queries that will have to be run<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Models">1a</a>, <a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Services">1b</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Models">2a</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Services">2b</a>]</sup>
 - Implement operations support systems like monitoring, reporting, etc.<sup>[<a href="https://github.com/235u/proposals.de-de/tree/master/PdfSplitter">1</a>, <a href="https://github.com/235u/proposals/tree/master/IdentityCustomization">2</a>, <a href="https://github.com/235u/proposals/tree/master/ElmahConfiguration">3</a>]</sup>
+
 
 ### Problem Decomposition
 
 - Break up problems into multiple functions
 - Come up with reusable functions / objects that solve the overall problem<sup>[<a href="https://observablehq.com/@nikita-sharov/stepper">1a</a>, <a href="https://observablehq.com/@nikita-sharov/hello-chessground">1b</a>]</sup>
 - Write generic / object-oriented code, that encapsulate aspects of the problem that are subject to change, using appropriate data structures and algorithms<sup>[<a href="https://github.com/nikita-sharov/word-counter">1</a>]</sup>
+- Perform object-relational mapping<sup>[<a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Services/ApplicationDbContext.cs">1a</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Services/ApplicationDbInitializer.cs">1b</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Services/ApplicationDbInitializer.Creations.cs">1c</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Services/ApplicationDbInitializer.Customers.cs">1d</a>, <a href="https://github.com/235u/website/blob/master/ActinUranium.Web/Services/ApplicationDbInitializer.Headlines.cs">1e</a>]</sup>
 
 ## Modus operandi
 
@@ -137,9 +139,7 @@ Relates to the entire set of artifacts that define the system:
 - Can do basic database administration, performance / index / query optimization, write advanced select queries
 - Understands how databases can be mirrored, replicated, etc.
 - Knows basic sorting, searching, and data structure traversal and retrieval algorithms
-- Is proficient in the use of the ORM tools<sup>[<a href="https://github.com/235u/website/tree/master/ActinUranium.Web/Models">1</a>, <a href="https://github.com/nikita-sharov/pure-legacy/tree/master/PureLegacy.PriceEstimation/Models">2</a>, <a href="https://github.com/nikita-sharov/dimdex/tree/master/src/Dimdex.Organization/Models">3</a>]</sup>
 - Considers space and time tradeoffs of arrays, linked lists, dictionaries, priority queues, etc.
-- Knows how hashtables can be implemented and how to handle collisions
 
 ### Systems programming
 
