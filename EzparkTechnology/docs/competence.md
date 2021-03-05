@@ -47,7 +47,7 @@ Is able to:
 
 - Understand the complete picture<sup>[<a href="https://github.com/235u/proposals/tree/master/EzparkTechnology">1</a>]</sup>
 - Recognize and code dynamic programming solutions<sup>[<a href="https://observablehq.com/@nikita-sharov/layer-cake">1</a>, <a href="https://observablehq.com/@nikita-sharov/diverging-area-chart">2</a>]</sup>
-- Communicate thoughts / design / ideas / specs in an unambiguous manner<sup>[<a href="https://github.com/nikita-sharov/alten/blob/master/README.md">1a</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">1b</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/online-application-form.md">1c</a>, <a href="https://github.com/nikita-sharov/docs/blob/master/applications-for-employment/alten/software-developer-csharp/motivational-letter.md">1d</a>]</sup>
+- Communicate thoughts / design / ideas / specs in an unambiguous manner<sup>[<a href="https://observablehq.com/@nikita-sharov/publications">1</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/README.md">2a</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/jama.md">2b</a>, <a href="https://github.com/nikita-sharov/alten/blob/master/docs/online-application-form.md">2c</a>, <a href="https://github.com/nikita-sharov/docs/blob/master/applications-for-employment/alten/software-developer-csharp/motivational-letter.md">2d</a>]</sup>
 - Effectively use the IDE using menus and keyboard shortcuts for the most used operations
 
 ### Systems Decomposition
