@@ -5,7 +5,7 @@ Inspired by the [Programmer Competency Matrix](https://sijinjoseph.com/programme
 ## Experience
 
 - Has 15 years of professional experience<sup>[<a href="https://observablehq.com/@nikita-sharov/cv">1a</a>, <a href="https://observablehq.com/@nikita-sharov/person-in-a-nutshell">1b</a>]</sup>
-- Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks<sup>[<a href="">1a</a>, <a href="https://observablehq.com/@nikita-sharov/partial-tree">1b</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-categories">1c</a>,  <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-logos">1d</a>, <a href="https://observablehq.com/@nikita-sharov/instrumentarium">2</a>]</sup>
+- Has used more than one framework in a professional capacity and is well-versed with the idioms of the frameworks<sup>[<a href="https://observablehq.com/@nikita-sharov/i-am-groot">1a</a>, <a href="https://observablehq.com/@nikita-sharov/partial-tree">1b</a>, <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-categories">1c</a>,  <a href="https://observablehq.com/@nikita-sharov/stackshare-tool-logos">1d</a>, <a href="https://observablehq.com/@nikita-sharov/instrumentarium">2</a>]</sup>
 - Has written libraries that sit on top of the APIs to simplify frequently used tasks and to fill in gaps in the API<sup>[<a href="https://observablehq.com/@nikita-sharov/stackshare-tools-categorized">1</a>, <a href="https://observablehq.com/@nikita-sharov/lodash-documentation-generator">2</a>, <a href="https://github.com/235u/proposals/tree/master/BoxFolderCreator">3</a>, <a href="https://github.com/235u/proposals/tree/master/GamePriceComparison">4</a>]</sup>
 
 ### Languages
