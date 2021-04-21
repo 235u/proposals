@@ -56,7 +56,7 @@ See rather technical [description](docs/competence.md).
 
 ### Features
 
-Follow the links in [Web Applications](#web-application) for details about the (nowadays very large) feature sets of each and every proposed cloud platform / service.
+Follow the links in [Web Applications](#web-applications) for details about the (nowadays very large) feature sets of each and every proposed cloud platform / service.
 
 ###	Benefits
 
