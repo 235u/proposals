@@ -1,6 +1,5 @@
 ﻿using RestSharp;
 using GamePriceComparison.Helpers;
-using GamePriceComparison.Models;
 using GamePriceComparison.Services;
 using System;
 using System.Collections.Generic;
@@ -18,8 +17,8 @@ namespace GamePriceComparison.Models
             [Currency.PoundSterling] = Country.UnitedKingdom
         };
 
-        // See: https://exchangeratesapi.io
-        private static readonly RestClient Client = new RestClient(baseUrl: "https://api.exchangeratesapi.io");
+        // See: https://ratesapi.io/documentation/
+        private static readonly RestClient Client = new RestClient(baseUrl: "https://api.ratesapi.io/api/");
 
         private ExchangeRateCollection()
         {
