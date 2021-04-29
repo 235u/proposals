@@ -18,7 +18,7 @@ E.g. 32 hours per week up to 256 hours results in a project start date plus 8 we
 
 ## Work Structure
 
-**20%** of work, to reach the functional requirements / desired quantity, implementing the happy case, following the happy path, working under ideal / narrow set of conditions, with manual help from the developer; **80%** of rework, to reach the non-functional requirements / desired quality, in an iterative manner, visualized as a spiral; 
+**20%** of work, to reach the functional requirements / desired quantity, implementing the happy case, following the happy path, working under ideal / narrow set of conditions, operated by the developer "pressing the right buttons" himself; **80%** of refinement, to reach the non-functional requirements / desired quality, in an iterative manner, visualized as a spiral; 
 
 **20%** of writing in natural language / English and multiple artificial / technical languages; **80%** of rewriting, to reach higher quality;
 
